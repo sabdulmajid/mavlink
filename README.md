@@ -212,7 +212,7 @@ Signing in mavutil refers to the process of adding a cryptographic signature to 
 
 When a message is signed, the sender uses their secret key to generate a signature. This signature is then attached to the message. When the message is received, the receiver uses the sender's public key to verify the signature. If the signature is valid, then the receiver can be confident that the message was sent by the claimed sender and that the message has not been tampered with.
 
-Here is the code for signing a message:
+Here is the code for signing/unsigning a message:
 
   ```python
   #Setup signing
@@ -220,4 +220,20 @@ Here is the code for signing a message:
 
   # Disable signing (clear secret key and all the other settings specified with setup_signing)
   def disable_signing(self):
+  ```
+
+Mavutil also allows for unsigned_callback, the example code for that being:
+
+  ```python
+  connection = mavutil.mavlink_connection('udpin:localhost:14540')
+
+  def unsigned_callback(self, msg):
+    if msgId == mavutil.mavlink.MAVLINK_MSG_ID_RADIO_STATUS:
+      return True
+    else:
+      return False
+    
+  # Pass the callback function to the mavlink connection
+  secret_key = chr(42) * 32
+  connection.setup_signing(secret_key, sign_outgoing=True, allow_unsigned_callback=unsigned_callback)
   ```
