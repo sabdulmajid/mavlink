@@ -4,4 +4,5 @@ Day 1: 22nd May 2023
 • Have the Raspberry Pi 3 software setup and ready to go
 • Update the project progress on GitHub for future reference: https://github.com/sabdulmajid/mavlink
 • Have learnt how to setup a connection, wait for heartbeats, and send & receive messages using a UDP port.
+• Have learnt how to use MAVLink to 
 
