@@ -1,78 +1,49 @@
-[![Build Status](https://github.com/mavlink/mavlink/workflows/Test%20and%20deploy/badge.svg)](https://github.com/mavlink/mavlink/actions?query=branch%3Amaster)
+# MAVLink 
+## Code explanation
+The ```mavgen.py``` is a Python script that generates a Python implementation of a MAVLink protocol XML file. MAVLink is a protocol for communication between unmanned aerial vehicles (UAVs) and ground control stations. The XML files that define the MAVLink protocol specify the names, types, and sizes of the messages that can be sent between UAVs and ground control stations.
 
-# MAVLink
+The Python script works by first parsing the MAVLink XML files. This is done using the mavparse module, which is a Python library for parsing MAVLink XML files. Once the XML``` files have been parsed, the script generates a Python implementation of the MAVLink protocol. The generated Python implementation includes classes for each of the messages defined in the MAVLink XML files. The classes provide methods for sending and receiving messages, as well as methods for getting and setting the properties of the messages.
 
-MAVLink -- Micro Air Vehicle Message Marshalling Library.
+The Python script also validates the MAVLink XML files. This is done by comparing the XML files to the MAVLink schema, which is a XML document that defines the syntax of MAVLink XML files. If the XML files do not conform to the schema, the script will print an error message.
 
-MAVLink is a very lightweight, header-only message library for communication between drones and/or ground control stations. It consists primarily of message-set specifications for different systems ("dialects") defined in XML files, and Python tools that convert these into appropriate source code for [supported languages](https://mavlink.io/en/#supported_languages). There are additional Python scripts providing examples and utilities for working with MAVLink data.
+The Python script is a useful tool for developers who want to create applications that communicate with UAVs using the MAVLink protocol. The script can be used to generate Python implementations of MAVLink XML files, which can then be used to send and receive messages between UAVs and ground control stations.
 
-> **Tip** MAVLink is very well suited for applications with very limited communication bandwidth. Its reference implementation in C is highly optimized for resource-constrained systems with limited RAM and flash memory. It is field-proven and deployed in many products where it serves as interoperability interface between components of different manufacturers.
+Here is a more detailed explanation of the steps that the Python script takes to generate a Python implementation of a MAVLink protocol XML file:
 
+  1. The script imports the mavparse module.
+  2. The script parses the MAVLink XML file using the ```mavparse.MAVXML``` class.
+  3. The script creates a Python class for each message defined in the MAVLink XML file.
+  4. The script adds methods to the Python classes for sending and receiving messages.
+  5. The script adds methods to the Python classes for getting and setting the properties of the messages.
+  6. The script validates the MAVLink XML file against the MAVLink schema.
+  7. The script prints an error message if the MAVLink XML file does not conform to the schema.
+  8. The script returns the Python classes.
+    
+After that, a function called mavgen_python_dialect() is defined. This function generates Python code for a MAVLink dialect. The function takes three arguments:
 
-## Quick start
+```dialect```: The name of the MAVLink dialect.
 
-### Generate C headers
+```wire_protocol```: The MAVLink wire protocol version.
 
-To install the minimal MAVLink environment on Ubuntu LTS 20.04 or 22.04, enter the following on a terminal:
+```with_type_annotations```: A boolean value indicating whether to generate type annotations for the Python code.
 
-```bash
-# Dependencies
-sudo apt install python3-pip
+The function first gets the path to the MAVLink dialect directory. It then gets the path to the MAVLink dialect XML file. If the XML file does not exist, the function tries to get the path to the XML file from the message definitions directory.
 
-# Clone mavlink into the directory of your choice
-git clone https://github.com/mavlink/mavlink.git --recursive
-cd mavlink
+The function then creates an Opts object. This object contains the following information:
 
-python3 -m pip install pymavlink/requirements.txt
-```
+The output directory.
+The MAVLink wire protocol version.
+The language to generate the Python code in.
+Whether to generate type annotations for the Python code.
+The function then checks if the Python 2 or Python 3 version of the mavgen script is available. It then calls the mavgen script to generate the Python code.
 
-You can then build the MAVLink2 C-library for `message_definitions/v1.0/common.xml` from the `/mavlink` directory as shown:
+The function finally returns a boolean value indicating whether the Python code was generated successfully.
 
-```bash
-python3 -m pymavlink.tools.mavgen --lang=C --wire-protocol=2.0 --output=generated/include/mavlink/v2.0 message_definitions/v1.0/common.xml
-```
+The mavgen script is a Python script that generates Python code for a MAVLink dialect. The script takes two arguments:
 
-### Use from cmake
+```output```: The output directory.
+```xml```: The path to the MAVLink dialect XML file.
 
-To include the headers in cmake, install them locally, e.g. into the directory `install`:
+The script first parses the MAVLink dialect XML file. It then generates Python code for each message defined in the XML file. The generated Python code includes classes for each message. The classes provide methods for sending and receiving messages, as well as methods for getting and setting the properties of the messages.
 
-```
-cmake -Bbuild -H. -DCMAKE_INSTALL_PREFIX=install -DMAVLINK_DIALECT=common -DMAVLINK_VERSION=2.0
-cmake --build build --target install
-```
-
-Then use `find_package` to get the dependency in `CMakeLists.txt`:
-
-```
-find_package(MAVLink REQUIRED)
-
-add_executable(my_program my_program.c)
-
-target_link_libraries(my_program PRIVATE MAVLink::mavlink)
-```
-
-And pass the local install directory to cmake (adapt to your directory structure):
-
-```
-cd ../my_program
-cmake -Bbuild -H. -DCMAKE_PREFIX_PATH=../mavlink/install
-```
-
-For a full example, check [examples/c](examples/c).
-
-*Note: even though we use `target_link_libraries` in cmake, it doesn't actually "link" to MAVLink as it's just a header-only library.*
-
-### Other instructions
-
-Instructions for using the C libraries are then covered in [Using C MAVLink Libraries (mavgen)](https://mavlink.io/en/mavgen_c/).
-
-> **Note:** [Installing the MAVLink Toolchain](https://mavlink.io/en/getting_started/installation.html) explains how to install MAVLink on other Ubuntu platforms and Windows, while [Generating MAVLink Libraries](https://mavlink.io/en/getting_started/generate_libraries.html) explains how to build MAVLink for the other programming languages [supported by the project](https://mavlink.io/en/#supported_languages).
-> The sub-topics of [Using MAVLink Libraries](https://mavlink.io/en/getting_started/use_libraries.html) explain how to use the generated libraries.
-
-
-## Key Links
-
-* [Documentation/Website](https://mavlink.io/en/) (mavlink.io/en/)
-* [Discussion/Support](https://mavlink.io/en/#support)
-* [Contributing](https://mavlink.io/en/contributing/contributing.html)
-* [License](https://mavlink.io/en/#license)
+The script finally writes the generated Python code to the output directory.
