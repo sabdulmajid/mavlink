@@ -1,0 +1,5 @@
+Progress Updates
+Day 1: 22nd May 2023
+• Completed setup and installation of all dependencies of the project (Python 3.11, pip, MAVLink, mavgenerate.py, pymavlink, mavutil)
+• Have the Raspberry Pi 3 software setup and ready to go
+• Currently learning how to setup a connection, send & receive messages between the Raspberry Pi 3 and Pixhawk 4.
