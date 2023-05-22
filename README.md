@@ -48,7 +48,7 @@ The script first parses the MAVLink dialect XML file. It then generates Python c
 
 The script finally writes the generated Python code to the output directory.
 
-## Spec Details for Integration
+## Spec Details
 Pixhawk 4 is a powerful flight controller that can be used to control a variety of unmanned aerial vehicles (UAVs). It is based on the STM32F405RGT6 microcontroller and includes a number of features that make it ideal for UAV applications, such as:
 
   - 32-bit processor 
