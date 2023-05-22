@@ -19,7 +19,7 @@ Here is a more detailed explanation of the steps that the Python script takes to
   7. The script prints an error message if the ```MAVLink XML``` file does not conform to the schema.
   8. The script returns the Python classes.
     
-After that, a function called mavgen_python_dialect() is defined. This function generates Python code for a MAVLink dialect. The function takes three arguments:
+After that, a function called ```mavgen_python_dialect()``` is defined. This function generates Python code for a MAVLink dialect. The function takes three arguments:
 
 ```dialect```: The name of the MAVLink dialect.
 
