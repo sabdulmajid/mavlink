@@ -143,3 +143,34 @@ It is always good practise to check that a message is valid before using it:
       # Use the attribute
       print('Mode: %s' % msg.mode)
   ```
+
+## Heartbeats
+
+  ```python
+  def heartbeat_send(self, type, autopilot, base_mode, custom_mode, system_status, mavlink_version=3, force_mavlink1=False):
+      '''
+      The heartbeat message shows that a system is present and responding.
+      The type of the MAV and Autopilot hardware allow the
+      receiving system to treat further messages from this
+      system appropriate (e.g. by laying out the user
+      interface based on the autopilot).
+
+      • type              : Type of the MAV (quadrotor, helicopter, etc.) (type:uint8_t, values:MAV_TYPE)
+      • autopilot         : Autopilot type/class (type:uint8_t, values:MAV_AUTOPILOT)
+      • base_mode         : System mode bitmap (type:uint8_t, values:MAV_MODE_FLAG)
+      • custom_mode       : A bitfield for use for autopilot-specific flags (type:uint32_t)
+      • system_status     : System status flag (type:uint8_t, values:MAV_STATE)
+      • mavlink_version   : MAVLink version, not writable by user, gets added by protocol because of magic data type: uint8_t_mavlink_version (type:uint8_t)
+      '''
+  ```
+
+As for an example on how to send a heartbeat:
+  
+    ```python
+      connection.mav.heartbeat_send(mavutil.mavlink.MAV_TYPE_GCS,
+                                                mavutil.mavlink.MAV_AUTOPILOT_INVALID, 0, 0, 0)
+      # Or use the following method if it is from a MAVLink application
+      connection.mav.heartbeat_send(mavutil.mavlink.MAV_TYPE_ONBOARD_CONTROLLER,
+                                                mavutil.mavlink.MAV_AUTOPILOT_INVALID, 0, 0, 0)
+    ```
+    
