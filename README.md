@@ -89,4 +89,15 @@ Here are some examples of how you can use MAVLink and a Raspberry Pi 3 to contro
   - Send a command to the Pixhawk 4 to land.
   - Receive data from the Pixhawk 4 about its current state, such as its altitude, speed, and heading.
 
+## Set-up a connection
+The 'mavutil' module provides a function, ```mavutil_connection()``` which always a user to connect with a device. Example code to connect to a UDP port:
 
+```python
+from pymavlink import mavutil
+connection = mavutil.mavlink_connection('udpin:localhost:14540')
+connection.wait_heartbeat()
+print("Heartbeat received from the system (system %u component %u)" % (connection.target_system, connection.target_component))
+```
+
+```udpin``` creates a socket to listen for a UDP connection, whereas, ```udpout``` creates a socket that iniatiates a UDP connection.
+```wait_heartbeat()``` waits for a heartbeat message from the system. This is a blocking function, so it will wait until a heartbeat is received.
