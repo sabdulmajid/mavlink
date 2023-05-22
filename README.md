@@ -101,3 +101,4 @@ print("Heartbeat received from the system (system %u component %u)" % (connectio
 
 ```udpin``` creates a socket to listen for a UDP connection, whereas, ```udpout``` creates a socket that iniatiates a UDP connection.
 ```wait_heartbeat()``` waits for a heartbeat message from the system. This is a blocking function, so it will wait until a heartbeat is received.
+Other useful ```mavlink_connection()``` parameters: ```source_system (default 255)```, ```source_component (default 0)``` and ```dialect (default ArduPilot)```
