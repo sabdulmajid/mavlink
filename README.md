@@ -207,7 +207,7 @@ def load_key_and_timestamp(self):
     self._initial_timestamp = None
 ```
 
-## Signing using mavutil
+## Signing
 Signing in mavutil refers to the process of adding a cryptographic signature to a message. This signature can be used to verify the authenticity and integrity of the message.
 
 When a message is signed, the sender uses their secret key to generate a signature. This signature is then attached to the message. When the message is received, the receiver uses the sender's public key to verify the signature. If the signature is valid, then the receiver can be confident that the message was sent by the claimed sender and that the message has not been tampered with.
