@@ -237,3 +237,5 @@ Mavutil also allows for unsigned_callback, the example code for that being:
   secret_key = chr(42) * 32
   connection.setup_signing(secret_key, sign_outgoing=True, allow_unsigned_callback=unsigned_callback)
   ```
+
+## Useful Examples
