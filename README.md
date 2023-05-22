@@ -130,7 +130,7 @@ There is another way to receive messages automatically, which waits for and inte
 
 It is always good practise to check that a message is valid before using it:
     
-    ```python
+  ```python
     msg = m.recv_match(type='SYS_STATUS', blocking=True)
     if not msg:
       return
@@ -142,4 +142,4 @@ It is always good practise to check that a message is valid before using it:
       #Message is valid
       # Use the attribute
       print('Mode: %s' % msg.mode)
-    ```
+  ```
