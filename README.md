@@ -170,13 +170,13 @@ def heartbeat_send(self, type, autopilot, base_mode, custom_mode, system_status,
 
 As for an example on how to send a heartbeat:
 
-    ```python
-      connection.mav.heartbeat_send(mavutil.mavlink.MAV_TYPE_GCS,
+  ```python
+    connection.mav.heartbeat_send(mavutil.mavlink.MAV_TYPE_GCS,
                                                 mavutil.mavlink.MAV_AUTOPILOT_INVALID, 0, 0, 0) # GCS stands for Ground Control Station
       # Or use the following method if it is from a MAVLink application
       connection.mav.heartbeat_send(mavutil.mavlink.MAV_TYPE_ONBOARD_CONTROLLER,
                                                 mavutil.mavlink.MAV_AUTOPILOT_INVALID, 0, 0, 0)
-    ```
+  ```
 
 ## Save and Load Key & Last-Timestamp
 
