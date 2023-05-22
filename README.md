@@ -102,3 +102,28 @@ print("Heartbeat received from the system (system %u component %u)" % (connectio
 ```udpin``` creates a socket to listen for a UDP connection, whereas, ```udpout``` creates a socket that iniatiates a UDP connection.
 ```wait_heartbeat()``` waits for a heartbeat message from the system. This is a blocking function, so it will wait until a heartbeat is received.
 Other useful ```mavlink_connection()``` parameters: ```source_system (default 255)```, ```source_component (default 0)``` and ```dialect (default ArduPilot)```
+
+As for receiving messages, the following code shows an example of how to do so efficiently:
+  
+  ```python
+  try:
+    altitude = connection.messages['GPS_RAW_INT'].alt
+    timestamp = connection.messages['GPS_RAW_INT'].time_usec # or timestamp = connection.time_since('GPS_RAW_INT')
+    print("Altitude: %s" % altitude)
+    print("Timestamp: %s" % timestamp)
+  except:
+    print("No GPS_RAW_INT message received")
+  ```
+
+There is another way to receive messages automatically, which waits for and intercepts any messages as they arrive:
+  
+  ```python
+  def recv_match(self, condition=None, type=None, blocking=False, timeout=None):
+    '''
+      Receive the next MAVLink message that matches the given type and condition
+      • type:        Message name(s) as a string or list of strings - e.g. 'SYS_STATUS'
+      • condition:   Condition based on message values - e.g. 'SYS_STATUS.mode==2 and SYS_STATUS.nav_mode==4'
+      • blocking:    Set to wait until message arrives before method completes. 
+      • timeout:     ? <!-- timeout for blocking message when the system will return. Is this just a time? -->
+    '''
+  ```
