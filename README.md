@@ -196,7 +196,6 @@ def save_key_and_timestamp(self):
 
 def load_key_and_timestamp(self):
   # Loads the secret key and last timestamp from permanent storage and returns: None
-
   try:
     with open("key.txt", "rb") as f:
       self._secret_key = f.read()
@@ -207,3 +206,18 @@ def load_key_and_timestamp(self):
     self._secret_key = None
     self._initial_timestamp = None
 ```
+
+## Signing using mavutil
+Signing in mavutil refers to the process of adding a cryptographic signature to a message. This signature can be used to verify the authenticity and integrity of the message.
+
+When a message is signed, the sender uses their secret key to generate a signature. This signature is then attached to the message. When the message is received, the receiver uses the sender's public key to verify the signature. If the signature is valid, then the receiver can be confident that the message was sent by the claimed sender and that the message has not been tampered with.
+
+Here is the code for signing a message:
+
+  ```python
+  #Setup signing
+  def setup_signing(self, secret_key, sign_outgoing=True, allow_unsigned_callback=None, initial_timestamp=None, link_id=None)
+
+  # Disable signing (clear secret key and all the other settings specified with setup_signing)
+  def disable_signing(self):
+  ```
