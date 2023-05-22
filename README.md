@@ -16,7 +16,7 @@ Here is a more detailed explanation of the steps that the Python script takes to
   4. The script adds methods to the Python classes for sending and receiving messages.
   5. The script adds methods to the Python classes for getting and setting the properties of the messages.
   6. The script validates the MAVLink XML file against the MAVLink schema.
-  7. The script prints an error message if the MAVLink XML file does not conform to the schema.
+  7. The script prints an error message if the ```MAVLink XML``` file does not conform to the schema.
   8. The script returns the Python classes.
     
 After that, a function called mavgen_python_dialect() is defined. This function generates Python code for a MAVLink dialect. The function takes three arguments:
