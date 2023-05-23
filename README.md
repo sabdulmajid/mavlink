@@ -337,3 +337,24 @@ There are a couple of features not added yet to the OpenDroneID protocol that co
  - Configure the broadcast method (BT4, BT5, Beacon, NaN)
  - Wi-Fi channel configuration for Beacon
  - Message update rates on the air
+
+## DroneKit Software In The Loop (SITL) Simulator
+To run the latest version of Copter:
+```shell
+dronekit-sitl copter
+```
+SITL will then start and wait for TCP connections on ```127.0.0.1:5760```
+
+You can specify a particular vehicle and version, and also parameters like the home location, the vehicle model type (e.g. “quad”), etc. For example:
+```shell
+dronekit-sitl plane-3.3.0 --home=-35.363261,149.165230,584,353
+```
+
+There are a number of other useful arguments:
+```shell
+dronekit-sitl -h            #List all parameters to dronekit-sitl.
+dronekit-sitl copter -h     #List additional parameters for the specified vehicle (in this case "copter").
+dronekit-sitl --list        #List all available vehicles.
+dronekit-sitl --reset       #Delete all downloaded vehicle binaries.
+dronekit-sitl ./path [args...]  #Start SITL instance at target file location.
+```
