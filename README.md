@@ -288,3 +288,17 @@ Here are some additional details about the two MAVLink protocol versions:
  - MAVLink 2.0 is a newer, more powerful version of the MAVLink protocol. It is designed to be more secure, extensible, and efficient than MAVLink 1.0.
 
 If you are using a Pixhawk flight controller, you can use either MAVLink 1.0 or MAVLink 2.0. The choice of which protocol to use depends on your specific needs. If you are looking for a simple and efficient protocol, then MAVLink 1.0 is a good choice. If you need a more secure, extensible, and efficient protocol, then MAVLink 2.0 is a better choice.
+
+## MAVLink Messages (In-depth)
+Here is a list of all useful messages to interact with the MAVLink device:
+  - **OPEN_DRONE_ID_BASIC_ID**: Provides an ID for the UA, characterizes the type of ID and identifies the type of UA.
+  - **OPEN_DRONE_ID_LOCATION**: Provides location, altitude, direction, and speed of the UA.
+  - **OPEN_DRONE_ID_AUTHENTICATION**: Provides authentication data for the UA.
+  - **OPEN_DRONE_ID_SELF_ID**: Optional plain text message that can be used by operators to identify themselves and the purpose of an operation. Can also be used to provide optional additional clarification in an emergency/remote ID system failure situation.
+  - **OPEN_DRONE_ID_SYSTEM**: Includes the operator location/altitude, multiple aircraft information (group/swarm, if applicable), full timestamp and possible category/class information.
+  - **OPEN_DRONE_ID_OPERATOR_ID**: Provides the operator ID.
+  - **OPEN_DRONE_ID_MESSAGE_PACK**: A payload mechanism for combining the messages above into a single message pack. Used with Bluetooth Extended Advertising, Wi-Fi NaN and Wi-Fi Beacon.
+  - **OPEN_DRONE_ID_ARM_STATUS**:	Sent by RID transmitter/receiver components to indicate that the RID system is "ready to use". This should be used as an arming condition for the flight stack. Note that this differs from the HEARTBEAT which indicates that the component is "alive" but not necessarily ready to use.
+  - **OPEN_DRONE_ID_SYSTEM_UPDATE**:	A subset of the **OPEN_DRONE_ID_SYSTEM** message, containing only the fields that must be updated at a high rate. Typically sent from the GCS to provide data to the RID transmitter component. If both **OPEN_DRONE_ID_SYSTEM** and **OPEN_DRONE_ID_SYSTEM_UPDATE** are used, the more efficient **OPEN_DRONE_ID_SYSTEM_UPDATE** will be used at a high rate and the full **OPEN_DRONE_ID_SYSTEM** at a low rate, to reduce the traffic on the control link.
+
+Note: [American Society for Testing and Materials (ASTM) Regulations](https://en.wikipedia.org/wiki/ASTM_International) are all met by each of these commands
