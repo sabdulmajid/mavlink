@@ -3,6 +3,10 @@ Day 1: 22nd May 2023
 • Completed setup and installation of all dependencies of the project (Python 3.11, pip, MAVLink, mavgenerate.py, pymavlink, mavutil)
 • Have the Raspberry Pi 3 software setup and ready to go
 • Update the project progress on GitHub for future reference: https://github.com/sabdulmajid/mavlink
-• Have learnt how to setup a connection, wait for heartbeats, and send & receive messages using a UDP port.
-• Have learnt how to use MAVLink to 
+• Have learnt how to setup a connection, wait for heartbeats, and send & receive messages using a UDP port
+• Have learnt how to use MAVLink to sign messages and verify signatures
+• Have added new examples to the ReadME file on GitHub for future reference
+
+Day 2: 23rd May 2023
+
 
