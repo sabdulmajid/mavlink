@@ -252,10 +252,14 @@ Mavutil also allows for unsigned_callback, the example code for that being:
 
 ## MAVLink 2.0 New Features
 Nothing much is different from MAVLink 1.0 to 2.0, but here are some of the new features:
-  
+
   1. 24 bit message ID - Allows over 16 million unique message definitions in a dialect (MAVLink 1 was limited to 256)
   2. Packet signing - Authenticate that messages were sent by trusted systems.
   3. Message extensions - Add new fields to existing MAVLink message definitions without breaking binary compatibility for receivers that have not updated.
   4. Empty-byte payload truncation - Empty (zero-filled) bytes at the end of the serialized payload must be removed before sending (All bytes were sent in MAVLink 1, regardless of content).
   5. Compatibility Flags/Incompatibility Flags - Allow for backwards compatible evolution of the protocol by indicating frames that must be handled in a special/non-standard way (packets with compatibility flags can still be handled in the standard way, while packets with incompatibility flags must be dropped if the flage is not supported).
 
+## MAVLink, Pixhawk 4, and ArduPilot
+
+Here is a really good guide on how to integrate & communicate between MAVLink & Raspberry Pi 3 [will be of great use for the project]:
+[Communication between RP & MAVLink](https://www.linkedin.com/pulse/communication-between-drone-raspberry-pi-via-mavlink-yan-pang/)
