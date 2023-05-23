@@ -330,3 +330,10 @@ General overview: [Diagrammatic View](https://mavlink.io/assets/opendroneid/conc
  - **MAV_CMD_MISSION_START**: This protocol is used to start a mission. The mission is a pre-planned flight path that the UAV will follow
  - **MAV_CMD_MISSION_PAUSE**: This protocol is used to pause a mission. The UAV will hold its current position and altitude until the mission is resumed
  - **MAV_CMD_MISSION_END**: This protocol is used to end a mission. The UAV will return to its home position and altitude
+
+There are a couple of features not added yet to the OpenDroneID protocol that could be useful for many projects (you can consider contributing to this project by adding these features):
+
+ - Starting/stopping broadcast
+ - Configure the broadcast method (BT4, BT5, Beacon, NaN)
+ - Wi-Fi channel configuration for Beacon
+ - Message update rates on the air

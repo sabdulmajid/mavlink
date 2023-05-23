@@ -8,5 +8,13 @@ Day 1: 22nd May 2023
 • Have added new examples to the ReadME file on GitHub for future reference
 
 Day 2: 23rd May 2023
-
-
+• Have learnt how to use MAVLink to encrypt messages and decrypt messages
+• Added new examples to the MAVLink ReadME file on GitHub for future reference
+• Added integration guide for MAVLink, Raspberry Pi 3, and Pixhawk 4 on GitHub for future reference
+• Installed MAVProxy dependencies on Mac
+• Ensured that the Pixhawk 4 is compatible with MAVLink protocol v2.0
+• Added useful messages for drone communication development
+• Added access to Android app to find vitals of drone
+• Added MAVLink components for future drone development
+• Added common protocols for UAV development
+• Added extra information about features not added to the main MAVLink protocol library (so we can be aware of them and work around them)
