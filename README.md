@@ -260,6 +260,22 @@ Nothing much is different from MAVLink 1.0 to 2.0, but here are some of the new 
   5. **Compatibility Flags/Incompatibility Flags** - Allow for backwards compatible evolution of the protocol by indicating frames that must be handled in a special/non-standard way (packets with compatibility flags can still be handled in the standard way, while packets with incompatibility flags must be dropped if the flage is not supported).
 
 ## MAVLink, Pixhawk 4, and ArduPilot
-
 Here is a really good guide on how to integrate & communicate between MAVLink & Raspberry Pi 3 [will be of great use for the project]:
 [Communication between RP & MAVLink](https://www.linkedin.com/pulse/communication-between-drone-raspberry-pi-via-mavlink-yan-pang/)
+
+## Open Drone ID (ODID)
+Useful information parsed from this website: [ODID](https://mavlink.io/en/services/opendroneid.html)
+
+There are 4 methods for broadcasting Open Drone ID messages:
+  1. Bluetooth Legacy Advertising (Bluetooth 4.x)
+  2. Bluetooth Long Range with Extended Advertising (Bluetooth 5.x)
+  3. Wi-Fi Neighbor-aware Network (Wi-Fi NaN)
+  4. Wi-Fi Beacon (vendor specific information element in the SSID beacon frame)
+
+Example uses of this:
+  1. A flight controller sends ID, location etc. data to an onboard Bluetooth/Wi-Fi RID transmitter component.
+  2. An onboard Bluetooth/Wi-Fi receiver picks up drone ID messages from surrounding aircraft, relays this information using MAVLink drone ID messages to the flight controller, which then uses the information e.g. for Detect And Avoid (DAA) calculations.
+  3. A drone sends MAVLink drone ID messages via its control link to the Ground Control Station (GCS). The GCS is connected via the Internet to a Remote ID server, which stores and publishes the drone's ID, location etc.
+  4. As above but in the other direction for DAA calculations.
+  5. A Remote ID Display application (RID) on the GCS listens to all drone ID data received from surrounding UAs and displays their position to the operator.
+
