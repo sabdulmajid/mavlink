@@ -339,6 +339,8 @@ There are a couple of features not added yet to the OpenDroneID protocol that co
  - Message update rates on the air
 
 ## DroneKit Software In The Loop (SITL) Simulator
+
+### Quick Starting the SITL Simulator
 To run the latest version of Copter:
 ```shell
 dronekit-sitl copter
@@ -358,3 +360,9 @@ dronekit-sitl --list        #List all available vehicles.
 dronekit-sitl --reset       #Delete all downloaded vehicle binaries.
 dronekit-sitl ./path [args...]  #Start SITL instance at target file location.
 ```
+
+For future reference when simulating: 
+  - [DroneKit-SITL documentation](https://github.com/dronekit/dronekit-sitl)
+  - [Running examples with DroneKit](https://dronekit-python.readthedocs.io/en/latest/examples/running_examples.html)
+  - [GitHub Repository with useful examples](https://github.com/dronekit/dronekit-python/tree/master/examples)
+  
