@@ -361,8 +361,20 @@ dronekit-sitl --reset       #Delete all downloaded vehicle binaries.
 dronekit-sitl ./path [args...]  #Start SITL instance at target file location.
 ```
 
+My first two tasks are to:
+ 1. Mission to travel between two points
+ 2. Configuring different sensors and access their data
+
+
 For future reference when simulating: 
   - [DroneKit-SITL documentation](https://github.com/dronekit/dronekit-sitl)
-  - [Running examples with DroneKit](https://dronekit-python.readthedocs.io/en/latest/examples/running_examples.html)
+  - [Running examples with DroneKit](https://dronekit-python.readthedocs.io/en/latest/examples/running_examples.html). Some useful examples include:
+    - [flightreplay.py](https://github.com/dronekit/dronekit-python/blob/master/examples/flight_replay/flight_replay.py)
+    - **[drone_delivery.py](https://github.com/dronekit/dronekit-python/blob/master/examples/drone_delivery/drone_delivery.py)**
+      -  Code demonstrates how to use DroneKit to communicate with a simulated vehicle and perform a simple delivery mission. The steps are: start server, process POST request, connect to the vehicle, and close simulator.
+    - [performance_test.py](https://github.com/dronekit/dronekit-python/blob/master/examples/performance_test/performance_test.py)
+      - Code demonstrates how to use DroneKit to communicate with a simulated vehicle and perform a simple delivery mission. The steps are: start connection, create message listener, send message, log, and close object.
+    - [simple_goto.py](https://github.com/dronekit/dronekit-python/blob/master/examples/simple_goto/simple_goto.py)
+    - [vehicle_state.py](https://github.com/dronekit/dronekit-python/blob/master/examples/vehicle_state/vehicle_state.py)
   - [GitHub Repository with useful examples](https://github.com/dronekit/dronekit-python/tree/master/examples)
   
