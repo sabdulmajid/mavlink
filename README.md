@@ -320,3 +320,13 @@ General overview: [Diagrammatic View](https://mavlink.io/assets/opendroneid/conc
  - **MAV_COMP_ID_ODID_TXRX_1**: A Remote ID transmitter/receiver component (Bluetooth/Wi-Fi/Internet)
  - **MAV_COMP_ID_ODID_TXRX_2**: A Remote ID transmitter/receiver component (Bluetooth/Wi-Fi/Internet)
  - **MAV_COMP_ID_ODID_TXRX_3**: A Remote ID transmitter/receiver component (Bluetooth/Wi-Fi/Internet)
+
+## Common Protocols UAVs (such as the PixHawk 2.4.8)
+ - **MAV_CMD_DO_SET_MODE**: This protocol is used to set the UAV's flight mode. The flight mode determines how the UAV will behave, and there are a variety of different flight modes available
+ - **MAV_CMD_DO_CHANGE_ALT**: This protocol is used to change the UAV's altitude. The altitude can be changed in a variety of ways, including up, down, and to a specific altitude
+ - **MAV_CMD_DO_MOTOR_TEST**: This protocol is used to test the UAV's motors. The motors can be tested individually or all at once
+ - **MAV_CMD_NAV_TAKEOFF**: This protocol is used to take off the UAV. The UAV will take off vertically and reach a specified altitude
+ - **MAV_CMD_NAV_LAND**: This protocol is used to land the UAV. The UAV will land vertically and come to a stop
+ - **MAV_CMD_MISSION_START**: This protocol is used to start a mission. The mission is a pre-planned flight path that the UAV will follow
+ - **MAV_CMD_MISSION_PAUSE**: This protocol is used to pause a mission. The UAV will hold its current position and altitude until the mission is resumed
+ - **MAV_CMD_MISSION_END**: This protocol is used to end a mission. The UAV will return to its home position and altitude
