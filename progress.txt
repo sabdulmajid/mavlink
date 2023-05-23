@@ -19,3 +19,4 @@ Day 2: Tuesday 23rd May 2023
 • Added common protocols for UAV development
 • Added extra information about features not added to the main MAVLink protocol library (so we can be aware of them and work around them)
 • Installed the dronekit-sitl Python library
+• Added code snippets which will help complete my two tasks
