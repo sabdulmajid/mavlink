@@ -302,3 +302,14 @@ Here is a list of all useful messages to interact with the MAVLink device:
   - **OPEN_DRONE_ID_SYSTEM_UPDATE**:	A subset of the **OPEN_DRONE_ID_SYSTEM** message, containing only the fields that must be updated at a high rate. Typically sent from the GCS to provide data to the RID transmitter component. If both **OPEN_DRONE_ID_SYSTEM** and **OPEN_DRONE_ID_SYSTEM_UPDATE** are used, the more efficient **OPEN_DRONE_ID_SYSTEM_UPDATE** will be used at a high rate and the full **OPEN_DRONE_ID_SYSTEM** at a low rate, to reduce the traffic on the control link.
 
 Note: [American Society for Testing and Materials (ASTM) Regulations](https://en.wikipedia.org/wiki/ASTM_International) are all met by each of these commands
+
+## Android Support for MAVLink Drone Location
+There is a very neat open source OpenDroneID Android Receiver application developed that could be of great use for the project. It is available on GitHub:
+[OpenDroneID Android Receiver](https://github.com/opendroneid/receiver-android)
+
+## Message Update Rates
+ASTM F3411 and ASD-STAN prEN 4709-002 standards both require that the LOCATION message (the message that contains the drone's location) be sent atleast once per second. The rest of these messages must be broadcasted atleast once every 3 seconds (note: BASIC ID and SYSTEM messages are required to be sent atleast once every second)
+
+## Routing Drone ID Messages (Inside the Unmanned Aircraft System (UAS))
+
+General overview: [Diagrammatic View](https://mavlink.io/assets/opendroneid/conceptual_overview.png)
