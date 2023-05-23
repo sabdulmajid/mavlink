@@ -372,7 +372,7 @@ For future reference when simulating:
     - [flightreplay.py](https://github.com/dronekit/dronekit-python/blob/master/examples/flight_replay/flight_replay.py)
     - **[drone_delivery.py](https://github.com/dronekit/dronekit-python/blob/master/examples/drone_delivery/drone_delivery.py)**
       -  Code demonstrates how to use DroneKit to communicate with a simulated vehicle and perform a simple delivery mission. The steps are: start server, process POST request, connect to the vehicle, and close simulator.
-    - [performance_test.py](https://github.com/dronekit/dronekit-python/blob/master/examples/performance_test/performance_test.py)
+    - **[performance_test.py](https://github.com/dronekit/dronekit-python/blob/master/examples/performance_test/performance_test.py)**
       - Code demonstrates how to use DroneKit to communicate with a simulated vehicle and perform a simple delivery mission. The steps are: start connection, create message listener, send message, log, and close object.
     - [simple_goto.py](https://github.com/dronekit/dronekit-python/blob/master/examples/simple_goto/simple_goto.py)
     - [vehicle_state.py](https://github.com/dronekit/dronekit-python/blob/master/examples/vehicle_state/vehicle_state.py)
