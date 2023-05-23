@@ -313,3 +313,10 @@ ASTM F3411 and ASD-STAN prEN 4709-002 standards both require that the LOCATION m
 ## Routing Drone ID Messages (Inside the Unmanned Aircraft System (UAS))
 
 General overview: [Diagrammatic View](https://mavlink.io/assets/opendroneid/conceptual_overview.png)
+
+## MAVLink Components
+ - **MAV_COMP_ID_AUTOPILOT1**: The flight controller/autopilot. Knows the ID of the UA, the current location, altitude, speed, direction, attitude (roll, pitch, and yaw), battery voltage, GPS status, flight mode, and environment (weather conditions, obstacles, etc.)
+ - **Ground Control Station**: GCS with a human user interface for inputting the operator ID, text description of the flight purpose, method for obtaining the operator location
+ - **MAV_COMP_ID_ODID_TXRX_1**: A Remote ID transmitter/receiver component (Bluetooth/Wi-Fi/Internet)
+ - **MAV_COMP_ID_ODID_TXRX_2**: A Remote ID transmitter/receiver component (Bluetooth/Wi-Fi/Internet)
+ - **MAV_COMP_ID_ODID_TXRX_3**: A Remote ID transmitter/receiver component (Bluetooth/Wi-Fi/Internet)
