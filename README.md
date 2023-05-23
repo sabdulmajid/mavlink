@@ -299,7 +299,7 @@ Here is a list of all useful messages to interact with the MAVLink device:
   - **OPEN_DRONE_ID_OPERATOR_ID**: Provides the operator ID.
   - **OPEN_DRONE_ID_MESSAGE_PACK**: A payload mechanism for combining the messages above into a single message pack. Used with Bluetooth Extended Advertising, Wi-Fi NaN and Wi-Fi Beacon.
   - **OPEN_DRONE_ID_ARM_STATUS**:	Sent by RID transmitter/receiver components to indicate that the RID system is "ready to use". This should be used as an arming condition for the flight stack. Note that this differs from the HEARTBEAT which indicates that the component is "alive" but not necessarily ready to use.
-  - **OPEN_DRONE_ID_SYSTEM_UPDATE**:	A subset of the **OPEN_DRONE_ID_SYSTEM** message, containing only the fields that must be updated at a high rate. Typically sent from the GCS to provide data to the RID transmitter component. If both **OPEN_DRONE_ID_SYSTEM** and **OPEN_DRONE_ID_SYSTEM_UPDATE** are used, the more efficient **OPEN_DRONE_ID_SYSTEM_UPDATE** will be used at a high rate and the full **OPEN_DRONE_ID_SYSTEM** at a low rate, to reduce the traffic on the control link.
+  - **OPEN_DRONE_ID_SYSTEM_UPDATE**:	A subset of the OPEN_DRONE_ID_SYSTEM message, containing only the fields that must be updated at a high rate. Typically sent from the GCS to provide data to the RID transmitter component. If both OPEN_DRONE_ID_SYSTEM and OPEN_DRONE_ID_SYSTEM_UPDATE are used, the more efficient OPEN_DRONE_ID_SYSTEM_UPDATE will be used at a high rate and the full OPEN_DRONE_ID_SYSTEM at a low rate, to reduce the traffic on the control link.
 
 Note: [American Society for Testing and Materials (ASTM) Regulations](https://en.wikipedia.org/wiki/ASTM_International) are all met by each of these commands
 
