@@ -279,3 +279,12 @@ Example uses of this:
   4. As above but in the other direction for DAA calculations.
   5. A Remote ID Display application (RID) on the GCS listens to all drone ID data received from surrounding UAs and displays their position to the operator.
 
+## PixHawk 2.4.8 Protocol Matching
+
+The Pixhawk flight controller supports both MAVLink 1.0 and MAVLink 2.0. The default protocol is MAVLink 1.0, but it can be changed to MAVLink 2.0 by setting the MAV_PROTO_VERSION parameter.
+
+Here are some additional details about the two MAVLink protocol versions:
+ - MAVLink 1.0 is the original MAVLink protocol. It is a simple and efficient protocol that is well-suited for embedded systems.
+ - MAVLink 2.0 is a newer, more powerful version of the MAVLink protocol. It is designed to be more secure, extensible, and efficient than MAVLink 1.0.
+
+If you are using a Pixhawk flight controller, you can use either MAVLink 1.0 or MAVLink 2.0. The choice of which protocol to use depends on your specific needs. If you are looking for a simple and efficient protocol, then MAVLink 1.0 is a good choice. If you need a more secure, extensible, and efficient protocol, then MAVLink 2.0 is a better choice.
