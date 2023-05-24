@@ -26,4 +26,13 @@ Day 3: Wednesday 24th May 2023
 • Created quick-start manual on GitHub for instructions to setup & start the project
 • Researched on how to integrate all this separate tools together to create a working prototype
 • Documented my research in the GitHub ReadME page
+• Have fully set-up the Raspberry Pi 3, including SSH
+• Have downloaded all the required dependencies both on the iMac and the Raspberry Pi 3
+• Main task for tommorow is to connect up the dronekit-sitl to the Pixhawk and start writing code for it (in a simulated environment)
 
+Day 3: Thursday 25th May 2023
+• Have successfully connected the dronekit-sitl to the Pixhawk 4 (in a simulation environment)
+• Have successfully written code to arm the drone and takeoff
+Tasks:
+• Look into Mission Planner, QGroundControl, and MAVProxy to see which one is the best to use for this project
+• Look into how to send commands to the drone using the dronekit-sitl, while also maintaining the MAVLink connection

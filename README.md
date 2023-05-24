@@ -381,8 +381,9 @@ For future reference when simulating:
 - Open a new terminal (I'm using MacOS 14.3, with Python 3.11.3)
 - Run the following command to enter the directory: ```shell cd /Users/ayman/Desktop/Ayman/UAV```
 - Enter the virtual environment by running the following command: ```shell source myenv/bin/activate```
-- (new) SSH into the Raspberry Pi by running the following command: ```ssh ayman@192.168.0.107```
-- Exit the SSH (but still stay in the terminal) by running the following command: ```exit```
+- Get into the myenv directory ```cd myenv/python_code``` and then run script is needed ```python script.py```
+  - (new) SSH into the Raspberry Pi by running the following command: ```ssh ayman@192.168.0.107```
+  - Exit the SSH (but still stay in the terminal) by running the following command: ```exit```
 
 Reasons for using a virtual environment: 
 - Isolate different projects from each other. This helps to prevent conflicts between different projects, and it also makes it easier to manage the dependencies of each project.
@@ -401,3 +402,14 @@ Reasons for using a virtual environment:
 
 It's as simple as that! Now you can easily access the Raspberry Pi's terminal from your computer, remotely. 
 Extra links to look at if stuck: [Guide 1](https://www.instructables.com/Connect-Raspberry-pi-to-MacOS-or-Linux-using-SSH/) or [Guide 2](https://medium.com/@thedyslexiccoder/how-to-remotely-access-a-raspberry-pi-on-a-mac-via-ssh-be285d418f54)
+
+
+## Breakdown of Various Software Packages
+Here's a breakdown of the different components and how they come into play:
+1. MAVProxy: MAVProxy is a command-line-based ground control station software that acts as a communication gateway between your Python script and the drone. It provides a flexible and extensible interface for sending and receiving MAVLink messages, monitoring telemetry, and controlling the drone. MAVProxy can run on your computer and establish a connection with the simulated drone (DroneKit-SITL) or a physical drone.
+
+2. DroneKit-SITL: DroneKit-SITL is a software-in-the-loop (SITL) simulator that emulates the behavior of a physical drone. It allows you to run and test your drone control scripts in a simulated environment without the need for a physical drone. DroneKit-SITL integrates with MAVProxy, providing the simulated drone's telemetry data and receiving commands from MAVProxy.
+
+3. Mission Planner: Mission Planner is a ground control station software primarily developed for the ArduPilot autopilot system. It offers a feature-rich graphical interface for mission planning, monitoring, and controlling the drone. Mission Planner is designed to communicate directly with the drone's autopilot, such as Pixhawk, through a telemetry link or a direct connection.
+
+4. QGroundControl: QGroundControl is another popular ground control station software that supports multiple autopilot systems, including ArduPilot and PX4. Like Mission Planner, it provides a user-friendly interface for mission planning, monitoring, and controlling the drone.
