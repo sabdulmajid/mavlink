@@ -379,9 +379,10 @@ For future reference when simulating:
   
 ## QuickStart Guide
 - Open a new terminal (I'm using MacOS 14.3, with Python 3.11.3)
-- Run the following command to enter the directory ```shell cd /Users/ayman/Desktop/Ayman/UAV```
-- Enter the virtual environment by running the following command ```shell source myenv/bin/activate```
-- (new) SSH into the Raspberry Pi by running the following command ```ssh ayman@192.168.0.107```
+- Run the following command to enter the directory: ```shell cd /Users/ayman/Desktop/Ayman/UAV```
+- Enter the virtual environment by running the following command: ```shell source myenv/bin/activate```
+- (new) SSH into the Raspberry Pi by running the following command: ```ssh ayman@192.168.0.107```
+- Exit the SSH (but still stay in the terminal) by running the following command: ```exit```
 
 Reasons for using a virtual environment: 
 - Isolate different projects from each other. This helps to prevent conflicts between different projects, and it also makes it easier to manage the dependencies of each project.
