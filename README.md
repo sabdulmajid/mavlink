@@ -365,7 +365,6 @@ My first two tasks are to:
  1. Mission to travel between two points
  2. Configuring different sensors and access their data
 
-
 For future reference when simulating: 
   - [DroneKit-SITL documentation](https://github.com/dronekit/dronekit-sitl)
   - [Running examples with DroneKit](https://dronekit-python.readthedocs.io/en/latest/examples/running_examples.html). Some useful examples include:
@@ -378,3 +377,15 @@ For future reference when simulating:
     - [vehicle_state.py](https://github.com/dronekit/dronekit-python/blob/master/examples/vehicle_state/vehicle_state.py)
   - [GitHub Repository with useful examples](https://github.com/dronekit/dronekit-python/tree/master/examples)
   
+## QuickStart Guide
+- Open a new terminal (I'm using MacOS 14.3, with Python 3.11.3)
+- Run the following command to enter the directory ```shell cd /Users/ayman/Desktop/Ayman/UAV```
+- Enter the virtual environment by running the following command ```shell source myenv/bin/activate```
+
+Reasons for using a virtual environment: 
+- Isolate different projects from each other. This helps to prevent conflicts between different projects, and it also makes it easier to manage the dependencies of each project.
+- Use different versions of Python for different projects. This can be useful if you are working on a project that requires a specific version of Python, but your system has a different version installed.
+- Keep your system Python environment clean. Virtual environments allow you to install Python packages in a separate directory, so they don't pollute your system Python environment.
+- Install packages without administrator privileges. You may not have access to install packages on your system, or you may not want to install packages globally.
+- Share your project requirements with others. You can easily share your project's requirements by giving them the requirements.txt file.
+
