@@ -397,6 +397,7 @@ Reasons for using a virtual environment:
 - SSH into the Raspberry Pi
   - In the terminal, run the following command ```ssh ayman@192.168.0.107```
   - Enter the password (default is ```raspberry```); no need for this now since I have created an SSH Key-Pair for smoother login
+- (Optional) Add new user to sudo users: ```sudo usermod newuser_name -a -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,spi,i2c,gpio``` then ```sudo visudo``
 
 It's as simple as that! Now you can easily access the Raspberry Pi's terminal from your computer, remotely. 
 Extra links to look at if stuck: [Guide 1](https://www.instructables.com/Connect-Raspberry-pi-to-MacOS-or-Linux-using-SSH/) or [Guide 2](https://medium.com/@thedyslexiccoder/how-to-remotely-access-a-raspberry-pi-on-a-mac-via-ssh-be285d418f54)
