@@ -20,3 +20,10 @@ Day 2: Tuesday 23rd May 2023
 • Added extra information about features not added to the main MAVLink protocol library (so we can be aware of them and work around them)
 • Installed the dronekit-sitl Python library
 • Added code snippets which will help complete my two tasks
+
+Day 3: Wednesday 24th May 2023
+• Have installed all dependencies that were giving errors last time (MAVProxy, wxPython, and attrdict3) [took most of my morning today :( ]
+• Created quick-start manual on GitHub for instructions to setup & start the project
+• Researched on how to integrate all this separate tools together to create a working prototype
+• Documented my research in the GitHub ReadME page
+
