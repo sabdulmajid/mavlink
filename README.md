@@ -389,3 +389,12 @@ Reasons for using a virtual environment:
 - Install packages without administrator privileges. You may not have access to install packages on your system, or you may not want to install packages globally.
 - Share your project requirements with others. You can easily share your project's requirements by giving them the requirements.txt file.
 
+## SSH-ing into the Raspberry Pi
+- Find Raspberry Pi's IP address (when connected to the Internet)
+  - In the Raspberry Pi's terminal, run the following command ```shell hostname -I```
+- SSH into the Raspberry Pi
+  - In the terminal, run the following command ```shell ssh pi@<IP address>```
+  - Enter the password (default is ```shell raspberry```)
+
+It's as simple as that! Now you can easily access the Raspberry Pi's terminal from your computer, remotely. 
+Extra links to look at if stuck: [Guide 1](https://www.instructables.com/Connect-Raspberry-pi-to-MacOS-or-Linux-using-SSH/) or [Guide 2](https://medium.com/@thedyslexiccoder/how-to-remotely-access-a-raspberry-pi-on-a-mac-via-ssh-be285d418f54)
