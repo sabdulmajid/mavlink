@@ -381,6 +381,7 @@ For future reference when simulating:
 - Open a new terminal (I'm using MacOS 14.3, with Python 3.11.3)
 - Run the following command to enter the directory ```shell cd /Users/ayman/Desktop/Ayman/UAV```
 - Enter the virtual environment by running the following command ```shell source myenv/bin/activate```
+- (new) SSH into the Raspberry Pi by running the following command ```ssh ayman@192.168.0.107```
 
 Reasons for using a virtual environment: 
 - Isolate different projects from each other. This helps to prevent conflicts between different projects, and it also makes it easier to manage the dependencies of each project.
@@ -391,10 +392,10 @@ Reasons for using a virtual environment:
 
 ## SSH-ing into the Raspberry Pi
 - Find Raspberry Pi's IP address (when connected to the Internet)
-  - In the Raspberry Pi's terminal, run the following command ```shell hostname -I```
+  - In the Raspberry Pi's terminal, run the following command ```hostname -I```
 - SSH into the Raspberry Pi
-  - In the terminal, run the following command ```shell ssh pi@<IP address>```
-  - Enter the password (default is ```shell raspberry```)
+  - In the terminal, run the following command ```ssh ayman@192.168.0.107```
+  - Enter the password (default is ```raspberry```); no need for this now since I have created an SSH Key-Pair for smoother login
 
 It's as simple as that! Now you can easily access the Raspberry Pi's terminal from your computer, remotely. 
 Extra links to look at if stuck: [Guide 1](https://www.instructables.com/Connect-Raspberry-pi-to-MacOS-or-Linux-using-SSH/) or [Guide 2](https://medium.com/@thedyslexiccoder/how-to-remotely-access-a-raspberry-pi-on-a-mac-via-ssh-be285d418f54)
