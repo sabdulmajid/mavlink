@@ -433,3 +433,11 @@ When trying to connect to a drone, there are chances that you will walk into pro
 10. Loose GPIO connection
 11. Loose or bad telemetry cable
 12. Dysfunctional flight controller or UART pin
+
+## Camera Options for Drone
+1. **Sony RX0 II**: This compact and lightweight camera offers excellent image quality, 4K video recording, and a high frame rate for capturing fast-moving objects. It can be easily integrated with OpenCV.
+2. **FLIR Duo Pro R**: If thermal imaging is essential for your UAV's autonomous functions, this camera combines a thermal sensor with a visible light sensor. It is suitable for applications like object detection and tracking in challenging environments.
+3. **DJI Zenmuse X7**: Designed specifically for drone use, this camera offers outstanding image quality with a Super 35mm sensor and supports interchangeable lenses. It provides excellent control and stability, making it a reliable option for autonomous UAVs.
+4. **GoPro HERO9 Black**: A popular choice among drone enthusiasts, the HERO9 Black offers 5K video recording, superb image stabilization, and a rugged design. Its compact size and compatibility with OpenCV make it a versatile option.
+5. **FLIR Blackfly S**: This camera series includes various models with different resolutions, frame rates, and interfaces, providing flexibility based on your specific needs. They offer high-quality imaging and can be integrated with OpenCV.
+6. **Raspberry Pi Camera Module**: If you're looking for a more budget-friendly option, the Raspberry Pi Camera Module is a popular choice. It is compatible with OpenCV and offers decent image quality and flexibility.
