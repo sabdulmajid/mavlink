@@ -382,7 +382,7 @@ For future reference when simulating:
 - Get the dronekit-sitl package by running the following command: ```dronekit-sitl copter```
 - Open a new terminal and run the following command to enter the directory: ```cd /Users/ayman/Desktop/Ayman/UAV```
 - Enter the virtual environment by running the following command: ```source myenv/bin/activate```
-- Get into the myenv directory ```cd myenv/python_code``` and then run script is needed ```python script.py```
+- Get into the myenv directory ```cd myenv/python_code``` and then the run script that is needed ```python script.py```
 
 
 For a Raspberry Pi SSH:
@@ -390,11 +390,11 @@ For a Raspberry Pi SSH:
 - Exit the SSH (but still stay in the terminal) by running the following command: ```exit```
 
 Reasons for using a virtual environment: 
-- Isolate different projects from each other. This helps to prevent conflicts between different projects, and it also makes it easier to manage the dependencies of each project.
-- Use different versions of Python for different projects. This can be useful if you are working on a project that requires a specific version of Python, but your system has a different version installed.
-- Keep your system Python environment clean. Virtual environments allow you to install Python packages in a separate directory, so they don't pollute your system Python environment.
-- Install packages without administrator privileges. You may not have access to install packages on your system, or you may not want to install packages globally.
-- Share your project requirements with others. You can easily share your project's requirements by giving them the requirements.txt file.
+- Isolate different projects from each other. This helps to prevent conflicts between different projects, and it also makes it easier to manage the dependencies of each project
+- Use different versions of Python for different projects. This can be useful if you are working on a project that requires a specific version of Python, but your system has a different version installed
+- Keep your system Python environment clean. Virtual environments allow you to install Python packages in a separate directory, so they don't pollute your system Python environment
+- Install packages without administrator privileges. You may not have access to install packages on your system, or you may not want to install packages globally
+- Share your project requirements with others. You can easily share your project's requirements by giving them the requirements.txt file
 
 ## SSH-ing into the Raspberry Pi
 - Find Raspberry Pi's IP address (when connected to the Internet)
@@ -405,15 +405,15 @@ Reasons for using a virtual environment:
 - (Optional) Add new user to sudo users: ```sudo usermod newuser_name -a -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,spi,i2c,gpio``` then ```sudo visudo``
 
 It's as simple as that! Now you can easily access the Raspberry Pi's terminal from your computer, remotely. 
-Extra links to look at if stuck: [Guide 1](https://www.instructables.com/Connect-Raspberry-pi-to-MacOS-or-Linux-using-SSH/) or [Guide 2](https://medium.com/@thedyslexiccoder/how-to-remotely-access-a-raspberry-pi-on-a-mac-via-ssh-be285d418f54)
+Extra links to look at if stuck: [Guide 1: SSH Guide for Raspberry Pi](https://www.instructables.com/Connect-Raspberry-pi-to-MacOS-or-Linux-using-SSH/) or [Guide 2: SSH-ing into Raspberry Pi from Mac](https://medium.com/@thedyslexiccoder/how-to-remotely-access-a-raspberry-pi-on-a-mac-via-ssh-be285d418f54) or [Guide 3: Connecting Raspberry Pi to Pixhawk via MAVLink](https://hackmd.io/@willy541222/RasPi-pixhawk)
 
 
 ## Breakdown of Various Software Packages
 Here's a breakdown of the different components and how they come into play:
-1. MAVProxy: MAVProxy is a command-line-based ground control station software that acts as a communication gateway between your Python script and the drone. It provides a flexible and extensible interface for sending and receiving MAVLink messages, monitoring telemetry, and controlling the drone. MAVProxy can run on your computer and establish a connection with the simulated drone (DroneKit-SITL) or a physical drone.
+1. **MAVProxy**: MAVProxy is a command-line-based ground control station software that acts as a communication gateway between your Python script and the drone. It provides a flexible and extensible interface for sending and receiving MAVLink messages, monitoring telemetry, and controlling the drone. MAVProxy can run on your computer and establish a connection with the simulated drone (DroneKit-SITL) or a physical drone.
 
-2. DroneKit-SITL: DroneKit-SITL is a software-in-the-loop (SITL) simulator that emulates the behavior of a physical drone. It allows you to run and test your drone control scripts in a simulated environment without the need for a physical drone. DroneKit-SITL integrates with MAVProxy, providing the simulated drone's telemetry data and receiving commands from MAVProxy.
+2. **DroneKit-SITL**: DroneKit-SITL is a software-in-the-loop (SITL) simulator that emulates the behavior of a physical drone. It allows you to run and test your drone control scripts in a simulated environment without the need for a physical drone. DroneKit-SITL integrates with MAVProxy, providing the simulated drone's telemetry data and receiving commands from MAVProxy.
 
-3. Mission Planner: Mission Planner is a ground control station software primarily developed for the ArduPilot autopilot system. It offers a feature-rich graphical interface for mission planning, monitoring, and controlling the drone. Mission Planner is designed to communicate directly with the drone's autopilot, such as Pixhawk, through a telemetry link or a direct connection.
+3. **Mission Planner**: Mission Planner is a ground control station software primarily developed for the ArduPilot autopilot system. It offers a feature-rich graphical interface for mission planning, monitoring, and controlling the drone. Mission Planner is designed to communicate directly with the drone's autopilot, such as Pixhawk, through a telemetry link or a direct connection.
 
-4. QGroundControl: QGroundControl is another popular ground control station software that supports multiple autopilot systems, including ArduPilot and PX4. Like Mission Planner, it provides a user-friendly interface for mission planning, monitoring, and controlling the drone.
+4. **QGroundControl**: QGroundControl is another popular ground control station software that supports multiple autopilot systems, including ArduPilot and PX4. Like Mission Planner, it provides a user-friendly interface for mission planning, monitoring, and controlling the drone.
