@@ -417,3 +417,19 @@ Here's a breakdown of the different components and how they come into play:
 3. **Mission Planner**: Mission Planner is a ground control station software primarily developed for the ArduPilot autopilot system. It offers a feature-rich graphical interface for mission planning, monitoring, and controlling the drone. Mission Planner is designed to communicate directly with the drone's autopilot, such as Pixhawk, through a telemetry link or a direct connection.
 
 4. **QGroundControl**: QGroundControl is another popular ground control station software that supports multiple autopilot systems, including ArduPilot and PX4. Like Mission Planner, it provides a user-friendly interface for mission planning, monitoring, and controlling the drone.
+
+## Connecting Drone to Software
+When trying to connect to a drone, there are chances that you will walk into problems. Here is a list of the most common problems:
+1. The Tx and Rx signal wires are connected wrong
+2. The companion software is not correctly loaded
+3. Serial interface is not enabled (in the Raspberry Pi)
+4. Forgetting the confirguration of the bt overlay  in the ```/boot/config.txt``` file
+5. Incorrect MAVProxy statement
+6. Incorrect MAVProxy baud rate
+7. Failure to set up the flight controller protocol
+8. Failure to use to the correct communication port
+9. Dysfunctional or dirty Raspberry Pi GPIO pins
+  1. GPIO pins can be checked using pigpio. To install pigpio, run the following command: ```sudo apt-get install pigpio python-pigpio python3-pigpio```
+10. Loose GPIO connection
+11. Loose or bad telemetry cable
+12. Dysfunctional flight controller or UART pin
