@@ -47,3 +47,5 @@ Day 5: Sunday 28th May 2023
 • Have installed VirtualBox and have researched on how to use it
 • Installed Ubuntu 22.04 on the iMac, to smoothly use a dual boot to connect to Mission Planner
 • Ran into a bunch of issues regarding the installation and the optimized functionality of Ubuntu 22.04
+• Have successfully managed to install all dependencies needed for the project
+• Used MONO on Linux to install the Mission Planner software
