@@ -43,7 +43,7 @@ Day 4: Thursday 25th May 2023
 
 Day 5: Sunday 28th May 2023
 • Reseached about QGroundControl and how to connnect a drone to it
-• Have connected drone to MAVProxy from dronekit-sitl, now need to connect it to QGroundControl
-• Need to connect physical drone first to the simulation software, THEN I'm able to run the simulation without it
-• 
+• Have connected drone to MAVProxy from dronekit-sitl
+
+
 
