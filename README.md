@@ -441,3 +441,22 @@ When trying to connect to a drone, there are chances that you will walk into pro
 4. **GoPro HERO9 Black**: A popular choice among drone enthusiasts, the HERO9 Black offers 5K video recording, superb image stabilization, and a rugged design. Its compact size and compatibility with OpenCV make it a versatile option.
 5. **FLIR Blackfly S**: This camera series includes various models with different resolutions, frame rates, and interfaces, providing flexibility based on your specific needs. They offer high-quality imaging and can be integrated with OpenCV.
 6. **Raspberry Pi Camera Module**: If you're looking for a more budget-friendly option, the Raspberry Pi Camera Module is a popular choice. It is compatible with OpenCV and offers decent image quality and flexibility.
+
+## QGroundControl
+QGroundControl is an open-source ground control station software that supports multiple autopilot systems, including ArduPilot and PX4. It provides a user-friendly interface for mission planning, monitoring, and controlling the drone.
+Here is how to setup the drone using QGroundControl:
+  1. Download QGroundControl from [here](https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html)
+  2. Connect the drone to the computer using a USB cable
+  3. Open QGroundControl
+  4. Go to the top left corner and click on the QGroundControl icon
+  5. Click on the Vehicle Setup option
+  6. Click on the Wizard option
+  7. Select the appropriate vehicle type
+  8. Select the appropriate airframe
+  9. Select the appropriate flight controller
+  10. Select the appropriate communication port
+  11. Select the appropriate baud rate
+  12. Click on the Finish button
+  13. Click on the OK button
+  14. Click on the Reboot Vehicle button
+  15. Click on the OK button
