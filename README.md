@@ -485,3 +485,10 @@ These are a few pre-trained object detection models that work well with OpenCV:
 1. **YOLO (You Only Look Once)**: YOLO is a popular real-time object detection framework known for its speed and accuracy. You can find pre-trained YOLO models, such as YOLOv3 or YOLOv4, which are trained on large-scale datasets like COCO (Common Objects in Context) or VOC (Visual Object Classes). These models are widely used in drone applications for detecting objects in real-time.
 2. **SSD (Single Shot MultiBox Detector)**: SSD is another widely-used object detection framework known for its speed and accuracy. It provides real-time detection of objects across various scales and aspect ratios. Pre-trained SSD models, such as SSD300 or SSD512, are available and can be used with OpenCV for drone-based object detection.
 3. **Faster R-CNN (Region-based Convolutional Neural Networks)**: Faster R-CNN is a two-stage object detection framework that offers high accuracy. It employs a region proposal network (RPN) to generate potential object regions and then performs classification and bounding box regression on those regions. While Faster R-CNN models are generally slower compared to YOLO and SSD, they can provide better accuracy. You can find pre-trained Faster R-CNN models, such as ResNet-Faster-RCNN or Inception-Faster-RCNN, which can be integrated with OpenCV.
+
+## Basic Overview So Far
+
+Setting up the Development Environment (iMac):
+1. **Install Python**: Download and install Python from the official website (https://www.python.org) if you haven't already.
+2. **Install necessary libraries**: Use pip (Python's package manager) to install the required packages such as pymavlink, dronekit, opencv-python, and numpy.
+3. **Connecting to the UAV**: Establish a connection between your computer and the UAV using appropriate hardware (e.g., telemetry module or USB cable). Ensure that your drone is compatible with MAVLink and has the necessary firmware installed.
