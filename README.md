@@ -505,3 +505,11 @@ Setting up the Development Environment Using a Virtual Machine (Linux & Mission 
 4. **Launch Mission Planner**: Once Mono is installed, navigate to the directory where you downloaded Mission Planner and run the executable file using the Mono runtime. In the terminal, enter the following command: ```mono MissionPlanner.exe```. This will launch Mission Planner within the Linux virtual machine.
 5. **Connect to the UAV**: Connect your UAV to the computer running the Linux virtual machine using the appropriate hardware (e.g., telemetry module or USB cable). Ensure that the UAV has the necessary firmware and is compatible with Mission Planner.
 6. **Interact with the UAV**: Use Mission Planner within the Linux virtual machine to communicate with and control the UAV. You can perform tasks such as mission planning, waypoint navigation, monitoring telemetry data, and more.
+
+## Setting Home Location & Simulating in Mission Planner
+1. Ensure that the simulation is running in DroneKit-SITL and the connection to MAVProxy is established.
+2. Open Mission Planner and connect to the simulated vehicle.
+3. In the top menu, click on "Config" and then select "Planner" from the drop-down menu.
+4. In the Planner Configuration window, go to the "Initial Setup" tab.
+5. Under "Home Location," you will find the "Set" button next to the latitude and longitude fields. Click on "Set."
+6. A dialog box will appear where you can manually enter the latitude and longitude coordinates of your desired home location. Enter the coordinates and click "OK" to set the home location.
