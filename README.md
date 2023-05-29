@@ -462,7 +462,7 @@ Here is how to setup the drone using QGroundControl:
   15. Click on the OK button
 
 ## Mission Planner on Linux
-Mission Planner is not really for use on Linux, but there is a method to force install it through the Windows ```.exe``` file. Here are the steps to running it on a a virtual Linux machine, after following the installation guide here: [installation guide for MONO and Mission Planner](https://ardupilot.org/planner/docs/mission-planner-installation.html)
+Mission Planner is not really for use on Linux, but there is a method to force install it through the Windows ```.exe``` file. Here are the steps to running it on a virtual Linux machine, after following the installation guide here: [installation guide for MONO and Mission Planner](https://ardupilot.org/planner/docs/mission-planner-installation.html)
 
 After installing, follow these steps to get it running on the virtual machine:
 1. Open VirtualBox
