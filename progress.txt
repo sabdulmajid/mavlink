@@ -56,3 +56,4 @@ Day 6: Monday 29th May 2023
 • Have successfully installed Mission Planner on the Ubuntu 22.04 Virtual Machine
 • Have successfully connected the simulation to dronekit-sitl
 • Have to research into how to use the Mission Planner software, and run simulations
+• Took the drone out for a manual test flight, to test functionality and to see if it is working properly
