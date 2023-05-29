@@ -472,8 +472,8 @@ After installing, follow these steps to get it running on the virtual machine:
 5. Voila! You can now run Mission Planner on Linux
 
 ## Setting up the Simulation
-1. Open a new terminal and running the following command: ```dronekit-sitl copter```
-2. Open a new terminal and running the following command: ```mavproxy.py --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501 --out 127.0.0.1:14550 --out 127.0.0.1:14551```
+1. Open a new terminal and run the following command: ```dronekit-sitl copter```
+2. Open a new terminal and run the following command: ```mavproxy.py --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501 --out 127.0.0.1:14550 --out 127.0.0.1:14551```
 3. Enter Mission Planner on the Virtual Machine, and enter the local port number ```14551```
 4. Open another terminal and run any scripts needed, such as the following command: ```python3 altitude_change.py```. Will most likely have to ```cd``` into a specific directory first
 5. Watch the simulated drone fly!
