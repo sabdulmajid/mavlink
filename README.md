@@ -513,3 +513,13 @@ Setting up the Development Environment Using a Virtual Machine (Linux & Mission 
 4. In the Planner Configuration window, go to the "Initial Setup" tab.
 5. Under "Home Location," you will find the "Set" button next to the latitude and longitude fields. Click on "Set."
 6. A dialog box will appear where you can manually enter the latitude and longitude coordinates of your desired home location. Enter the coordinates and click "OK" to set the home location.
+
+## Setting Waypoints & Simulating in Mission Planner
+1. Ensure that the simulation is running in DroneKit-SITL and the connection to MAVProxy is established.
+2. In Mission Planner, ensure that you are connected to the simulated vehicle.
+3. Go to the "Flight Plan" tab in Mission Planner.
+4. On the left side, you will see a map interface. Right-click on the map at the location where you want to set your destination point.
+5. A menu will appear with various options. Select "Add WP (at current alt)" to add a waypoint at that location.
+6. Repeat step 4 to add additional waypoints if desired, forming a route from your home location to the destination point.
+7. Once you have added all the waypoints, you can click the "Upload" button to upload the mission to the simulated vehicle.
+8. After the mission is uploaded, you can arm the vehicle and start the simulation by following the appropriate steps in Mission Planner.
