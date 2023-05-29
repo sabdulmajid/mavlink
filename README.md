@@ -498,7 +498,7 @@ Setting up the Development Environment (iMac):
 7. **Integrating OpenCV**: OpenCV is a computer vision library that can be used for various tasks, such as image processing, object detection, and visual tracking. Incorporate OpenCV into your project to add computer vision capabilities to your UAV system. For example, you can perform image analysis on the video feed from the UAV's camera.
 8. **Image Processing with OpenCV**: Use OpenCV to process the video stream from the UAV's camera. You can perform tasks like object detection, image stabilization, optical flow, and more. Implement the desired algorithms and techniques based on your project requirements.
 
-Setting up the Development Environment Using a Virtual Machine (Linux & Mission Planner):
+## Setting up the Development Environment Using a Virtual Machine (Linux & Mission Planner):
 1. **Set up a Linux Virtual Machine**: Install a virtualization software such as Oracle VirtualBox or VMware on your computer. Create a new virtual machine and install a Linux distribution of your choice (e.g., Ubuntu, CentOS, etc.) as the guest operating system.
 2. **Install Mission Planner**: Within the Linux virtual machine, download the Mission Planner software from the official website (https://ardupilot.org/planner/). Mission Planner is primarily designed for Windows, but it can also run on Linux using Mono, an open-source implementation of Microsoft's .NET framework.
 3. **Install Mono**: Mono is required to run .NET applications on Linux. Open a terminal in the Linux virtual machine and install Mono by following the instructions provided by the Mono project (https://www.mono-project.com/). Make sure you install the necessary dependencies and configure the environment properly.
