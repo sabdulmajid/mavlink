@@ -523,3 +523,6 @@ Setting up the Development Environment (iMac):
 6. Repeat step 4 to add additional waypoints if desired, forming a route from your home location to the destination point.
 7. Once you have added all the waypoints, you can click the "Upload" button to upload the mission to the simulated vehicle.
 8. After the mission is uploaded, you can arm the vehicle and start the simulation by following the appropriate steps in Mission Planner.
+
+## (Optional) Setting up SITL with Linux Using ArduPilot
+Here is a link on how to use the ArduPilot SITL software; including installation and setup guides: [Guide to ArduPilot's SITL App](https://ardupilot.org/dev/docs/setting-up-sitl-on-linux.html)
