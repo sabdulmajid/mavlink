@@ -477,3 +477,11 @@ After installing, follow these steps to get it running on the virtual machine:
 3. Enter Mission Planner on the Virtual Machine, and enter the local port number ```14551```
 4. Open another terminal and run the any scripts needed, such as the following command: ```python3 altitude_change.py```. Will most likely have to ```cd``` into a specific directory first
 5. Watch the simulated drone fly!
+
+## OpenCV Models for Drone
+There are several good OpenCV models for object detection that can be used with drone imagery. OpenCV itself provides various algorithms and techniques for object detection, such as Haar cascades, HOG (Histogram of Oriented Gradients), and DNN (Deep Neural Networks) models. These models can be trained on a separate dataset or can be found pre-trained on popular object detection benchmarks.
+
+These are a few pre-trained object detection models that work well with OpenCV:
+1. **YOLO (You Only Look Once)**: YOLO is a popular real-time object detection framework known for its speed and accuracy. You can find pre-trained YOLO models, such as YOLOv3 or YOLOv4, which are trained on large-scale datasets like COCO (Common Objects in Context) or VOC (Visual Object Classes). These models are widely used in drone applications for detecting objects in real-time.
+2. **SSD (Single Shot MultiBox Detector)**: SSD is another widely-used object detection framework known for its speed and accuracy. It provides real-time detection of objects across various scales and aspect ratios. Pre-trained SSD models, such as SSD300 or SSD512, are available and can be used with OpenCV for drone-based object detection.
+3. **Faster R-CNN (Region-based Convolutional Neural Networks)**: Faster R-CNN is a two-stage object detection framework that offers high accuracy. It employs a region proposal network (RPN) to generate potential object regions and then performs classification and bounding box regression on those regions. While Faster R-CNN models are generally slower compared to YOLO and SSD, they can provide better accuracy. You can find pre-trained Faster R-CNN models, such as ResNet-Faster-RCNN or Inception-Faster-RCNN, which can be integrated with OpenCV.
