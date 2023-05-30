@@ -539,5 +539,5 @@ Note: You can use either pymavlink or DroneKit to interact with the simulated ve
 
 ## Location To Use
 I have selected these two points to run simulations on to try and work. Have currently run into issues with pymavlink and hence will have to research into another way to run simulations for the drone project.
-Point 1: 28.382731,36.482608,20
-Point 2: 28.382503,36.482018,20
+Point 1: (28.382731,36.482608,0,20) [in the form of (lat,lon,alt,yaw)]
+Point 2: (28.382503,36.482018,0,20) [in the form of (lat,lon,alt,yaw)]
