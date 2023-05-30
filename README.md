@@ -530,8 +530,11 @@ Here is a link on how to use the ArduPilot SITL software; including installation
 ## Switching Back To Mac For Drone Simulation Development
 Since I've run into numerous errors trying to install and use Mission Planner, I have decided to revert back to trying to just use the iMac to try and get code working on it. I will be using the DroneKit-SITL software to simulate a drone on the iMac. Here is a link on how to use the DroneKit-SITL software; including installation and setup guides: [Guide to DroneKit-SITL](https://dronekit-python.readthedocs.io/en/latest/develop/sitl_setup.html)
 
-1. **Launch the SITL simulation**: in a terminal, run the following command: ```dronekit-sitl copter```. This will start the SITL simulation for a quadcopter.
-2. **Connect to SITL using MAVProxy**: in another terminal, run the following command: ```mavproxy.py --master tcp:127.0.0.1:5760 --out udp:127.0.0.1:14550 --out udp:127.0.0.1:14551```. This command connects to the SITL simulation and creates two output connections: one for GCS (Ground Control Station) and another for additional applications.
+1. **Launch the SITL simulation**: in a terminal, run the following command: ```dronekit-sitl copter --home=28.382731,36.482608,0,180```. This will start the SITL simulation for a quadcopter.
+2. **Connect to SITL using MAVProxy**: in another terminal, run the following command: ```mavproxy.py --master tcp:127.0.0.1:5760 --out udp:127.0.0.1:14551 --out udp:10.55.222.120:14550
+```. This command connects to the SITL simulation and creates two output connections: one for GCS (Ground Control Station) and another for additional applications.
 3. **Verify the connection**: in the terminal, you should see the MAVProxy console, indicating a successful connection to SITL.
 4. **Run your simulation or interact with the vehicle using pymavlink or DroneKit**: run the python script in another terminal and try to get it to interact with the simulated vehicle.
+
 Note: You can use either pymavlink or DroneKit to interact with the simulated vehicle. DroneKit provides a higher-level API and additional functionality, while pymavlink offers a lower-level interface.
+
