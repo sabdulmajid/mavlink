@@ -64,3 +64,4 @@ Day 6: Monday 29th May 2023
 Day 7: Tuesday 30th May 2023
 • Fixed up the issues I had with the Linux Virtual Machine
 • Discovered that pymavlink is incompatibile with Python 3.11, 3.10, 3.7 and even 3.6, and would not install on the Linux Virtual Machine
+• Had to downgrade each time from 3.11 to 3.10 to 3.7 and finall 3.6 to install pymavlink, before giving up
