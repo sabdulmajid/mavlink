@@ -538,5 +538,6 @@ Since I've run into numerous errors trying to install and use Mission Planner, I
 Note: You can use either pymavlink or DroneKit to interact with the simulated vehicle. DroneKit provides a higher-level API and additional functionality, while pymavlink offers a lower-level interface.
 
 ## Location To Use
+I have selected these two points to run simulations on to try and work. Have currently run into issues with pymavlink and hence will have to research into another way to run simulations for the drone project.
 Point 1: 28.382731,36.482608,20
 Point 2: 28.382503,36.482018,20
