@@ -67,3 +67,10 @@ Day 7: Tuesday 30th May 2023
 • Had to downgrade each time from 3.11 to 3.10 to 3.7 and finall 3.6 to install pymavlink, before giving up
 • Researched into other possible methods of getting a simulation running, hopefully without pymavlink compatibility issues
 • Will continue on working on this huge setback for the remainder of the week
+
+Day 8: Wednesday 31st May 2023
+• Researched into other possible methods of getting a simulation running, hopefully without pymavlink compatibility issues
+• Ran into an issue when trying to purge the Python from the Ubuntu Virtual Machine, which caused the whole system to break and crash
+• Reinstalled the whole Ubuntu Virtual Machine on the iMac to try again and hopefully get some code running
+• Have successfully installed the Ubuntu Virtual Machine on the iMac
+• Have successfully reinstalled all the dependencies needed for the project on the Ubuntu VM
