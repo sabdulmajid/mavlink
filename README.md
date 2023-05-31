@@ -545,4 +545,28 @@ I have selected these two points to run simulations on to try and work. Have cur
 ## Alternatives To Mission Planner (& PyMAVLink)
 After setting almost everything up, I ran into some issues with pymavlink. Apparently pymavlink is not compatible with Python 3.10 or 3.11, but I also had issues trying to install it on Python 3.6 & 3.7. And in the end I was unable to find a fix for that. Now I am looking into alternatives to Mission Planner and pymavlink. I have found a few alternatives that could potentially be of use, and [here is a link](https://discuss.ardupilot.org/t/pymavlink-vs-mavsdk-python-vs-dronekit-python-for-udp-receiving-program/86422) discussing them.
 
-## 
+## Settings To Note When Setting Things Up Again
+- When trying to run the Python script, you have to ```cd``` into the directory where the script is located, so for me ```cd ~/Desktop/python_code```
+- Before running the Python script on the terminal, you have to change some lines of code on the dronekit ```__init__.py``` file, located at ```/usr/local/lib/python3.10/dist-packages/dronekit/``` for me. You then go in and change the ```import collections``` line to ```import collections.abc as collections```. This is because the dronekit library is not compatible with Python 3.10, and this is a temporary fix for it.
+
+
+Notes: I run into this error when trying to run the Python script (and I am guessing that this because of the pymavlink issue):
+```bash
+Connecting to vehicle on: tcp:127.0.0.1:5760
+WARNING:dronekit:Link timeout, no heartbeat in last 5 seconds
+ERROR:dronekit.mavlink:Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/dronekit/mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+  File "/usr/local/lib/python3.10/dist-packages/dronekit/__init__.py", line 1371, in listener
+    raise APIException('No heartbeat in %s seconds, aborting.' %
+dronekit.APIException: No heartbeat in 30 seconds, aborting.
+Traceback (most recent call last):
+  File "/home/ayman/Desktop/python_code/test.py", line 33, in <module>
+    vehicle = connect(connection_string, wait_ready=True)
+  File "/usr/local/lib/python3.10/dist-packages/dronekit/__init__.py", line 3167, in connect
+    vehicle.initialize(rate=rate, heartbeat_timeout=heartbeat_timeout)
+  File "/usr/local/lib/python3.10/dist-packages/dronekit/__init__.py", line 2276, in initialize
+    raise APIException('Timeout in initializing connection.')
+dronekit.APIException: Timeout in initializing connection.
+```
