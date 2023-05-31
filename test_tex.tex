@@ -1,0 +1,94 @@
+\newpage
+
+\section*{ECE222: Chapter 1 Summary}
+
+\subsection*{Introduction}
+
+\textbf{Concepts}
+
+\begin{quote}
+"...not publicly disclosed until 1946... ENIAC was a general-purpose machine...18,000 vacuum tubes... programming was done manually by plugging cables and setting switches... data were entered on punch cards..."
+\end{quote}
+
+\textbf{Moore's Law (1965)}
+
+\begin{quote}
+
+integrated circuit (IC) resources (such as the number of transistors) double every 1.5 to 2 years
+\end{quote}
+Today, in the post-Moore era, newer 2018 chips utilize 7nm process technology, where 7nm is the smallest feature size on the chip, typically manufactured by TSMC (Taiwan Semiconductor Manufacturing Technology Corp.). The chip examples include:
+
+\begin{itemize}
+\item Apple's A12: 7nm process, 6.9B transistors
+\item Nvidia's Xavier chip: 12nm process, 9B transistors, 350 die, 8 central processing unit (CPU) cores, 512 graphics processing unit (GPU) cores, deep learning accelerator, computer vision accelerators, 8K HDR video processing, 30W, 30Tops (trillion operations per second)
+\end{itemize}
+
+\textbf{Design ideas}
+
+\begin{itemize}
+\item Abstraction - levels of design: transistor, gate, architecture, behavior (data flow graph)
+\item Parallelism
+\begin{itemize}
+\item Consider a typical digital filter computation. A multiply-accumulate (MAC) involves a multiplication operation whose output is added to a previous accumulated sum. Parallelism provides increased performance. For example, one ALU (0.5 MAC/cycle) in (i) versus two ALUs (one MAC/cycle) in (ii).
+\item \begin{array}{ c }
+\text{(i)} \quad \text{(ii)} \\
+\includegraphics[scale=0.4]{data_flow_graph_i.png} \quad \includegraphics[scale=0.4]{data_flow_graph_ii.png}
+\end{array}
+\end{itemize}
+\item Pipelining
+\begin{itemize}
+\item Multiplication takes longer than addition. Using a pipelined multiplier, 1/2 of the multiplication is performed in one cycle and the other 1/2 in the next cycle. Pipelining increases performance. For example, one Multiplier and one adder (0.5 MAC/cycle) in (iii) versus one Pipelined Multiplier and one adder (1.0 MAC/cycle) in (iv).
+\item \begin{array}{ c }
+\text{(iii)} \quad \text{(iv)} \\
+\includegraphics[scale=0.4]{data_flow_graph_iii.png} \quad \includegraphics[scale=0.4]{data_flow_graph_iv.png}
+\end{array}
+\end{itemize}
+\item Common case fast - optimize the code that accounts for the majority of execution time
+\item Prediction - conditional branching - start doing work on the likely outcome of a branch to save time
+\item Memory hierarchy - smaller memory is faster, but a hierarchy is used to accommodate the need for larger memory
+\item Testable/reliable
+\begin{itemize}
+\item Make it testable - with billions of transistors and thousands of pins, testability becomes a challenging problem
+\item Make it reliable - duplicate hardware to detect errors, triplicate hardware for fault-tolerant operations (3 to 1 majority voter), lower power dissipation, SiP (silicon in package), 2.5D SiP, 3D SiP packaging
+\end{itemize}
+\end{itemize}
+
+\subsection*{Terminology & Equations}
+
+\textbf{System software}
+
+\begin{itemize}
+\item Operating system (OS) - handles input/output (I/O), memory allocation, protected sharing of computer among multiple applications
+\item Compiler - high-level language to assembly language
+\item Assembler - assembly language to machine language (binary, hardware control)
+\end{itemize}
+
+\textbf{Parts of a computer}
+
+\begin{itemize}
+\item I/O
+\item Processing (central processing unit, CPU)
+\item Storing (memory)
+\end{itemize}
+
+\textbf{CPU}
+
+\begin{itemize}
+\item Datapath (ALU, buses, registers)
+\item Control (commands the data path, memory, I/O according to the instructions)
+\end{itemize}
+
+\textbf{Memory}
+
+\begin{itemize}
+\item RAM - random access memory (e.g., vs sequential access from magnetic tapes)
+\item sRAM - static RAM, dRAM - dynamic RAM
+\item Others: RRAM - resistive RAM, MRAM - magnetic RAM
+\item Cache - small fast memory (buffer memory for dRAM chips)
+\item Main memory, dRAM dominates - volatile memory
+\item Secondary memory - magnetic disks
+\item Flash - nonvolatile, wears out after 100k-1M writes, slower and more power-efficient than dRAMs, costlier than disks
+\item Embedded processor or microcontroller - registers, register file, sRAM, EEPROM, flash
+\item High-performance processor - register, register file, level 1 cache, level 2 cache, main memory dRAM, hard disk drives
+\item Networks - communication between computers
+\end{itemize}
