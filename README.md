@@ -539,5 +539,8 @@ Note: You can use either pymavlink or DroneKit to interact with the simulated ve
 
 ## Location To Use
 I have selected these two points to run simulations on to try and work. Have currently run into issues with pymavlink and hence will have to research into another way to run simulations for the drone project.
-Point 1: (28.382731,36.482608,0,20) [in the form of (lat,lon,alt,yaw)]
-Point 2: (28.382503,36.482018,0,20) [in the form of (lat,lon,alt,yaw)]
+- Point 1: (28.382731,36.482608,0,20) [in the form of (lat,lon,alt,yaw)]
+- Point 2: (28.382503,36.482018,0,20) [in the form of (lat,lon,alt,yaw)]
+
+## Alternatives To Mission Planner (& PyMAVLink)
+After setting almost everything up, I ran into some issues with pymavlink. Apparently pymavlink is not compatible with Python 3.10 or 3.11, but I also had issues trying to install it on Python 3.6 & 3.7. And in the end I was unable to find a fix for that. Now I am looking into alternatives to Mission Planner and pymavlink. I have found a few alternatives that could potentially be of use, and [here is a link](https://discuss.ardupilot.org/t/pymavlink-vs-mavsdk-python-vs-dronekit-python-for-udp-receiving-program/86422) discussing them.
