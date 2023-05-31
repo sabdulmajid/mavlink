@@ -544,3 +544,5 @@ I have selected these two points to run simulations on to try and work. Have cur
 
 ## Alternatives To Mission Planner (& PyMAVLink)
 After setting almost everything up, I ran into some issues with pymavlink. Apparently pymavlink is not compatible with Python 3.10 or 3.11, but I also had issues trying to install it on Python 3.6 & 3.7. And in the end I was unable to find a fix for that. Now I am looking into alternatives to Mission Planner and pymavlink. I have found a few alternatives that could potentially be of use, and [here is a link](https://discuss.ardupilot.org/t/pymavlink-vs-mavsdk-python-vs-dronekit-python-for-udp-receiving-program/86422) discussing them.
+
+## 
