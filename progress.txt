@@ -51,11 +51,11 @@ Day 5: Sunday 28th May 2023
 • Used MONO on Linux to install the Mission Planner software
 
 Day 6: Monday 29th May 2023
-• Succesfully found the issue for the Virtual Machine problem, and uninstalled the VirtualBox software and used VMWare Fusion instead
+• Successfully found the issue for the Virtual Machine problem, and uninstalled the VirtualBox software and used VMWare Fusion instead
 • Have successfully installed Ubuntu 22.04 on the iMac Virtual Machine
 • Have successfully installed Mission Planner on the Ubuntu 22.04 Virtual Machine
 • Have successfully connected the simulation to dronekit-sitl
-• Have to research into how to use the Mission Planner software, and run simulations
+• Have to research how to use the Mission Planner software, and run simulations
 • Took the drone out for a manual test flight, to test functionality and to see if it is working properly
 • Have successfully connected the drone to the Mission Planner software
 • Running into problems trying to run the Mission Planner on the Linux Virtual Machine - such as rendering issues, programming issues, and connection issues
