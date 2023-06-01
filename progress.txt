@@ -31,18 +31,17 @@ Day 3: Wednesday 24th May 2023
 • Main task for tommorow is to connect up the dronekit-sitl to the Pixhawk and start writing code for it (in a simulated environment)
 
 Day 4: Thursday 25th May 2023
-• Have successfully connected the dronekit-sitl to the Pixhawk 4 (in a simulation environment)
-• Updated the software on the drone's Raspberry Pi 4
-• Ran into multiple issues regarding Python 2 and Python 3 collisions in the RasbianOS, which I managed to fix
+• Successfully connected the dronekit-sitl to the Pixhawk 4 (in a simulation environment)
+• Successfully written code to arm the drone and takeoff
 • Had to fully rewire the pip on the RP4 because there was an outdated, deprecated version of it pre-installed
 • Communicated with Hussain to resolve any software issues he was facing on the RP4
 • Researched about connecting the physical drone to the software on the Raspberry Pi 4
-• Looked into adding a different camera module to the drone (found out 6 different types)
-• Researched about potential issues that may arise when connecting the drone to the software on the Raspberry Pi 4
-• Discussed about QGroundControl and Mission Planner with Hussain
+• Looked into adding a different camera module to the drone (found 6 different types)
+• Researched potential issues that may arise when connecting the drone to the software on the Raspberry Pi 4
+• Discussed QGroundControl and Mission Planner with Hussain
 
 Day 5: Sunday 28th May 2023
-• Reseached about QGroundControl and how to connnect a drone to it
+• Researched about QGroundControl and how to connect a drone to it
 • Have connected drone to MAVProxy from dronekit-sitl
 • Have installed VirtualBox and have researched on how to use it
 • Installed Ubuntu 22.04 on the iMac, to smoothly use a dual boot to connect to Mission Planner
