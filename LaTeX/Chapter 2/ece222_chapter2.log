@@ -1,0 +1,78 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.6.2)  2 JUN 2023 10:15
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/shaik/Documents/mavlink/LaTeX/Chapter 2/ece222_chapter2.tex"
+(c:/Users/shaik/Documents/mavlink/LaTeX/Chapter 2/ece222_chapter2.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-05-15> (C:\Users\shaik\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(C:\Users\shaik\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\shaik\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count193
+\l__pdf_internal_box=\box51
+) (ece222_chapter2.aux)
+\openout1 = `ece222_chapter2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+ [1
+
+{C:/Users/shaik/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Overfull \hbox (75.72191pt too wide) in paragraph at lines 47--48
+\OT1/cmr/m/n/10 RISC-V log-i-cal op-er-a-tions in-clude shift left/right, right arith-metic, bit-wise AND/OR/NOT/XOR. 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 65--65
+[]\OT1/cmtt/m/n/10 assume f through j correspond to values in registers x19 through x23[] 
+ []
+
+[2]
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 83--83
+[]\OT1/cmtt/m/n/10 assume value of i is in register x22 and value of k is in register x24.[] 
+ []
+
+[3] (ece222_chapter2.aux) ) 
+Here is how much of TeX's memory you used:
+ 444 strings out of 476411
+ 8855 string characters out of 5789135
+ 1857845 words of memory out of 5000000
+ 20878 multiletter control sequences out of 15000+600000
+ 514308 words of font info for 39 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,5n,38p,270b,270s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\shaik\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/shaik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/shaik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/shaik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/shaik/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on ece222_chapter2.pdf (3 pages, 76076 bytes).
+PDF statistics:
+ 37 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
