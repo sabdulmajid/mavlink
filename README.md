@@ -583,3 +583,32 @@ As for SSH-ing into the Solo (for a Copter IMX):
 3. Copy 3dr-solo.tar.gz and 3dr-solo.tar.gz.md5 to the /log/updates directory on the copter
 4. ```sololink_config --update-apply sololink --reset``` executes the update and reboots
 
+## Quickstart Guide for MAVSDK
+MAVSDK is a cross-platform SDK for communicating with drones. It is written in C++ and has bindings for Python, Swift, and Rust. It is compatible with Python 3.7+. Here is a quickstart guide for MAVSDK:
+1. Install MAVSDK-Python: ```pip3 install mavsdk```
+2. Install the lightweight REPL (Read-Eval-Print-Loop) tool called asyncio: ```pip3 install aioconsole```
+3. After the SITL is ready, we can open a REPL and start writing code for the drone.
+4. Then run the following code (line-by-line) int the REPL:
+```python
+from mavsdk import System
+drone = System()
+await drone.connect()
+await drone.action.arm()
+await drone.action.takeoff()
+# Extra commands to try out to see how the drone responds:
+  # await drone.action.land()
+  # await drone.action.disarm()
+  # await drone.action.kill()
+  # await drone.action.reboot()
+  # await drone.action.return_to_launch()
+  # await drone.action.goto_location(47.398039859999997, 8.5455725400000002, 10, 0)
+```
+## Useful Examples (for MAVSDK)
+  - [Simple Taking Off & Landing Example Code](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/takeoff_and_land.py)
+  - [Mission Simulation From Point to Point to Point](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/mission.py)
+  - [Calibration Code](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/calibration.py)
+>>>>>>> cde04cf579785c24936476b5a7406bba62ed6c03
+
+## Fixing 'Permission Denied' Errors
+When trying to install dependencies and all, I found out that there were a lot of times where I couldn't download a specific package because I didn't have the permission to do so.
+My quick fix for this is to run the following command in the terminal window that is installing all of this: ```sudo chown -R $(whoami) $(brew --prefix)/*```
