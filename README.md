@@ -603,3 +603,7 @@ await drone.action.takeoff()
   # await drone.action.return_to_launch()
   # await drone.action.goto_location(47.398039859999997, 8.5455725400000002, 10, 0)
 ```
+## Useful Examples (for MAVSDK)
+  - [Simple Taking Off & Landing Example Code](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/takeoff_and_land.py)
+  - [Mission Simulation From Point to Point to Point](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/mission.py)
+  - [Calibration Code](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/calibration.py)
