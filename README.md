@@ -570,3 +570,7 @@ Traceback (most recent call last):
     raise APIException('Timeout in initializing connection.')
 dronekit.APIException: Timeout in initializing connection.
 ```
+
+## Fixing 'Permission Denied' Errors
+When trying to install dependencies and all, I found out that there were a lot of times where I couldn't download a specific package because I didn't have the permission to do so.
+My quick fix for this is to run the following command in the terminal window that is installing all of this: ```sudo chown -R $(whoami) $(brew --prefix)/*```
