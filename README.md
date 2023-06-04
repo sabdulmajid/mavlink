@@ -583,3 +583,16 @@ As for SSH-ing into the Solo (for a Copter IMX):
 3. Copy 3dr-solo.tar.gz and 3dr-solo.tar.gz.md5 to the /log/updates directory on the copter
 4. ```sololink_config --update-apply sololink --reset``` executes the update and reboots
 
+## Quickstart Guide for MAVSDK
+MAVSDK is a cross-platform SDK for communicating with drones. It is written in C++ and has bindings for Python, Swift, and Rust. It is compatible with Python 3.7+. Here is a quickstart guide for MAVSDK:
+1. Install MAVSDK-Python: ```pip3 install mavsdk```
+2. Install the lightweight REPL (Read-Eval-Print-Loop) tool called asyncio: ```pip3 install aioconsole```
+3. After the SITL is ready, we can open a REPL and start writing code for the drone.
+4. Then run the following code (line-by-line) int the REPL:
+```python
+from mavsdk import System
+drone = System()
+await drone.connect()
+await drone.action.arm()
+await drone.action.takeoff()
+```
