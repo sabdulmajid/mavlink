@@ -595,4 +595,11 @@ drone = System()
 await drone.connect()
 await drone.action.arm()
 await drone.action.takeoff()
+# Extra commands to try out to see how the drone responds:
+  # await drone.action.land()
+  # await drone.action.disarm()
+  # await drone.action.kill()
+  # await drone.action.reboot()
+  # await drone.action.return_to_launch()
+  # await drone.action.goto_location(47.398039859999997, 8.5455725400000002, 10, 0)
 ```
