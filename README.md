@@ -570,3 +570,16 @@ Traceback (most recent call last):
     raise APIException('Timeout in initializing connection.')
 dronekit.APIException: Timeout in initializing connection.
 ```
+
+## Open Solo 4
+After finding out that DroneKit is a 'dead' API and project now, I had to search for alternatives for it. I have stumbled upon Open Solo 4, which is a fork of the original Solo project. It is a Linux-based operating system for the Solo drone, and it is open-source. It is also compatible with Python 3.10, which is a plus. Here is the general installation overview of installing the IMX Firmware via SSH/SCP:
+1. Download the latest Open Solo 4 firmware from [here](https://github.com/OpenSolo/OpenSolo/wiki/Install-via-SSH)
+2. Extract the downloaded file
+3. Connect to the Solo's WiFi network (you will want to do the copter first, since you will lose connectivity when the controller update initiates)
+
+As for SSH-ing into the Solo (for a Copter IMX):
+1. SSH into the copter with ```IP 10.1.1.10```, username ```root```, password ```TjSDBkAu``` (this is the default password)
+2. ```sololink_config --update-prepare sololink``` cleans up and prepares the directories
+3. Copy 3dr-solo.tar.gz and 3dr-solo.tar.gz.md5 to the /log/updates directory on the copter
+4. ```sololink_config --update-apply sololink --reset``` executes the update and reboots
+
