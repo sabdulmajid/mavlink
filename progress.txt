@@ -86,3 +86,5 @@ Day 10: Sunday 4th June 2023
 • Will test using pymavlink instead of the dronekit library
 • Have found an alternative to dronekit-sitl, known as Open Solo 4
 • Will test using Open Solo 4 instead of dronekit-sitl (as dronekit-sitl has been declared a 'dead' project back in November 2019)
+• Have also found a 'jailbreaked' version of Mission Planner for Mac, which will allow me to connect to the drone using the Mission Planner software (even on the Mac)
+• Will test using the jailbreaked version of Mission Planner for Mac, instead of the Linux Virtual Machine
