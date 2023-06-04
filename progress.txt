@@ -75,8 +75,14 @@ Day 8: Wednesday 31st May 2023
 • Have successfully reinstalled all the dependencies needed for the project on the Ubuntu VM
 
 Day 9: Thursday 1st June 2023
-•
-• 
-• 
-• 
-• 
+• Have successfully installed the Mission Planner software on the Ubuntu Virtual Machine
+• Further looked into the issue of pymavlink not being compatible with Python 3.11, 3.10, 3.7 and 3.6
+• Went out for testing the drone with Hussain & Dr. Tareq
+• Will use dronekit-api to connect to the simulated drone (instead of pymavlink)
+
+Day 10: Sunday 4th June 2023
+• Have successfully installed the dronekit-api
+• Have found an alternative and a possible solution to the problem
+• Will test using pymavlink instead of the dronekit library
+• Have found an alternative to dronekit-sitl, known as Open Solo 4
+• Will test using Open Solo 4 instead of dronekit-sitl (as dronekit-sitl has been declared a 'dead' project back in November 2019)
