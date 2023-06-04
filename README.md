@@ -607,7 +607,6 @@ await drone.action.takeoff()
   - [Simple Taking Off & Landing Example Code](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/takeoff_and_land.py)
   - [Mission Simulation From Point to Point to Point](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/mission.py)
   - [Calibration Code](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/calibration.py)
->>>>>>> cde04cf579785c24936476b5a7406bba62ed6c03
 
 ## Fixing 'Permission Denied' Errors
 When trying to install dependencies and all, I found out that there were a lot of times where I couldn't download a specific package because I didn't have the permission to do so.
