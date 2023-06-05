@@ -89,3 +89,9 @@ Day 10: Sunday 4th June 2023
 • Have also found a 'jailbreaked' version of Mission Planner for Mac, which will allow me to connect to the drone using the Mission Planner software (even on the Mac)
 • Will test using the jailbreaked version of Mission Planner for Mac, instead of the Linux Virtual Machine
 • Found a few other good alternatives for DroneKit-SITL, one being the ArduPilot-SITL, and I will try to use that with MAVSDK to set up the simulation environment
+
+Day 11: Monday 5th June 2023
+• Could only really do some research on the project today, as I did not have access to the work iMac
+• Researched into the ArduPilot-SITL and MAVSDK, and how to set up the simulation environment
+• Researched into the jailbreaked version of Mission Planner for Mac, and how to set up the simulation environment
+• Researched into the Open Solo 4 and how to set up the simulation environment, and will probably avoid this option
