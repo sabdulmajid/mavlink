@@ -611,3 +611,13 @@ await drone.action.takeoff()
 ## Fixing 'Permission Denied' Errors
 When trying to install dependencies and all, I found out that there were a lot of times where I couldn't download a specific package because I didn't have the permission to do so.
 My quick fix for this is to run the following command in the terminal window that is installing all of this: ```sudo chown -R $(whoami) $(brew --prefix)/*```
+
+## Guide to Start Arducopter-SITL
+It is a long and tedious method, but to get the ArduCopter SITL running, I had to follow the following commands:
+
+1. ```cd /Users/ayman/Desktop/Ayman/ardupilot```
+2. ```git submodule update --init --recursive```
+3. ```./waf configure --board sitl```
+4. ```./waf copter --upload```
+5. ```cd build/sitl/bin```
+6. ```./arducopter --model quad ../../../../Tools/autotest/default_params/copter.parm```
