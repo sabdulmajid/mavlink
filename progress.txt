@@ -95,3 +95,9 @@ Day 11: Monday 5th June 2023
 • Researched into the ArduPilot-SITL and MAVSDK, and how to set up the simulation environment
 • Researched into the jailbreaked version of Mission Planner for Mac, and how to set up the simulation environment
 • Researched into the Open Solo 4 and how to set up the simulation environment, and will probably avoid this option
+
+Day 12: Tuesday 6th June 2023
+• 
+• 
+• 
+• 
