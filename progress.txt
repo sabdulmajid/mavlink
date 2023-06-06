@@ -97,7 +97,10 @@ Day 11: Monday 5th June 2023
 • Researched into the Open Solo 4 and how to set up the simulation environment, and will probably avoid this option
 
 Day 12: Tuesday 6th June 2023
-• 
-• 
-• 
-• 
+• Set up the MAVSDK environment for further use
+• Researched into MAVSDK's compatibility with PX4 and ArduPilot, and found out that it is mainly tested on PX4 but should be compatible with any MAVLink device
+• Wrote some code involving pymavlink to try and connect to the TCP port from the ArduPilot-SITL
+• Ran into many issues with setting up a simulated drone environment for testing
+• Ran into multiple errors with connection, especially building the ArduPilot-SITL software
+• Now need to fix issues with actual running the point_to_point2.py file
+• Tomorrow's task is to get ahold of the differences between using UDP and TCP, and try to connect to the UDP port from the SITL
