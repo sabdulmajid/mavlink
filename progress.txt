@@ -104,3 +104,8 @@ Day 12: Tuesday 6th June 2023
 • Ran into multiple errors with connection, especially building the ArduPilot-SITL software
 • Now need to fix issues with actual running the point_to_point2.py file
 • Tomorrow's task is to get ahold of the differences between using UDP and TCP, and try to connect to the UDP port from the SITL
+
+Day 13: Wednesday 7th June 2023
+• Researched into the differences between UDP and TCP, and how to connect to the UDP port from the SITL
+• Researched into the differences between MAVLink and MAVSDK, and how to connect to the UDP and TCP ports from the SITL
+• Researched into why I am unable to simulate a drone's mission, even though I am fully connected to the SITL with a proper running program

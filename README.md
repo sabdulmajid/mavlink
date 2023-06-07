@@ -625,3 +625,4 @@ It is a long and tedious method, but to get the ArduCopter SITL running, I had t
 And as for connecting the simulated drone to the SITL:
 1. ```cd /Users/ayman/Desktop/Ayman/UAV/myenv/python_code/UAV-Flight-Code/testing_ping_connection.py``` 
 2. OR directly just type this into a terminal ```/usr/bin/python3 /Users/ayman/Desktop/Ayman/UAV/myenv/python_code/UAV-Flight-Code/testing_ping_connection.py```
+
