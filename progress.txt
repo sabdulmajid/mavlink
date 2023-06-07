@@ -109,3 +109,5 @@ Day 13: Wednesday 7th June 2023
 • Researched into the differences between UDP and TCP, and how to connect to the UDP port from the SITL
 • Researched into the differences between MAVLink and MAVSDK, and how to connect to the UDP and TCP ports from the SITL
 • Researched into why I am unable to simulate a drone's mission, even though I am fully connected to the SITL with a proper running program
+• Will overlook the simulation issue, and will try to connect to the actual drone instead to test Python code
+• Long day ahead of us tomorrow - let's start it on a good note :)
