@@ -625,3 +625,18 @@ It is a long and tedious method, but to get the ArduCopter SITL running, I had t
 And as for connecting the simulated drone to the SITL:
 1. ```cd /Users/ayman/Desktop/Ayman/UAV/myenv/python_code/UAV-Flight-Code/``` then ```python3 testing_ping_connection.py``` 
 2. OR directly just type this into a terminal ```/usr/bin/python3 /Users/ayman/Desktop/Ayman/UAV/myenv/python_code/UAV-Flight-Code/testing_ping_connection.py```
+
+## Different Types of Remote Connections
+1. **SSH (Secure Shell)**: SSH is a cryptographic network protocol that provides secure remote access to systems over an unsecured network. It enables you to establish a secure command-line or terminal connection to a remote server. SSH encrypts the data exchanged between the client and the server, ensuring confidentiality and integrity.
+
+2. **Remote Desktop Protocol (RDP)**: RDP is a proprietary protocol developed by Microsoft. It allows you to remotely access and control a Windows-based computer over a network connection. With RDP, you can view the remote desktop and interact with it as if you were physically present at the machine.
+
+3. **VNC (Virtual Network Computing)**: VNC is a graphical desktop sharing system that enables remote control of a computer's desktop environment. It works on the client-server model, where the server sends a compressed image of the remote desktop to the client, which in turn sends user input back to the server. VNC is platform-independent and supports various operating systems.
+
+4. **Telnet**: Telnet is an older remote connection protocol that allows you to establish a command-line connection with a remote system. It operates over a network and provides a text-based interface for remotely accessing and managing systems. However, Telnet doesn't provide encryption, making it less secure compared to SSH.
+
+5. **FTP (File Transfer Protocol)**: FTP is a standard network protocol used for transferring files between a client and a server on a computer network. It provides a way to access, modify, and transfer files remotely. FTP can be used with a command-line interface or various FTP client software that provides a graphical interface.
+
+6. **SFTP (SSH File Transfer Protocol)**: SFTP is a secure alternative to FTP that uses the SSH protocol for file transfer. It provides secure file transfer capabilities and remote file management similar to FTP. SFTP encrypts the data during transmission, ensuring confidentiality.
+
+7. **SCP (Secure Copy)**: SCP is another secure file transfer protocol that works over SSH. It allows you to securely copy files between remote systems. SCP provides both encryption and authentication, ensuring secure file transfers.

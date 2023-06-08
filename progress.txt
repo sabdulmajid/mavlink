@@ -111,3 +111,5 @@ Day 13: Wednesday 7th June 2023
 • Researched into why I am unable to simulate a drone's mission, even though I am fully connected to the SITL with a proper running program
 • Will overlook the simulation issue, and will try to connect to the actual drone instead to test Python code
 • Long day ahead of us tomorrow - let's start it on a good note :)
+
+Day 14: Thursday 8th June 2023
