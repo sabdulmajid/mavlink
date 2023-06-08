@@ -640,3 +640,28 @@ And as for connecting the simulated drone to the SITL:
 6. **SFTP (SSH File Transfer Protocol)**: SFTP is a secure alternative to FTP that uses the SSH protocol for file transfer. It provides secure file transfer capabilities and remote file management similar to FTP. SFTP encrypts the data during transmission, ensuring confidentiality.
 
 7. **SCP (Secure Copy)**: SCP is another secure file transfer protocol that works over SSH. It allows you to securely copy files between remote systems. SCP provides both encryption and authentication, ensuring secure file transfers.
+
+
+## How To Stay Connected In The Air
+1. **Set up the Pixhawk 4**: Connect your Pixhawk 4 to your Raspberry Pi 4 using a USB cable. Ensure that the Pixhawk 4 is powered on and recognized by the Raspberry Pi 4. You can verify this by checking the device connection using the ls /dev/serial/by-id command in the terminal. Make a note of the serial port name assigned to the Pixhawk 4 (e.g., /dev/serial/by-id/usb-3D_Robotics_PX4_FMU_v2.x_0-if00).
+
+2. **Launch SITL (Software In The Loop)**: SITL allows you to simulate the Pixhawk's behavior and test your software without an actual drone. Launch the SITL environment by opening a terminal window and running the following command:
+
+```arduino
+dronekit-sitl copter --home=latitude,longitude,altitude,yaw
+```
+Replace latitude, longitude, altitude, and yaw with the desired starting position and orientation for the simulated drone.
+
+3. **Connect QGroundControl**: Launch QGroundControl on your ground station computer. Ensure that your Wi-Fi connection is active and select the appropriate Wi-Fi network on both your ground station computer and the Raspberry Pi 4. QGroundControl should automatically detect the Pixhawk 4 and establish a connection.
+
+4. **Start MAVProxy**: Open a new terminal window on your Raspberry Pi 4 and run the following command to start MAVProxy:
+
+```python
+mavproxy.py --master=/dev/serial/by-id/your-pixhawk-serial-port --out udp:ip-of-ground-station:14550 --out udp:ip-of-ground-station:14551
+```
+Replace your-pixhawk-serial-port with the serial port name of your Pixhawk 4, and ip-of-ground-station with the IP address of your ground station computer running QGroundControl. This command establishes a connection between the Pixhawk 4 and QGroundControl via MAVProxy.
+
+5. **Interact with the drone using MAVProxy**: With MAVProxy running, you can enter commands in the MAVProxy terminal to interact with the simulated drone. MAVProxy provides a command-line interface for controlling the drone and accessing telemetry data. You can arm/disarm the drone, take off, control its movements, and perform other operations. Refer to MAVProxy documentation for a list of available commands.
+
+6. **Develop with pymavlink and dronekit-sitl**: You can use pymavlink and dronekit-sitl libraries to develop custom scripts and applications for interacting with the drone. These libraries provide APIs to send and receive MAVLink messages, control the drone's behavior, and access telemetry data. You can write Python scripts using these libraries to automate tasks, perform custom missions, or integrate additional functionality.
+
