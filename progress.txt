@@ -113,3 +113,8 @@ Day 13: Wednesday 7th June 2023
 • Long day ahead of us tomorrow - let's start it on a good note :)
 
 Day 14: Thursday 8th June 2023
+• Wrote code for the drone to takeoff, in hopes of getting the actual drone to work
+• Ran into issues with the drone not taking off, and not being able to connect to the drone
+• Researched into how to load code onto the drone
+• Researched into how to stay connected to the drone when it is flying in the air (since we have no access point outside)
+• Installed Mission Planner and QGroundControl on the work i9 Windows PC for testing
