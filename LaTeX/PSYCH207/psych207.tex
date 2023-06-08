@@ -1,0 +1,1393 @@
+\documentclass[]{article}
+\usepackage[margin = 1.5in]{geometry}
+\setlength{\parindent}{0in}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage{color}
+\definecolor{darkish-blue}{RGB}{25,103,185}
+\usepackage[pdftex,
+  pdfauthor={Chris Thomson},
+  pdftitle={PSYCH 207: Cognitive Processes},
+  pdfsubject={Lecture notes from PSYCH 207 at the University of Waterloo},
+  pdfkeywords={PSYCH 207, course notes, notes, Waterloo, University of Waterloo, psychology, cognitive psychology},
+  pdfproducer={LaTeX},
+  pdfcreator={pdflatex}]{hyperref}
+
+\hypersetup{
+    colorlinks,
+    citecolor=darkish-blue,
+    filecolor=darkish-blue,
+    linkcolor=darkish-blue,
+    urlcolor=darkish-blue
+}
+
+\setlength{\marginparwidth}{1.5in}
+\newcommand{\lecture}[1]{\marginpar{{\footnotesize $\leftarrow$ \underline{#1}}}}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+\begin{document}
+	\title{\bf{PSYCH 207: Cognitive Processes}}
+	\date{Winter 2013, University of Waterloo \\ \center Notes written from Jonathan Fugelsang's lectures.}
+	\author{Chris Thomson}
+
+	\blfootnote{I'd love to hear your feedback. Feel free to email me at \href{mailto:chris@cthomson.ca}{chris@cthomson.ca}.}
+
+	\blfootnote{See \href{http://cthomson.ca/notes}{cthomson.ca/notes} for updates.
+		\ifdefined\sha % Also, \commitDateTime should be defined.
+		Last modified: \commitDateTime{} ({\href{https://github.com/christhomson/lecture-notes/commit/\sha}{\sha}}).
+		\fi
+	}
+
+	\maketitle
+	\newpage
+	\tableofcontents
+	\newpage
+
+	\section{Introduction \& Course Structure} \lecture{January 8, 2013}
+		\subsection{Course Structure}
+			The grading scheme is four in-class non-cumulative multiple-choice exams, equally weighted. There is also a 4\% bonus for research participation through SONA. You should get the textbook.
+			\\ \\
+			See the course syllabus for more information -- it's available on \href{https://learn.uwaterloo.ca/}{Waterloo LEARN}.
+
+		\subsection{Introduction to Cognitive Processes}
+			\begin{quote}
+				``Cognitive psychology refers to all processes by which the sensory input is transformed, reduced, elaborated, stored, recovered, and used." \textendash{}  Neisser, 1967
+			\end{quote}
+			\textbf{Cognitive psychology} involves perception, attention, memory, knowledge, reasoning, and decision making.
+			\\ \\
+			\textbf{Cognitive processes} are everything that goes on in our mind that affects our environment. Many of these processes are completely unconscious.
+			\\ \\
+			Conscious experience is an \underline{active reconstructive process}. The external world and our internal representation of that world is \emph{not} an exact match. Our brain ends up filling in many gaps, making many assumptions.
+			\\ \\
+			Our brain cannot decontextualize the world.
+
+	\section{Historical Overview \& Approaches} \lecture{January 10, 2013}
+		\underline{Attention} (notice \emph{something}) $\to$ \underline{Perception} (perceive that \emph{something}) $\to$ \underline{Pattern Recognition} (recognize what that \emph{something} is) $\to$ \underline{Memory} (recall previously-known attributes about the \emph{something}).
+		\\ \\
+		Our cognitive apparatus is ultimately an efficient simplification process.
+
+		\subsection{Antecedent Philosophies and Traditions}
+			Many researchers take very strong views on empiricism vs. nativism, however reality is most likely somewhere between the two. The debate for structuralism vs. functionalism is similar.
+
+			\subsubsection{Empiricism}
+				\begin{itemize}
+					\item Locke, Hume, and Stuart Hill.
+					\item Emphasis is on experience and \underline{learning}.
+					\item Key is the \underline{association} between experiences.
+					\item This is observational learning -- the nurture side of the nature vs. nurture argument.
+				\end{itemize}
+
+			\subsubsection{Nativism}
+				\begin{itemize}
+					\item Plato, Descartes, and Kant.
+					\item Emphasis is on that which is \underline{innate}.
+					\item Innate causal mechanisms.
+					\item This is the nature side of the nature vs. nurture argument.
+				\end{itemize}
+
+			\subsubsection{Structuralism}
+				\begin{itemize}
+					\item Wundt and Baldwin.
+					\item The focus is on the elemental components of mind.
+					\item Very reductive -- it's about stripping out context to understand the very basic elements.
+
+					\item \underline{Introspection} (method)
+						\begin{itemize}
+							\item Report on the basic elements of consciousness.
+							\item Not internal perception, but \underline{experimental self observation}.
+							\item Must be done in a lab under controlled conditions.
+							\item Basic elements of the conscious experience include processes like identifying colors.
+						\end{itemize}
+				\end{itemize}
+
+			\subsubsection{Functionalism}
+				\begin{itemize}
+					\item William James.
+					\item Regarded the mission of psychology to be the explanation of our experience.
+					\item Key question: why does the mind work as it does?
+					\item The function of our mind is more important than its content.
+					\item \underline{Introspection in natural settings} (method)
+						\begin{itemize}
+							\item Must study the whole organism in real-life situations.
+							\item Must get out of the lab to conduct functionalist research.
+						\end{itemize}
+				\end{itemize}
+
+			\subsubsection{Behaviorism}
+				\begin{itemize}
+					\item Watson and Skinner.
+					\item Started in the 30s and was the dominate focus of academic psychology until the 60s.
+					\item Originally evolved as a reaction to the lack of progress provided by introspection.
+					\item A behaviourist sees psychology as an objective, experimental branch of science. Psychology's goal is the prediction and control of behaviour. Therefore, they make behavior (not consciousness) the focus of their research.
+					\item Focus is on the relation between input and output, but the steps in between (which make up cognitive psychology) do not matter to behaviourists.
+				\end{itemize}
+
+			\subsubsection{Gestalt Psychology}
+				\begin{itemize}
+					\item Wertheimer, Koffka, and Kohler.
+					\item Focus is on the holistic aspects of conscious experiences.
+					\item Key question: what are the rules by which we parse the world into wholes?
+					\item \underline{Introspection} (method)
+						\begin{itemize}
+							\item Experience is simply described, never analyzed.
+						\end{itemize}
+					\item A unified whole is often different than the sum of its parts. How do we impose structure on what's already out there? For example: 8 line segments in groups of 2 are interpreted differently than the 8 lines being all scrambled together in a seemingly random way.
+					\item How does the mind simplify the world to focus our attention on things/objects that matter?
+					\item We need to study phenomena in their entirety, since a unified whole is different than the sum of its parts.
+				\end{itemize}
+
+			\subsubsection{Individual Differences}
+				\begin{itemize}
+					\item Sir Francis Galton.
+					\item Intelligence, morals, and personality are innate.
+					\item Mental imagery was studied in both a lab and in natural settings. The vividness of mental imagery differs from person to person.
+					\item Galton invented the process of using questionnaires to assess abilities. This process has been used by cognitive psychologists ever since.
+				\end{itemize}
+
+		\subsection{The Cognitive Revolution}
+			\begin{itemize}
+				\item The speed of information publishing, sharing, and retrieval has become very fast.
+				\item We're now running into the cognitive speed limit as our limiting factor, whereas before communication channels (snail mail, travel) slowed down research.
+				\item Recent advances in neuroimaging are also a mini-revolution in cognitive psychology.
+			\end{itemize}
+
+			\subsubsection{Human factors engineering presented new problems}
+				\begin{itemize}
+					\item A machine should be designed for human use -- for use in the most efficient way possible. Knowledge of human cognition is required in order to increase efficiency.
+					\item We have to think about the $7 \pm 2$ information limitation of the human mind, and how to get around the limit.
+					\item NASA hires cognitive psychologists to study how the human mind operates in extreme conditions. Cognitive psychologists develop the user interfaces that astronauts use.
+				\end{itemize}
+
+			\subsubsection{Behaviorism failed to adequately explain language}
+				\begin{itemize}
+					\item Skinner in 1957 (behaviorism): children learn language by imitation and reinforcement.
+					\item Chomsky in 1959 questioned Skinner's explanation of language.
+						\begin{itemize}
+							\item Children often say sentences they have never heard before, such as ``I hate you mommy.'' (Not imitation.)
+							\item Children often use incorrect grammar, such as ``The boy hitted the ball'', despite a lack of reinforcement.
+						\end{itemize}
+				\end{itemize}
+
+			\subsubsection{Localization of functions in the brain forced discussion of mind}
+				\begin{itemize}
+					\item Donald Hebb stated that some functions, like perception, are based on cell assemblies (collections of neurons).
+					\item Hubel and Weisel demonstrated the importance of early experiences on the development of the nervous system. Early experiences actually change how some cell assemblies physically develop.
+					\item Many things seem to happen without observational learning coming into play.
+				\end{itemize}
+
+			\subsubsection{Development of computers and artificial intelligence gave a dominant metaphor}
+				\begin{itemize}
+					\item A computer takes input into short-term memory (RAM), may access long-term memory (a hard drive), and returns some output.
+					\item The mind may work in a similar way.
+					\item Perhaps we introspected and that's why we developed computers the way we did?
+				\end{itemize}
+
+		\subsection{Paradigms of Cognitive Psychology}
+			\begin{itemize}
+				\item Emphasis is on serial processing.
+				\item Information is stored symbolically.
+				\item The mind is an information processing system with systems of interrelated capacities.
+				\item All of these attributes are similar to that of typical computer systems.
+			\end{itemize}
+
+			\subsubsection{Localist models}
+				\begin{itemize}
+					\item A symbolic concept, such as a letter, word, or meaning, is represented in your mind with a node.
+					\item You may have a node for `cat', `dot', or `house' (lexical knowledge). You may also have a node for `provides shelter', `barks', or `has four legs', all of which are boolean attributes (semantic knowledge).
+				\end{itemize}
+
+			\subsubsection{Connectionism -- Neural network models}
+				\begin{itemize}
+					\item Parallel processing across a population of neurons.
+					\item Multiple neurons are used to represent complex concepts. For example: the representation of a person may have a neuron for their name, a neuron for their profession, a neuron for their cat's name, and so on.
+					\item The \underline{pattern of activation} of the neurons represent a symbolic concept.
+					\item Semantic knowledge and lexical knowledge for a particular symbolic concept have different activation patterns.
+					\item Units in neural networks are connected by weights that are modified by learning (positive weight $\to$ activation, negative weight $\to$ inhibition).
+				\end{itemize}
+
+		\subsection{Major Assumptions of Approaches}
+			The major assumption of these approaches is that research must be done in the lab. This is believed for two key reasons:
+			\begin{itemize}
+				\item We must uncover the basic processes underlying cognition in order to fully understand it.
+				\item Processes are stable across situations, and can only be researched under controlled conditions (such as in a lab).
+			\end{itemize}
+
+		\subsection{Other Approaches}
+			\subsubsection{The Evolutionary Approach}
+				\begin{itemize}
+					\item Mental processes are subject to natural selection.
+					\item Cognition is based off our history, and special processes have developed over time.
+				\end{itemize}
+
+			\subsubsection{The Ecological Approach}
+				\begin{itemize}
+					\item Cognitive processes develop with culture and differ depending on the context and situation.
+					\item Analyzes how humans behave in context-specific situations. As a result of this approach, natural observation must be used instead of lab research.
+					\item People focus on the eyes of others, because they show attention, desires, and more. This behavior might differ depending on the context.
+				\end{itemize}
+	\section{The Brain} \lecture{January 15, 2013}
+		\subsection{Dependent Measures of Behavior}
+			Experiments in cognitive psychology focus on measuring outward behavior. Experiments are usually (but not quite always) measured using two metrics:
+			\begin{itemize}
+				\item \textbf{Accuracy}. Give the test subject some information and see how well they can hold onto it over time. Measure the percentage of accurate results from an experiment.
+				\item \textbf{Response Time}. If one task takes longer than another, it's usually an indicator that the longer task requires more brain power. This measure is typically used when accuracy is virtually perfect, because events occur over time in the mind. Time is a much more sensitive measure than accuracy.
+			\end{itemize}
+
+			Time can be effectively used to determine the \textbf{decision time} for a particular task. For example, say you have two tasks:
+			\begin{enumerate}
+				\item Hit a button when you see a light.
+				\item Hit a button when you see a green light, but not when you see a red light.
+			\end{enumerate}
+
+			The response times are measured for both of these tasks. The average response time for the simpler task (task 1) is 150 ms, and it's 250 ms for the more complex task. By subtracting task 1 from task 2, we get 250 ms - 150 ms = 100 ms, which is the decision time.
+			\\ \\
+			Computers have made experiments like these much easier to conduct than before. Computers enable the ability to gather much more precise response times.
+			\subsubsection{Modified/Damaged Brains}
+				Patients with brain damage and transcranial magnetic stimulation (TMS) are both useful in assessing the role of various regions of the brain in various cognitive abilities.
+				\\ \\
+				Transcranial magnetic stimulation (TMS) allows researchers to artificially simulate brain damage by sending repeated electric pulses to an area of the brain.
+			\subsubsection{Human Brain Lesions}
+				Brain damage or damage simulated by TMS can be useful in determining how the brain works. There are typically two approaches researchers take:
+				\begin{itemize}
+					\item \textbf{What function is supported by a given brain region?} Patients with similarly-damaged brains are examined for common cognitive deficits.
+					\item \textbf{What brain regions support a given cognitive function?} People with realizable behavior deficits are examined for common brain damage.
+				\end{itemize}
+			\subsubsection{Brain Processing}
+				There is no direct means of knowing exactly what's happening in the mind. It can only be inferred or introspected. There are a couple of technologies that are commonly used to achieve this.
+				\begin{itemize}
+					\item \textbf{Functional magnetic resonance imaging (fMRI)}. fMRI specializes in providing a spatially-accurate view, however it is bad at timing brain activity. It works by indirectly measuring blood flow throughout the brain using magnets to distinguish between oxygenated and deoxygenated blood. fMRI machines are extraordinarily expensive -- they cost millions of dollars.
+					\item \textbf{Electroencephalography (EEG)}. EEG specializes in providing a temporally-accurate view, however it is bad at spatial representation (opposite of fMRI). It works by measuring electrical activity on the scalp. It's much faster than fMRI because electrical signals are instantaneous. EEG machines are not nearly as expensive as fMRI machines -- EEG machines cost about \$100,000. EEGs are used for event-related potential (ERP), which measures the brain's response that is a direct result of some event.
+				\end{itemize}
+		\subsection{Structure of the Brain}
+			\subsubsection{Brain Planes}
+				There are several different views of the brain.
+				\begin{itemize}
+					\item \textbf{Coronal Plane}. A vertical slice down the width of the brain.
+					\item \textbf{Horizontal Plane} (also known as an \textbf{Axial} view).
+					\item \textbf{Sagittal Plane}. A vertical slice down the length of the brain.
+					\item \textbf{Midsagittal Plane}. A slice down the very middle of the brain.
+				\end{itemize}
+				Take a look at the course slides (chapter 2, slide 9) for illustrations.
+			\subsubsection{Brain Regions}
+			There are many important brain regions, some of which concern cognitive psychology more than others. Most of the areas of interest for cognitive psychology lie in the \textbf{Forebrain} (the top portion of the brain). Some important regions are:
+				\begin{itemize}
+					\item \textbf{Cerebral Cortex}.
+					\item \textbf{Medulla oblongata}.  It regulates life support, and is the main transmission point between the body and the brain.
+					\item \textbf{Pons}. A neural relay, for the left body / right brain (yes, they're opposites!).
+					\item \textbf{Cerebellum}. Coordinates muscular activity, handles general motor behavior and balance.
+					\item \textbf{Corpus callosum}. Located at the center of the brain, it is where information is transmitted between brain hemispheres.
+					\item \textbf{Amygdala}. Responsible for encoding and retrieving the emotional aspects of an experience. Note that you can never encode and retrieve information in a vacuum -- context is always present.
+					\item \textbf{Hippocampus}. Acts as a key structure for memory (indexes memory). The hippocampus is to your memories as Google is to the web. It points you in the direction of what you're looking for.
+					\item \textbf{Thalamus}. Serves as the a major relay centre.
+				\end{itemize}
+
+				Subcordical regions vary less from individual to individual. They're much more specialized at particular tasks than other regions.
+			\subsubsection{Lobes of the Brain}
+				There are four main lobes in the brain:
+				\begin{itemize}
+					\item \textbf{Frontal lobe} (at the front of the brain), responsible for complex cognitive activities such as decision-making, speech, motor activity, and executive functioning.
+					\item \textbf{Parietal lobe} (at the top of the brain, but behind the frontal lobe), responsible for spatial operations, mathematics, and sensations.
+					\item \textbf{Temporal lobe} (below the frontal and parietal lobes), responsible for memory, recognition, and auditory abilities.
+					\item \textbf{Occipital lobe} (at the very back of the brain), responsible for visual perception.
+				\end{itemize}
+		\subsection{Localization of Function}
+			There is a lot history in cognitive psychology of claiming that functions are localized within the brain.
+			\\ \\
+			One theory was that different mental abilities were independent and autonomous functions that were carried out in different parts of the brain. The physical size of the regions was said to be related to the important of that particular cognitive function. They even made career suggestions based on bumps on your head, because bumps were said to indicate brain regions that were abnormally large. Obviously, this is not true, but localization might be!
+			\subsubsection{Faulty Assumptions}
+				\begin{itemize}
+					\item Brain location/region size $\ne$ power/capacity. Sometimes there is a loose relation between a brain region's size and its power, but it's not as black-and-white as it was described to be.
+					\item Functions are not independent. This is especially false in the cortex because the whole brain is involved at some level with all tasks, only some regions are more active than others.
+				\end{itemize}
+
+			\subsubsection{Localization of Language (Double Dissociations)}
+				Let's say you have two patients.
+				\begin{itemize}
+					\item A patient with damage to area $X$ is impaired for cognition $A$ but not for cognition $B$.
+					\item A patient with damage to area $Y$ is impaired for cognition $B$ but not for cognition $A$.
+				\end{itemize}
+
+				This is a \textbf{double dissociation}, where two patients' deficits correspond to the opposite deficit as each other.
+
+		\subsection{Brain Imaging Techniques}
+			Brain imaging is mostly done with fMRI today. Brain imaging today can measure healthy, normal brains, whereas in the past there was only an opportunity to analyze damaged brains.
+			\subsubsection{Functional Neuroimaging}
+				Electrical activity on the scalp can be measured. \textbf{Event-related potential} (ERP) is a derivative of EEG. We also use PET (Positron Emission Tomography) and BOLD (blood oxygenated level dependent fMRI) to analyze metabolism. PET scans are typically avoided because they involve injecting radioactive substances into your blood.
+				\\ \\
+				In analyzing the results from these scans, the same \textbf{subtractive logic} is used, as was used in determining decision time. We feed two stimuli to the subject, and subtract the more simplistic stimuli's results from the more complex stimuli's results, in order to get the delta.
+				\\ \\
+				Donders in 1868 foresaw BOLD fMRIs, despite the fact that technology was nowhere near that advanced back then.
+			\subsubsection{Cerebral Blood Supply}
+				Blood flow increases with neuron activity. Functional MRIs measure the difference in the magnetic properties of oxygenated and deoxygenated blood (BOLD). BOLD is slow because metabolic processes are slow. BOLD takes several seconds to take a measurement, which is relatively long.
+				\\ \\
+				fMRI machines can be setup with goggles for the subject or a prism to look through (at a screen) in order to show them stimuli for use in experiments. The same experiments are possible inside an fMRI -- the only difference is that the subject is lying in a large magnetic tube.
+				\\ \\
+				The level of brain activity in various regions is illustrated on results by a color scheme. The more yellow a region is, the more active it is. Red regions are less active. Results and statistics are often superimposed over an MRI image. Statistics could also be plotted, with the \% change being plotted against time.
+	\section{Perception} \lecture{January 17, 2013}
+		\textbf{Housekeeping Note}: the first exam is next Thursday (January 24, 2013), and it will contain 30 multiple-choice questions and 2 short answer questions.
+
+		\begin{itemize}
+			\item What our mind interprets is not a true representation of the world, but it's fairly close.
+			\item Our retinas are magical. They define edges and boundaries for the objects we see.
+			\item Fun fact: the retinal image is flipped left/right and upside down.
+			\item The brain fills in many gaps, and makes many assumptions. It simplifies our visual and auditory world, and helps to make sense of it.
+			\item The beauty of our cognitive architecture is we aren't actively aware of it.
+			\item The way we perceive size and other qualities depends on our past experiences with similar stimuli. Some inferences our brain makes based on past experiences can sometimes lead us astray.
+			\item Let's say you're looking at a book. The physical book is the \textbf{distal stimulus}, your retinal image of the book is the \textbf{proximal stimulus}, and your recognition of the object as a book is the \textbf{percept}.
+			\item The distal stimulus and percept are not precise copies of one another.
+			\item Perceived size, luminance, and color do not necessarily correspond in any simple way to the stimulus. Perception is not completely determined by the stimulus itself, it requires the perceiver's active participation.
+		\end{itemize}
+
+		\subsection{Bottom-Up Processes}
+			\begin{itemize}
+				\item Simple low-level functions that analyze for basic features, driven by stimuli.
+				\item Often referred to as \textbf{data-driven} or \textbf{stimulus-driven}.
+				\item Percepts are built from low-level features only.
+				\item There are three general classes of bottom-up processes: template matching, feature analysis, and prototype matching.
+			\end{itemize}
+
+			\subsubsection{Template Matching}
+				\begin{itemize}
+					\item An external stimulus is matched with an internal template (a stored pattern in memory).
+					\item A pattern is compared to all templates in memory and identified by the template that best matches it.
+					\item Works well in machine vision applications, such as parsing the bank account/routing numbers on the bottom of cheques or the UPC code from a barcode.
+				\end{itemize}
+
+				There are a few problems with template matching, however.
+				\begin{itemize}
+					\item It needs lots of templates. You'd need an infinitely large cranium.
+					\item It does not explain how we recognize new objects, or create new templates in the first place.
+					\item It does not work well with surface variation of the stimuli (i.e. stimuli that are similar but not similar on the surface \textendash{} such as varying writing styles).
+				\end{itemize}
+
+			\subsubsection{Feature Analysis}
+				\begin{itemize}
+					\item Objects are composed of a combination of \underline{features}.
+					\item Features are small/local templates that can be combined in many ways.
+					\item The mind first recognizes individual features, then it recognizes the combination of them at a deeper level.
+					\item \underline{Examples}: pandemonium, recognition by components (RBC; involves complex features), and word reading.
+				\end{itemize}
+
+				There are several advantages to feature analysis.
+				\begin{itemize}
+					\item It's more flexible than template matching.
+					\item It doesn't require nearly as many templates as in template matching (certainly not an infinite number of templates).
+				\end{itemize}
+
+				There is lots of evidence supporting feature analysis.
+				\begin{itemize}
+					\item \textbf{Visual search}. If you have a box filled with letters, most of which are curved letters, and you're asked to find the X in the box, it'll jump out quickly. If you're trying to find a target object within a group of objects, if the target object has the same basic features as the rest of the group, the search must happen \underline{serially} because the visual cortex can't process the question. The reaction time remains constant as the set size increases if parallel (automatic) processing is occurring, otherwise it grows linearly.
+					\item \textbf{Cortical feature detectors}. Recall these from the lecture on history.
+				\end{itemize}
+			\subsubsection{Prototype Matching}
+				\begin{itemize}
+					\item Matches a pattern to a stored, fuzzy representation called a \textbf{prototype}.
+					\item A prototype is an idealized representation of a class of objects.
+					\item Exact matching is not required.
+					\item When you pass the featural level, the representation is compared to a prototype.
+					\item The prototype for a class of objects differs from person to person based on their past experiences.
+					\item Back in the day, Palm Pilots used prototype matching to allow people to type letters by writing them out. They used fuzzy matching to match peoples' scribbles with the letters of the alphabet.
+				\end{itemize}
+		\subsection{Top-Down Processes}
+			\begin{itemize}
+				\item Often referred to as \textbf{theory-driven} or \textbf{conceptually-driven} processing.
+				\item Knowledge, theories, and expectations influence perception based on past experiences.
+				\item \underline{Examples}: context effect, and change blindness.
+			\end{itemize}
+
+			\subsubsection{Context Effect}
+				\begin{itemize}
+					\item Colors are influenced by their surrounding colors.
+					\item Dale Purves discovered that the way we perceive objects is determined by our historical success or failure with similar objects. This happens at the neural level as well.
+					\item A basic structure exists for the initial recognition, prior to any relevant experiences having occurred. This is the base case.
+					\item Lots of pruning occurs over time.
+					\item The gist of the context effect: context in which objects appear affects perception.
+					\item See \href{http://www.purveslab.net/seeforyourself/}{Dale Purves' website, Purves Lab} (read that out loud), for a demonstration of the context effect in action. In particular, take a look at the ``Brightness contrast with color: cube'' demo.
+				\end{itemize}
+
+			\subsubsection{Change Blindness}
+				\begin{itemize}
+					\item You won't perceive changes that don't change the meaning of what you're perceiving.
+					\item \underline{Flicker paradigm}: you need a break for the perceptual system to reset. You can't just go from the original image to a modified image (you'll notice the difference) \textendash{} you need a flicker between the images in order to not notice the difference.
+					\item We perceive objects for the gist of it. We don't perceive all of the little, minor details.
+				\end{itemize}
+		\subsection{Other Views of Perception} \lecture{January 22, 2013}
+			\subsubsection{Gestalt Approaches}
+				\begin{itemize}
+					\item Has a bit of a top-down feel to it.
+					\item Focuses on understanding how we come to recognize objects as forms.
+					\item Form perception: segregation of displays into objects and background (vase vs. two faces illusion).
+					\item It's a holistic view \textendash{} how we impose structure on objects.
+					\item It's very difficult to view the two faces and the vase in the illusion at the same time. You can force yourself to view one or the other, but seeing both at once isn't easy.
+					\item The goal is to derive Gestalt principles of perceptual organization.
+					\item \underline{Law of Pragnanz}: we tend to select the organization that yields the simplest and most stable shape or form, out of all possible interpretations.
+					\item There are various cues for simplification, including:
+						\begin{itemize}
+							\item No grouping.
+							\item Proximity (several groups of 2, for example).
+							\item Similarity of color.
+							\item Similarity of size.
+							\item Similarity of orientation.
+							\item Common fate (objects that move together).
+							\item Symmetry.
+							\item Parallelism.
+							\item Continuity.
+							\item Closure.
+						\end{itemize}
+					\item Once you perceive something in a certain way, it alters your perception of other things.
+					\item Combining cues can help you figure out what to focus on and what's considered to be less focus-worthy (the background).
+					\item Our perceptual system groups and categorizes objects. Our memory system is organized hierarchically and categorically.
+					\item The human perceptual system is very efficient at processing faces. It's very good at recognizing, perceiving, and remembering faces. You can also read a lot (including sincerity and intentions) from faces.
+					\item We impose facial structure on things that aren't faces (i.e. dents on Mars have some face-like features). Once you get the perception of a face, the other details fill themselves in \textendash{} it's a very holistic, top-down, and automatic process.
+					\item It takes longer to parse faces upside down because it is not how we naturally view faces \textendash{} all of a sudden, we must apply feature analysis. The process is more serial, focusing on details.
+				\end{itemize}
+
+			\subsubsection{Neuropsychology}
+				\begin{itemize}
+					\item Patients with brain damage are often studied.
+					\item The emphasis of these studies is on the preserved cognitive abilities and the deficits.
+					\item Helps to identify which brain regions are special purpose devices that have a particular function, such as face recognition.
+				\end{itemize}
+
+			\subsubsection{Visual Agnosia}
+				\begin{itemize}
+					\item \textbf{Visual agnosia} is the inability to identify certain objects by sight.
+					\item There are two types of visual agnosia:
+						\begin{enumerate}
+							\item \textbf{Apperceptive agnosia}, which is the inability to form stable (pre-semantic) representations of objects. This is a low-level processing deficit. The retina is okay, but there is damage to one side of the brain near the back of the head.
+							\item \textbf{Associative agnosia}, which is where percepts can be formed but cannot be identified (cannot achieve a correct semantic description). This type of agnosia is category-specific. This is a high-level cognitive deficit.
+						\end{enumerate}
+					\item \textbf{Prosopagnosia} is a type of associative agnosia where faces cannot be recognized.
+					\item No faces can be recognized, not even those of family members. Not even their own.
+					\item Cognitive processes that we're really good at, like face recognition, have a higher risk of damage because more cortical space is dedicated to them.
+					\item People with prosopagnosia use contextual cues (such as clothes, etc.) to identify people instead of being able to identify people based on their face.
+					\item Working with inverted faces is easier for people with prosopagnosia because their detail/feature analysis processes are more tuned and efficient than those of people who do not have prosopagnosia.
+					\item There is evidence that there is still covert, unconscious recognition of these faces in people with prosopagnosia, however. The unconscious feeling of familiarity is called a GSR (a \textbf{Galvonic Skin Response}).
+					\item You might have a similar experience with a GSR when you encounter someone out of their usual context.
+					\item There is dedicated neural tissue in the brain for face processing, called the Fusiform cortex, also known as the \textbf{Fusiform Face Area} (FFA). This neural tissue is located in the temporal lobe of the brain.
+					\item We tend to focus on the eyes, but people with prosopagnosia focus on less diagnostic features like mouths, etc. There's a tendency for them to use less distinguishable features to discriminate, which obviously isn't terribly effective.
+					\item Why is this information stored in the temporal lobe? So it can be used in close proximity to other functions.
+				\end{itemize}
+			\subsubsection{Capgras Syndrome}
+				\begin{itemize}
+					\item \textbf{Capgras Syndrome} is the flip of prosopagnosia: you can recognize the person but you don't get the unconscious sense of familiarity.
+					\item Everyone feels like an impostor, even people who are very close.
+					\item There was a woman who suffered from Capgras Syndrome who claimed to have over 80 husbands because they all felt like impostors who had been replaced.
+					\item People with Capgras Syndrome are not prosopagnosic. They just don't have any GSRs occurring.
+					\item They have a delusional feel.
+					\item One explanation is that it results from an attempt to reconcile the lack of GSR response with the fact that they know the person looks identical to someone they know.
+					\item Some people believe the Fusiform area is actually reserved for our most advanced area of expertise, which just happens to be face processing.
+					\item Prosopagnosia is where you can't sense overtly, but you can sense covertly. Capgras Syndrome is the opposite: you can sense overtly, but not covertly.
+				\end{itemize}
+	\section{Attention} \lecture{January 29, 2013}
+		\begin{itemize}
+			\item There is a ton of sensory information available to you, but you only think about a very small portion of it.
+			\item The gorilla video: where you're asked to count the number of passes between the players wearing white. A gorilla passes through the scene. 42\% of people did not see the Gorilla in the original study. This particular video was an updated video where in addition to the Gorilla, a player left the game and the curtain behind the players changed from red to gold. Note that white-shirted people were used to avoid confusion between black shirts and the gorilla.
+			\item If the task is harder, attentional focus is stronger, which means there is a higher chance of missing the gorilla.
+			\item We only perceive that which we attend to.
+			\item How much of this information is actually processed? Attentional research became important during the cognitive revolution because humans have limited mental capacity.
+			\item We can store $7 \pm 2$ bits of information in our consciousness. There is a lot more information available than that.
+			\item How can we filter some information out in order to focus on other things? How much attention do we spend on out-of-focus things? How do we decide what to pay attention to?
+		\end{itemize}
+
+		\subsection{Selective Attention}
+			\begin{itemize}
+				\item Attention comes before perception.
+				\item Attention determines which distal stimuli get turned into a percept.
+				\item Sensation is not the same as perception.
+				\item We're going to look at early selection and late selection, however we aren't making any claims about which is right and which is wrong.
+				\item The key difference between early and late selection is where in the system the attention filter occurs. These are very debatable models.
+				\item The thing you try not to do is the thing that is the hardest not to do (try not to think about blinking your eyes, for instance). This is an ironic process of cognition.
+			\end{itemize}
+
+			\subsubsection{Early Selection}
+				\begin{itemize}
+					\item The filter occurs after physical characteristics, but before meaning.
+				\item \textbf{Broadbent's Filter Model}: selection is early because it is done on the basis of basic auditory features. The filter must happen very early on.
+					\item False memories: because we filter out a lot of details, you may witness a crime but not pick up many details other than ``gun'' because your attentional focus was so strong. Our mind then tries to fill in the gaps with false memories.
+					\item \textbf{Dichotic listening task}: tell people to focus on something (such as number of passes), which leaves no room to focus on something you should be ignoring (such as the gorilla). Given an audio stream, ask the subject to repeat the audio that was sent to one ear only. This allows researchers to see how much processing is occurring for the contents of the other ear.
+					\item \textbf{Cocktail party effect}: if one's own name is in either in- or out-of-focus content, attention will be diverted to hear more. Certain things (such as our own names) have lower thresholds than other content, in order to divert our attention. The filter is not occurring just at the physical level.
+					\item \textbf{Semantic leakage}: story switched from shadowing one ear to the other as the meaning continued on the other, unattended ear. You're picking up meaning, to some degree, in the unattended ear.
+					\item \textbf{Associations learned unconsciously}: shock was paired with city names. Unattended city names in the unshadowed ear triggered a GSR response to those city names but not control words (even new city names).
+					\item \textbf{Treisman's Attenuation Model}: 2 critical stages.
+						\begin{enumerate}
+							\item \textbf{1st stage: ``attenuator'' instead of a ``filter''}: unattended messages are tuned down with attenuator, instead of by a filter. Analyzes for physical characteristics, language and meaning. Analysis is only done to the necessary level to identify which message should be attended. Unattended messages are attenuated.
+							\item \textbf{2nd stage: dictionary unit}: contains stored words that have thresholds. Important items, such as your own name, have lower thresholds and thus even a weak signal can cause an activation. We all have different dictionary units and thresholds based on personal experiences and what matters to us. This explains things like the cocktail party effect, since our own name has a lower threshold.
+						\end{enumerate}
+				\end{itemize}
+
+			\subsubsection{Late Selection}
+				\begin{itemize}
+					\item All information (both attended and unattended) is processed for meaning, and activates the corresponding representation in long-term memory (LTM).
+					\item Selection of what to pay attention to happens during the response output stage.
+					\item Human limitation for processing two streams of information lies in making a conscious response to each stimuli.
+					\item The filter occurs very late. Meaning is determined for all information before the filtering process occurs.
+				\end{itemize}
+
+		\subsection{Automaticity}
+			\begin{itemize}
+				\item Intimately tied to attention.
+				\item Automated processing does not require attention.
+				\item Word reading is thought by many to be automatic.
+				\item Over time, the attentional capacity required for a given task decreases. At first, you think about the mechanics of playing a guitar, for instance, but you stop thinking about the mechanics as time progresses.
+				\item Down side: automaticity could interfere with other tasks. If a word is presented, you cannot prevent yourself from reading/processing the word for meaning. It's very difficult to stop an automatic process from happening.
+				\item \textbf{The STROOP task}: a series of color bars (or color words) are presented in conflicting colors. The task is to name the color of the ink of each item as quickly as possible. The size of the STROOP effect increases as you become more proficient at that task.
+				\item Capacity limitations ($7 \pm 2$ pieces of information) are only applicable to tasks that require conscious attention, and do not apply to automatic processes.
+				\item Practicing a task leads it into being an automatic process over time.
+				\item \textbf{Controlled processing} is serial, requires attention, has a limited capacity, and is under conscious control.
+				\item \textbf{Automatic processing} is without intention, with no conscious awareness, does not interfere with other mental activities, runs in parallel, and does not constrain capacity.
+			\end{itemize}
+		\subsection{Disorders of Attention} \lecture{January 31, 2013}
+			\begin{itemize}
+				\item Visual neglect is a disorder of attention. It's also known as heavy neglect, hemispatial neglect, or unilateral neglect.
+				\item When the right parietal lobe is damaged, which effects your perception of your left vision.
+				\item The visual components are there, but they cannot internally divert attention to the object.
+				\item The ability to attend to stimuli and ability to divert attention is affected.
+				\item They can still see everything if an external cue helps them along.
+				\item The left hemisphere has less specialization, which means it is not affected nearly as much as the right hemisphere.
+				\item Visual neglect is an attentional deficit rather than a sensory deficit.
+				\item May also neglect contralateral side of the body, even to the point of denial.
+				\item \textbf{Line bisection}: a patient is asked to bisect the center of a line. Normal people will hit the middle (almost; there is a slight right bias). Affected people would be far to the right because they see the line as being shorter. This is a test that's often used in diagnosis of visual neglect.
+				\item If you had visual neglect, you wouldn't be able to drive.
+				\item No two patients will have the \emph{exact} same behavior, because their lesions differ.
+				\item Anton was a patient who started to attend to more details as time went on, as he was recovering from his stroke. This illustrates that different patients can have varying degrees of severity.
+				\item We know that this is an attention disorder because you can point out visual inaccuracies and they'll notice them at that point. They just cannot notice these visual inaccuracies without an external cue.
+				\item \textbf{Semantic priming}: saying the word ``doctor'' and words like ``nurse'' will also be activated to some degree. A word in a neglected field will not be noticed, however it can prime responses to words in the attended field.
+				\item Their visual perceptual system is not broken! This is purely an attention disorder.
+				\item People with heavy neglect need to be conscious of their disorder but attention is generally unconscious, so this is hard to do.
+				\item They do not have conscious (explicit) knowledge of information in neglected fields but they do show some unconscious (implicit) knowledge.
+			\end{itemize}
+
+		\subsection{Attention in the Real World}
+			\begin{itemize}
+				\item We have finite attentional abilities.
+				\item Talking on a cell phone, or similar tasks, divert some of our finite attentional abilities from our primary focus.
+				\item Listening to a radio broadcast is not very distracting. However, talking on a cell phone increases the probability of errors and increases response time (which isn't good in situations like driving).
+				\item Why are cell phone calls bad? Two reasons: you have to hold the cell phone, and if you were instead talking to other people in the car, those people would be mindful of the situation whereas people on the other end of the line are not.
+			\end{itemize}
+
+	\section{Memory Structures}
+		\begin{itemize}
+			\item Short-term memory records 20 seconds worth of information. If this information is rehearsed a sufficient amount, it'll be moved to long-term memory.
+			\item Episodic memories form in long-term memory starting at 4-5 years old. Semantic meanings (like word meanings) are learned earlier. You need a developed sense of self for episodic memories.
+		\end{itemize}
+
+		\subsection{Sensory Memory}
+			\begin{itemize}
+				\item Sensory memory represents about one second of information. It's very brief, and only handles basic percepts.
+				\item We have a sensory store for \emph{each} modality (1 second for iconic/visual and 4-5 seconds for echoic/auditory).
+				\item Sterling wondered how long information is stored in sensory memory, and how much we can store in sensory memory. He presented subjects with a $3 \times 4$ matrix of letters to remember, with two recall conditions: whole report and partial report.
+				\item If you take light and spin it in a circle, it appears to be a circle, not a single point, because of sensory memory.
+				\item Multiple-choice exams are partial reports. They're cueing 30 questions out of (say) 500 possible questions.
+				\item Full reports fail because sensory memory fades. Partial reports allow you to report before the information fades because there is less information to report.
+				\item In real experiments, more trials acts as a way to eliminate the bias of people guessing rather than truly remembering.
+				\item The $7 \pm 2$ pieces of information fact only applies to short-term memory, not sensory memory.
+				\item Sensory memory is bigger than short-term memory. It's just shorter.
+				\item Have you ever been in a situation where someone asked you a question, and you say ``what?'', but then answer the question a second later.
+				\item Information will be wiped out if something takes their place. This is known as the \textbf{masking effect} for iconic percepts, and the \textbf{suffix effect} for echoic percepts.
+				\item Iconic (visual) memory consists of < 1 second of information, containing the visual field and the physical features within it.
+				\item Echoic (auditory) memory consists of 4 - 5 seconds of information, less than iconic memory, and contains categorical contents.
+			\end{itemize}
+		\subsection{Short-Term Memory} \lecture{February 5, 2013}
+			\begin{itemize}
+				\item Short-term memory is often abbreviated as STM.
+				\item STM is your active consciousness at a particular point in time.
+				\item You can keep track of $7 \pm 2$ bits of information in STM, according to George Miller.
+				\item Short-term memory is where the real, conscious work happens.
+				\item Short-term memory is similar to RAM in your computer (the number of active programs you can have is similar to your memory span).
+				\item It's important to note that it's really $7 \pm 2$ chunks of information. N-F-L-C-B-S-F-B-I-M-T-V is hard to remember, but NFL-CBS-FBI-MTV is easy to remember.
+			\end{itemize}
+
+			\subsubsection{Forgetting in Short-Term Memory}
+				\begin{itemize}
+					\item If you don't use information, it'll fade away.
+					\item There are two theories in terms of how forgetting works in STM. Both are likely occurring in some way.
+				\end{itemize}
+
+				\begin{enumerate}
+					\item \textbf{Trace decay theory}. This is the automatic fading of the memory trace as time goes on. An experiment you could run to test this is to present some letters to a subject, then ask them to count backwards by 3s from some number (for some period of time), then to recall the letters. Due to trace decay, they may have trouble recalling the letters.
+					\item \textbf{Interference theory}. This is the disruption of the memory trace by other traces, where the degree of interference that occurs depends on the similarity of the two memory traces (how similar the old \& new memories are). There are two kinds of interference:
+						\begin{itemize}
+							\item \textbf{Proactive interference} is where early information makes it hard to encode new information. This is the type of interference that occurs in your mind from focussing on several different classes at once, for instance.
+							\item \textbf{Retroactive interference} is a more powerful kind of interference where new information makes it difficult to retrieve old information. This has a bigger impact on long-term memory than proactive interference does.
+						\end{itemize}
+
+						A modified experiment could be used to suggest that proactive interference is occurring. You ask the subjects to remember and recall letters, with intervals between the various trials of the experiment. There is a control group that is given three letters to remember every time. The experimental group has to remember letters for all trials except the last. Switching the last trial like this causes a release from proactive interference! With the control group, their performance suffered as the number of trials increased. However, the experimental group jumped back up to maximum performance on the final trial, since it was a different task that did not experience proactive interference. This is pretty compelling evidence that proactive interference is actually occurring.
+				\end{enumerate}
+
+		\subsection{Working Memory}
+			\begin{itemize}
+				\item Some researchers (Baddeley and Hitch) questioned whether the notion of short-term memory was adequate, or too simplistic.
+				\item They claimed that rehearsing digits out loud interfered with reasoning and comprehension tasks, but the degree of impairment was far from dramatic. This task is known as the syntactic verification task. The percentage of errors did not change, but the reasoning time took longer and longer.
+				\item The digit task takes up only one subsystem and the reasoning \& comprehension tasks are free to use the other (unused) subsystems. This suggests that short-term memory is not a unitary system.
+				\item We really have a central executive, a visuospatial sketch pad, and a phonological loop. The central executive coordinates resources between the visuospatial subsystem and the phonological subsystem. The visuospatial subsystem handles visual information, and the phonological loop handles articulation and other verbal information.
+				\item The visuospatial sketchpad and the phonological loop are \underline{functionally independent} systems.
+				\item You can do two different tasks at the same time if one is verbal and one is visual.
+				\item It's very hard to stop words from their obligatory access to the phonological loop. For example: it's hard to tune out music, TV, or a boring lecture, to study.
+				\item A sentence is shown on the screen, and read aloud. It's then hidden. You're asked how many words there were. Both of these tasks use the phonological loop, so you offload one task (counting, in this case) to something visual, by counting on your fingers. If you didn't do this, this task would be very difficult (it'd have to be run serially).
+				\item People have different strategies for encoding information (visually, through repetition, etc.).
+				\item If these systems are independent (as they are), then articulatory suppression (repeating nonsense like ``the the the the'') should disturb memory for linguistic information but not for visual information. Saying words out loud makes it harder for you to rehearse information in your head.
+				\item The act of saying something out loud makes it more distinctive, which means it's generally easier to retrieve that information from memory because there is a larger variety of cues for that piece of information (your own voice saying it aloud acts as a cue).
+				\item It's generally easier to retrieve information that is more distinctive because cues are more unique to that piece of information, and aren't shared across multiple pieces of information in memory.
+			\end{itemize}
+
+		\subsection{Long-Term Memory}
+			\begin{itemize}
+				\item There is much evidence to show that we do actually have separate systems for working memory and long-term memory.
+				\item Episodic and semantic memories (etc.) are stored in long-term memory.
+				\item Long-term memory is akin to a hard drive in a computer. Both store information indefinitely. Information in LTM is stored forever, but it becomes harder to retrieve the information over time.
+				\item Our conscious memories are also a reconstructive process.
+				\item \textbf{Serial Position Effect}:
+					\begin{itemize}
+						\item You're given 20 items to recall.
+						\item You'll remember the last couple of items because of the \underline{recency effect}. These items are stored in sensory or working memory, and will be wiped out over time (i.e. with a delay between the items being presented and the time to recall them).
+						\item You'll also remember the first few items because of the \underline{primacy effect}. These items are stored in long-term memory and can be wiped out through subvocal rehearsal.
+					\end{itemize}
+				\item You can have deficits in one memory system but not another. \lecture{February 7, 2013}
+				\item \textbf{Clive Wearing}:
+					\begin{itemize}
+						\item Has a severe case of amnesia because his temporal lobes are damaged (which contains the hippocampus, etc.). These are the structures that are involved in remembering and inserting new memories.
+						\item He has moment-to-moment consciousness.
+						\item He always feels like he's awaking afresh, all the time.
+						\item He writes a diary / log of things that happen, to act as long-term memory. However, he doesn't believe the things he wrote earlier so he crossed them out. He thinks he was unconscious when he wrote earlier log entries.
+						\item His short-term / working memory is intact, but his episodic long-term memory is not working. He can still play piano well, so his procedural memories are intact.
+					\end{itemize}
+				\item Episodic memories are stored all around the cortex.
+				\item Retrieval is governed by the hippocampus, which acts as an indexing system.
+				\item The hippocampus can be wiped out but memories are still stored. They just can't be retrieved.
+				\item People with amnesia do not suffer a primacy effect because they do not have long-term memory.
+				\item The capacity of long-term memory is very large or possibly infinite. It goes beyond what we can actually measure.
+				\item Long-term memory is coded semantically (by meaning). The concept of an apple is connected to seeds, fruit, pie, worm, food, pizza, and red. Some of those concepts are also connected to each other, too.
+				\item Long-term memory is a permastore, even without use. Retrieval cues just start failing over time with no use.
+				\item There are different types of retrieval. Recognition is when you're asked ``do you recognize X?'', which provides a retrieval cue. Recall is when you're asked ``list all of the words you saw.'', which clearly is a harder task and therefore has worse performance than recognition.
+				\item Savings of learning is the ability to quickly relearn something.
+				\item Forgetting memories typically is a very rapid dip, then it levels off.
+				\item Interference is the main cause of forgetting in long-term memory. Concepts get difficult to retrieve as competition builds for certain retrieval cues (having multiple usual parking spots, for instance).
+				\item The more cues you have for the same target, the easier it is to remember / retrieve it. The more distinct these cues are (from cues for other concepts), the easier it becomes.
+				\item The deeper you process something (processed for meaning), the more meaningful it's going to be, the easier it'll be to retrieve later.
+				\item Encoding can occur through two different types of rehearsal.
+					\begin{itemize}
+						\item \textbf{Maintenance rehearsal}: repetition. Repetition allows you to maintain or hold information without transferring it into deeper code (deeper meaning). This is not a very effective encoding method.
+						\item \textbf{Elaborative rehearsal}: elaborate on meaning. This transfers the information to deeper code, and provides richer multimodal codes as a result. It makes the memory more unique and therefore easier to retrieve.
+					\end{itemize}
+				\item \textbf{The Generation Effect}: people are much better at remembering things that came from within. You're reliving the experience as part of the retrieval process.
+				\item \textbf{Encoding Specificity Principle}:
+					\begin{itemize}
+						\item ``Recollection of an event, or a certain aspect, occurs if and only if properties of the trace of the event are sufficiently similar to the retrieval information.'' \textendash Endel Tulving.
+						\item More cues at encoding time means you'll store a more accurate representation.
+						\item This principle is why witnesses to crimes are often taken to visit the scene of the crime again.
+						\item There is a \emph{slight} benefit to writing a test in the same room you learned it in.
+					\end{itemize}
+				\item \textbf{Context Dependent Memory}: information learned in a particular context is better recalled if recall takes place in the same context. Memory is dependent on the context it was encoded in.
+					\begin{itemize}
+						\item \textbf{Location}: a perfect dissociation was seen in the scuba divers recall experiment (studying words underwater, then asked to call on land and underwater \textendash{} underwater performance was better).
+						\item \textbf{Alcohol}: information that was learned while intoxicated was retrieved well when intoxicated again. Information learned while intoxicated but retrieved while sober was the worst case.
+						\item \textbf{Personality}: an individual with dissociative identity disorder was asked to learn and recall a list of words in each of four personalities. If the study personality matched the subject's personality, their own personality will have floored performance (less errors) and other personalities were had ceiling performance (more errors). Jonah was the dominant personality that did better than others, with ``average'' results for all personalities types (not great at any, and not terrible at any).
+					\end{itemize}
+			\end{itemize}
+	\section{Memory Processes} \lecture{February 12, 2013}
+		\subsection{Reconstructive Nature of Memory}
+			\begin{itemize}
+				\item Memory is an active reconstructive process. As we recall memories, we relive those experiences and fill in gaps (as before). Memories are not accurate replays.
+				\item Information is processed for the gist of it (the meaning). The same goes for information in memories.
+				\item Bartlett created an experiment where a story was read to participants, then they were asked to recall the story at a later point in time. As time increased, people reported aspects of the story in a culturally consistent manner. That is, they inserted details into the story without being aware that they were doing so.
+				\item A \textbf{schema} (pluralized as \textbf{schemata}) is a framework for organizing memory.
+				\item Last class, the prof listed a bunch of words that were associated with the word ``window'', but he did not say ``window'' as part of the list. However, half the class \emph{thought} he said ``window'' as well. This is an example of how easy it is to create false memories.
+				\item Your mind will fill in gaps in order to make sense or to make it a better story.
+				\item 80,000 court cases a year occur in the United States where eyewitness testimony is the only evidence against the accused.
+				\item Eyewitness testimony is very convincing (persuasive), however the validity of those memories can be highly suspect based on a few variables.
+					\begin{itemize}
+						\item Memory can integrate suggested details. For example, if you ask the question ``about how fast were the cars going when they \_\_\_\_\_ each other?'', the answer distribution will vary depending on what word is inserted. If you use the word like ``smashed'', people will report higher speeds and if later asked about whether there was broken glass, they're more likely to say yes. If instead you used the word ``contacted'', it sounds less threatening so reported speeds will be lower and less people will report broken glass.
+						\item Leading questions (misleading questions) can affect recall of the event.
+					\end{itemize}
+				\item Inconsistent questions can also serve to confuse. Let's say you were given a scene to memorize containing a car pulling up to a yield sign. If you're then asked ``did another car pass while it was stopped at the \underline{stop} sign?'', that's confusing (inconsistent) because it was actually a yield sign.
+				\item We're not sure if inconsistent questions replace or modify memory, or if they just add additional interference to your memories.
+				\item True memories can activate different areas of the brain than false/deceptive memories. In theory, we may be able to use an fMRI as a lie detector because of this. The hippocampus has the same activation pattern for both, but the parahippocampal gyrus has different activation patterns for true memories than for false memories. As far as the person is aware, these are all real memories \textendash{} they don't consciously realize that some memories are false, but the brain knows.
+			\end{itemize}
+
+		\subsection{Amnesia}
+			\begin{itemize}
+				\item Amnesia is caused by damage to the hippocampal system (which is composed of the hippocampus and amygdala) and/or the midline diencephalic region. This damage could be caused by a head injury, stroke, brain tumor, or a disease.
+				\item There are two types of amnesia:
+					\begin{itemize}
+						\item \textbf{Anterograde amnesia} is the inability to form new memories. It affects long-term memory but not working memory. Memory for general knowledge remains intact, as is skilled performance. Anterograde amnesia occurs for a period of time after a particular event. The movie ``50 First Dates'' is about someone who cannot encode episodic memories.
+						\item \textbf{Retrograde amnesia} is the loss of memory of past events. It is always present with anterograde amnesia. It doesn't affect overlearned skills (such as general social skills and language skills), or skill learning (like a minor tracing task). The retrograde period is a period before a particular event that you cannot remember. Over time, this period decreases in length, but the older memories come back first.
+					\end{itemize}
+				\item Anterograde amnesia will also have retrograde amnesia in every case, but you can have retrograde amnesia without having anterograde amnesia.
+				\item You can find people with damaged episodic memory, but intact semantic memory. The reverse is also true, but it's much rarer.
+				\item Participants were given lists of words followed by four memory tasks:
+					\begin{itemize}
+						\item Free recall (explicit task).
+						\item Recognition (explicit task).
+						\item Word fragment identification (e.g. participants had to identify visually degraded words) (implicit task).
+						\item Word stem completion (e.g. complete the stem: bo\_\_) (implicit task).
+					\end{itemize}
+					The control group did better for the explicit tasks, but the results were fairly even for the control group and the amnesia group for the implicit tasks. Why is this? With explicit tasks, the participant would have to place themselves in a situation consciously, which is harder for amnesics because they can't remember those situations.
+				\item Explicit tasks are tasks that involve directly querying memory, whereas implicit tasks indirectly assess memory.
+				\item Amnesia causes a deficit with explicit memory but not implicit memory.
+				\item Tulving claimed that long-term memory consists of two distinct but interactive systems:
+					\begin{itemize}
+						\item \textbf{Episodic memory} is memory for information about one's personal experiences. These memories have a date and time. For example: your memory of where you were on September 11, 2001.
+						\item \textbf{Semantic memory} is general knowledge of language and world knowledge. For example: shoes go on your feet.
+					\end{itemize}
+				\item Semantic memories may have an episodic trace, which can be lost over time. For example: you may have an episodic memory of the circumstances where you learned that Ottawa is the capital of Canada.
+				\item If episodic memories are ``lost'', they're still there but the indexing system is unavailable, making the episodic memories inaccessible.
+				\item Episodic and semantic memory systems are dissociated in the brain.
+				\item There is slightly more activation in the temporal lobes for semantic memories. There is \emph{much} more activation in the frontal lobes for episodic tasks.
+				\item A patient had a motorcycle accident which caused damage to his frontal and temporal lobes (including the left hippocampus). His intellectual functioning (intelligence, memory span, language, and normal vocabulary) was preserved, as was his semantic memory. However, he has lost his episodic memory, so he can't remember his brother's death or when he broke his own arm.
+				\item A woman with encephalitis had damage to her front temporal lobes. She lost her semantic memory, so she forgot the meanings of common words and cannot recall basic attributes of objects. However, her episodic memory is fully intact. She can still remember her wedding, honeymoon, her father's death, and she can produce many details about events like those.
+			\end{itemize}
+
+		\subsection{Models of Semantic Memory}
+			\begin{itemize}
+				\item Collins and Quillian suggested a hierarchical semantic network model consisting of cognitive economy and semantic networks.
+				\item \textbf{Cognitive economy} aims to minimize redundancy. Properties and facts are stored at the highest level possible in a hierarchy.
+				\item \textbf{Semantic network} is the concept that our semantic memories are stored as a series of nodes which are connected by pointers or links.
+				\item The semantic network has three levels: superordinate, basic, and subordinate. For example: the concept of an ``animal'' is stored at the superordinate level, ``bird'' and ``fish'' are at the basic level, and ``canary'', ``ostrich'', ``shark'', and ``salmon'' are at the subordinate level.
+				\item Research supporting semantic networks tests reaction times. The theory is that people should be faster at verifying statements whose representations spanned fewer levels than statements whose representations spanned two levels. For example: ``a canary can sing'' should be faster than ``a canary can fly'' since the ``sing'' property is at the canary (subordinate) level and the ``fly'' property is at the bird (basic) level.
+				\item There is a problem with these reaction time experiments, though: the \textbf{typicality effect}. We're faster at responding to ``a robin is a bird'' than to ``a turkey is a bird'', even though they span the same distance on the semantic network. The concept of a robin is somehow more closely associated with the concept of bird than turkey is.
+				\item Collins and Loftus suggested \textbf{spreading activation theory}, which does not consist of a hierarchy. Instead, concepts are represented in a web-like fashion, where each concept is represented by a node. Activation spreads between related concepts.
+				\item Evidence in support of spreading activation theory comes from priming experiments. People are shown two items on a trial and asked to decide if the second item spells a word. This is a \textbf{lexical decision task}.
+			\end{itemize}
+
+		\subsection{Memory \& Studying}
+			\begin{itemize}
+				\item \textbf{The Working Memory Model}:
+					\begin{itemize}
+						\item Since we have two functionally independent subsystems (the visuospatial sketchpad and the phonological loop), encoding information visually (if possible) would eliminate many distractions.
+						\item Studying in silence is best because studying typically involves the phonological loop. Instrumental music is also okay, although it does have some negative effects. Vocalizations of any kind are bad and will distract you.
+					\end{itemize}
+
+				\item \textbf{Levels of Processing}:
+					\begin{itemize}
+						\item Put things into a meaningful context because meaning is how information is stored and retrieved in long-term memory.
+						\item Put concepts into your own words in order to increase meaning.
+					\end{itemize}
+
+				\item \textbf{The Generation Effect}:
+					\begin{itemize}
+						\item The act of generating lecture notes is more beneficial than reading them afterwards.
+						\item Not taking your own lecture notes will come back to bite you.
+						\item After writing your own notes, writing a test is really just doing what you've done before.
+						\item This is perhaps the most important principle for studying.
+					\end{itemize}
+
+				\item \textbf{The Encoding Specificity Principle}:
+					\begin{itemize}
+						\item Testing in the same room you learned the content in can benefit you.
+					\end{itemize}
+
+				\item \textbf{Distributed Practice}:
+					\begin{itemize}
+						\item It's better to learn information in many small periods rather than one large period.
+						\item The retention level for distributed studying is much higher (especially over time) than massed studying.
+					\end{itemize}
+			\end{itemize}
+	\section{Concepts \& Categorization} \lecture{February 26, 2013}
+		\begin{itemize}
+			\item We categorize things into sections, but many things belong in multiple sections.
+			\item The categorization of concepts is the grouping of complex objects.
+			\item People used to have a richer understanding of the world around them because the technology was simpler. Today, if you ask someone how a helicopter works (for instance), you'll get a very high level overview.
+			\item Today, people rely on other sources to augment their less-rich understanding. The Internet is a large source for this off-loading.
+			\item Off-loading increases with age. Memory processes get worse as you age, but you get more efficient at off-loading.
+			\item Doctors use categorization to find brain tumors and make diagnosis.
+			\item ``Experts'' in many industries are really just people who are great at categorization.
+			\item Categorization fits in the mental model as part of long-term memory.
+			\item Categorization is how our semantic memory system is organized. It's web-like.
+			\item We study categorization because much of human cognition involves interpreting a large variety of sensory inputs in terms of a finite number of meaningful concepts.
+		\end{itemize}
+
+		\subsection{Definitions}
+			\begin{itemize}
+				\item A \textbf{concept} is defined as a mental representation that is used for a variety of cognitive functions (including memory, reasoning, language) and is storing as much knowledge as is typically relevant for that object, event, or pattern.
+				\item \textbf{Categorization} is the process by which things are placed into groups (which we call categories).
+				\item A \textbf{category} is nothing more than a group of similar objects or entities.
+			\end{itemize}
+
+		\subsection{Functions of Categorization}
+			\begin{itemize}
+				\item Categorization allows you to understand individual cases that you haven't seen before. You can make inferences about these cases.
+				\item It reduces the complexity of the environment by organizing everything in a logical way.
+				\item It requires less learning and memorization. It reduces redundancy.
+				\item It provides a guide to appropriate action. For example: you may want to be aware of the difference in appearance between a dolphin and a shark before going for a swim.
+			\end{itemize}
+
+		\subsection{Classical View}
+			\begin{itemize}
+				\item Category membership is determined by a set of defining properties.
+				\item These properties are necessary and sufficient properties. That is, all properties must be present.
+				\item Example: the ``bachelor'' category may have the defining properties ``unmarried'', ``human'', ``adult'', and ``male.''
+				\item Example: the ``triangle'' category may have the defining properties ``three-sided'', ``planar'', and ``geometric figure.''
+				\item Does the Pope have the properties of a bachelor? Yes. However, he doesn't belong in the bachelor category. This is a flaw in the classical view.
+				\item The classical view works quite well for simple objects like the triangle. There is no triangle that is more (or less) typical than any other triangle.
+				\item Let's say we have a ``dog'' category, with one of the defining properties being ``four legs.'' What happens if the dog somehow loses a leg? Does it lose its dog-ness? It shouldn't.
+				\item The classical view makes two assumptions: concepts are not representations of examples, they are a list of characteristics, and membership in a category is all or none.
+			\end{itemize}
+
+			\subsubsection{Problems with the Classical View}
+				\begin{itemize}
+					\item There are no defining features for many natural-kind categories, such as games. Nothing is common among all games, but there are similarities between certain games.
+					\item Typicality is a problem. People judge members of a category as having a different grade in membership. For example: a tomato will have a lower grade in fruit membership than an apple, because an apple is more typically thought of as a fruit. The classical view assumes there is no graded membership \textendash{} all members are created equal.
+				\end{itemize}
+
+		\subsection{Prototype View}
+			\begin{itemize}
+				\item A prototype is an idealized representation of a class of objects.
+				\item It includes features that are \emph{typical} rather than necessary or sufficient. We no longer need all characteristics to be present.
+				\item A prototype is formed by averaging out the characteristics of category members we have seen in the past.
+				\item Members can have graded membership \textendash{} some members can be more typical than others.
+				\item Chairs all look different (have no single defining qualities), but they generally have a set of characteristics. There are some exceptions, however, which is why the prototype view beats the classical view in this sense.
+				\item Family resemblance is another area where the prototype view shines. Family members look similar but they don't all have one characteristic that is exactly the same. Some family members share some characteristics of some other family members, but those characteristics aren't shared among \emph{all} family members.
+				\item Overlapping features between members of a category predict typicality.
+				\item Example: fruits.
+					\begin{itemize}
+						\item Apple: red, \underline{sweet}, crunchy, \underline{round}.
+						\item Orange: juicy, \underline{sweet}, \underline{round}, soft.
+						\item Coconut: hard, brown, white inside, tropical.
+					\end{itemize}
+				\item Example: furniture.
+					\begin{itemize}
+						\item Chair: \underline{sit on}, legs, \underline{armrests}, \underline{upholstery}.
+						\item Sofa: cushions, \underline{sit on}, \underline{upholstery}, \underline{armrests}.
+						\item Rug: stand on, woven, soft, flat.
+					\end{itemize}
+				\item The prototypicality of a category member predicts the performance on a number of tasks.
+				\item For instance, if you were asked to identify if a given concept is included in a category (``is X a fruit?''), you would perform worse on less typical members. You'd respond slower to ``is tomato a fruit?'' than ``is apple a fruit?''.
+				\item Concepts will still have features in common with other categories as well, just less features in common than the main category it's considered to be part of.
+			\end{itemize}
+
+			\subsubsection{Problems with the Prototype View}
+				\begin{itemize}
+					\item Categories are variable. The concept of a ``game'' may differ depending on you \textendash{} it may mean paintball, online poker, or basketball, for instance.
+					\item Typicality is not fixed. Typicality varies as a function of the context it's in. A robin may seem typical in the context of a park and less typical in the context of a farm or backyard.
+				\end{itemize}
+
+		\subsection{The Exemplar View}
+			\begin{itemize}
+				\item Concepts are composed of previous instances (examples).
+				\item Categorization occurs by comparing the current instance with previous instances that are stored in memory.
+				\item There are no fuzzy prototypes being stored in memory under this view.
+				\item This view has gained much traction lately. It's widely supported in literature.
+				\item This view shows that in many cases we're interested in superficial similarity, and not actually digging for similar meaning.
+				\item Many doctors are trained by showing them many instances of both positive and negative patients, rather than being taught rules to follow to make a diagnosis.
+				\item The exemplar view discards less information than the prototype view.
+				\item It also explains why definitions don't work (there are only instances, no definitions), and why typicality occurs (objects more like known instances are classified faster).
+			\end{itemize}
+
+			\subsubsection{Problems with the Exemplar View}
+				\begin{itemize}
+					\item It does not specify which exemplars will be used for categorization.
+					\item It requires us to store a lot of exemplars. We do still only have a cranium of finite size, however!
+				\end{itemize}
+		\subsection{The Schemata View} \lecture{February 28, 2013}
+			\begin{itemize}
+				\item Concepts are schemas (organized frameworks for representing knowledge).
+				\item A schema combines instances and exemplars as well as abstract ideas.
+			\end{itemize}
+			\subsubsection{Problems with the Schemata View}
+				\begin{itemize}
+					\item It does not specify boundaries among individual schemata.
+					\item This view is difficult to test empirically for validity.
+				\end{itemize}
+		\subsection{The Knowledge-Based View}
+			\begin{itemize}
+				\item Examples of categories are children, pets, photo albums, family heirlooms, and cash.
+				\item A category becomes coherent only when you know the purpose of the category. This provides a theory for the purpose of objects.
+				\item Categories interact with top-down \emph{and} bottom-up processes.
+				\item This view captures the highly flexible nature of categorization.
+				\item Categories can change as our goals/tasks change.
+				\item Concepts are theories, and instances are data.
+				\item Categorization involves:
+					\begin{itemize}
+						\item Knowledge of how concepts are organized.
+						\item The purpose of the category.
+						\item People's theories about the world.
+						\item Expectations.
+					\end{itemize}
+				\item It is difficult to test this view as well.
+			\end{itemize}
+
+		\subsection{Learning New Concepts}
+			\begin{itemize}
+				\item There is an experiment containing cards, each of which contains one of three shapes, one of three colors, and one of three borders.
+				\item Participants were given an instances (such as ``black circles''), without the concept itself.
+				\item They then had to pick additional cards which they thought might be instances of the same concept. They received feedback on their guesses.
+				\item This experiment is an analytical/conscious/explicit strategy for learning new concepts.
+			\end{itemize}
+
+			\subsubsection{Learning Strategies}
+				\begin{itemize}
+					\item They might use a conscious, strategic, or unconscious strategy.
+					\item When the task is simple (few objects and categories), conscious learning is the way to go. Learning a language is more complex, so an unconscious approach would be better in that situation.
+					\item \textbf{Simultaneous scanning}: testing multiple hypotheses at the same time (such as ``white circles''). This has heavy demands on working memory.
+					\item \textbf{Successive scanning}: testing one hypothesis at a time (such as ``black figures''). This is inefficient but has low demands on working memory.
+					\item \textbf{Conservative focusing}: choosing cards that vary in only one respect from a positive instances (known as the ``focus card''). This is both efficient \emph{and} easy.
+				\end{itemize}
+
+			\subsubsection{Implicit Learning}
+				\begin{itemize}
+					\item There's an experiment involving artificial grammars.
+					\item The learning phase involves both sequences of letters generated by an artificial grammar, and completely random sequences of letters.
+					\item In a memory test, the random group performed poorer than the grammar group.
+					\item Participants were not consciously aware there was a grammar rule in play at all.
+					\item If they're told there is a rule, they will perform worse. Using a conscious strategy in complex situations will hurt you.
+					\item The similarity aspect is a bottom-up process, and the explanation is top-down.
+					\item The participants used the grammar to improve their performance while not being aware of the rules of the grammar.
+					\item This is a non-analytical/unconscious/implicit learning strategy.
+				\end{itemize}
+
+			\subsection{How Concepts \& Categorization May Work in the Brain}
+				\begin{itemize}
+					\item Prototypes are at play here.
+					\item Participants were not given a prototype, but exemplars shared many neural activations with their prototypes.
+					\item There is a lot of right hemisphere activity in analyzing categories. Left hemisphere activity also increases gradually over time, but to a lesser degree.
+					\item In the initial na\"ive learning, stimuli could only be processed as visual patterns (right prefrontal and right parietal).
+					\item As learning progressed, participants gained the ability to abstract general properties (left parietal) and generate + reason with a verbal rule (left prefrontal).
+				\end{itemize}
+	\section{Visual Imagery} \lecture{March 5, 2013}
+		\begin{itemize}
+			\item Mental imagery is similar to going back and reliving an experience.
+			\item Like most other cognitive processes, mental imagery is a reconstructive process based on schemata, concepts, expectations, etc. It's not a perfect representation of what actually happened.
+			\item A visual form of memory with some short-term and some long-term memory attributes.
+			\item Kosslyn was a big researcher in this area. He was one of Pinker's PhD students.
+			\item Imagery provides richer cues for retrieval.
+			\item There are some concepts that cannot be accurately represented/expressed using words. A picture is worth a thousand words, so to speak.
+		\end{itemize}
+
+		\subsection{Visual Imagery and Memory}
+			\begin{itemize}
+				\item Imagery is reprocessing information using the same components that were used when it was encoded for the first time.
+				\item Pictures evoke emotions, especially those that are particularly hard to express in words.
+				\item Pictures can express ideas much more efficiently than words.
+				\item Images are much more memorable than other representations. They're encoded in a richer way, which makes them easily retrievable.
+				\item Various techniques are used to increase chances of remembering, such as mnemonics.
+				\item Mnemonics serve as an effective retrieval cue (for example: ``HOMES'' to remember the names of the Great Lakes).
+				\item The \textbf{method of Loci} is where you imagine a series of places that have a specific order to them. You imagine the items that you have to remember at those locations. You can perform a mental walkthrough to recreate the images of the items along the path. The geographical locations are the cues.
+				\item There is an issue, however: proactive interference.
+				\item Bower suggested in 1970 to try paired-associate learning. He argued that interacting images are better than non-interacting images. Remembering the association would act as a retrieval cue.
+				\item Wollen et al. argued in 1972 about interactive and non-interactive images, and bizarre vs. non-bizarre images. They discovered that interactive images are recalled better, and the bizarreness of an image has no effect.
+				\item \textbf{The Pegword Method}: create an image of memory items with another set of ordered cues. Create an easily recalled list of nouns (which is the ordered cues), then picture each memory item interacting with one of the nouns. There's more to remember, but it provides more retrieval cues. It works well, but it's fairly limited in terms of how long the list can be. There is also proactive interference with associating new items over and over.
+				\item \textbf{Dual code hypothesis} (Paivio, 1969): memory contains two distinct coding systems: verbal and imagery. This improves memory over having only a single code. We have multiple representations of the same information, which means we have two sources to recall the target information from. He did a study with four lists of noun pairs: CC, CA, AC, and AA (concrete / abstract). The best results were for both concrete objects, followed by CA, then AC, then AA. CA was second because the first concrete object was used as a peg to attach the abstract noun to.
+				\item Analysis: people spontaneously make images for concrete nouns, and imagery varies with conreteness. Concrete nouns are dual-coded, but abstract nouns are only coded verbally. The first noun in the experiment acted as a peg for the second noun, so the imageability of the first noun in crucial.
+			\end{itemize}
+
+		\subsection{Mental Rotation}
+			\begin{itemize}
+				\item When asked to perform a letter rotation (determining if a letter is forwards or backwards), it's quicker to determine letters that require less of a rotation.
+				\item Research shows that you actually mentally rotate in your mind (no shortcuts).
+				\item There are individual differences in how good people are at generating images.
+				\item Spatial and visual processing are quite similar. Mathematical ability is highly associated with mental rotation ability (since spatial processing is really just comparing magnitudes).
+				\item \textbf{Symbolic difference effect}: if you create an image of two things, the difference between the two determines the performance of the comparison. For example, comparing an elephant and a cat is quicker than comparing a beaver to a cat or a mouse to a rat. Comparing 7 to 2 is faster than comparing 3 to 2.
+				\item Shepard and Metzler (1971) conducted an experiment where they asked participants to compare two objects and decide if they are the same. The objects were presented at different orientations/rotations. They discovered the time to compare is directly related to the degree of rotation required. In their experiment, there was a rotation rate of 60 degrees per second.
+				\item Men perform better than woman (by one standard deviation) for mental rotations on average, and the converse is true for information processing. Females typically have more math anxiety on average, so this is fairly logical.
+				\item Performance is likely better for rotating letters exactly 180 degrees (upside down).
+			\end{itemize}
+
+		\subsection{Image Scanning}
+			\begin{itemize}
+				\item Kosslyn in 1973 said if imagery is spatial (like perception), then it should take longer for participants to find parts that are located further away from the initial point of focus.
+				\item Kosslyn performed an experiment with a map, and discovered that people would take longer to scan larger distances in their mental imagery, which suggests that it is spatial.
+				\item However, this experiment could have suffered from experiment bias (the expected outcome of the experiment is obvious to participants) or other confounds (other variables).
+			\end{itemize}
+		\subsection{Properties of Mental Images} \lecture{March 7, 2013}
+			\begin{itemize}
+				\item \textbf{Implicit encoding}: images give access to information that was not explicitly encoded. This information can be accessed explicitly.
+				\item An example of implicit encoding is in determining the number of cupboards in your kitchen. You probably haven't counted, but you could use a mental image of your kitchen to determine the proper answer.
+				\item \textbf{Perceptual equivalence}: imagery activates similar systems as perception does (although not as strongly).
+				\item Participants were told to study a banana on a screen. They were then distracted. Then a different image was projected really faintly on the screen (but the participants were only told to \emph{imagine} the banana), and people could not differentiate between the new image and the banana. It depends on how closely the faint image resembles the mental image. Seeing was mistaken for imaging.
+				\item \textbf{Spatial equivalence}: spatial relationships in images correspond to spatial relationships in actual physical space. Recall Kosslyn's scanning studies (involving the map) from earlier. Blind people had the same results as sighted people after learning the map by touch.
+				\item \textbf{Transformational equivalence}: image transformations and physical transformations are governed by the same laws of motion. Recall the mental rotation studies from earlier \textendash{} it takes time to rotate (depending on the angle of rotation), it seems continuous (there are intermediate stages), and the entire object is rotated, not just its parts.
+				\item \textbf{Structural equivalence}: images have a coherent structure, are well organized, and can be reorganized and reinterpreted. Generating images depends on the complexity of the image (as picture inspection does as well). It takes longer to construct a detailed image than one with less detail.
+				\item We can sometimes think of an image in a simpler way to make it seem less complex. We could think of two overlapping rectangles (in the shape of a plus), or we could think of it as five squares (which is more complex).
+			\end{itemize}
+
+		\subsection{The Imagery Debate}
+			\begin{itemize}
+				\item Stephen Kosslyn and Zenon Pylyshyn debated between analog (fluid) and propositional imagery.
+				\item Pylyshyn's view was that characteristics were demanded, the picture metaphor was questionable (can you imagine something without knowing what it is?), and he questioned why we need two distinct codes and can't just use propositions.
+				\item Images are based on what you know. Some information is not retained, however. For example: do you know which way the polar bear is facing on a toonie?
+				\item The analog position (picture metaphor theory): a visual code is used that closely resembles the original state, and visual images are ``pictures in the head.''
+				\item The propositional position: visual imagery uses a symbol code, and visual images are simply descriptions that are constructed of abstract propositions.
+				\item The propositional representation of a cat under a table would be ``UNDER(CAT, TABLE)'', whereas the analog view would be a literal (spatial) depiction of a cat under some table.
+				\item Critique: many imagery tasks are cognitively penetrable.
+				\item Critique: people may be ``mentally pausing'' in image scanning experiments because of their expectations about what the experimenters want them to do. This is known as experiment bias. A study was done on this bias by telling participants conflicting expectations prior to the experiment to see if their behaviour changed at all.
+			\end{itemize}
+
+		\subsection{The Imaging Brain}
+			\begin{itemize}
+				\item Brain areas involved in imagery are the same as the brain areas that are involved with perception.
+				\item Patient ``MGS'' had her right occipital lobe removed as treatment for epilepsy. The occipital lobe is primarily responsible for vision. Removing part of the visual cortex has the consequence of decreasing the field of view.
+				\item Before and after her surgery, MGS performed a mental-walk task. That is, she imagined walking toward and animal and estimate how close she was when the image began to overflow her (decreased) visual field. The result? Removing part of the visual cortex decreased her field of view \emph{and} the size of her images (the field of view in imagery).
+				\item People who have lost the ability to see color are also unable to see colors through imagery.
+				\item Unilateral neglect patients ignore the left-side of their mental images.
+				\item The same neurons respond to perception and images. Neurons are actually category-specific, too.
+				\item In experiments, a ``sham'' is a magnetic pulse that is sent to the brain in an unrelated location. It's like a control condition to ensure that magnetic pulses are actually having an effect only where they hypothesize that an effect is occurring \textendash{} not just everywhere in the brain.
+			\end{itemize}
+
+	\section{Language} \lecture{March 12, 2013}
+		\begin{itemize}
+			\item If you're given some distorted audio to listen to, you may not be able to understand it at all. However, if you're presented the text visually, you'll be able to hear the words in the distorted audio.
+			\item Expectation, knowledge, etc. fills in gaps in auditory stimuli. Like other cognitive processes, this is an active reconstruction.
+		\end{itemize}
+
+		\subsection{What is Language?}
+			\begin{itemize}
+				\item \textbf{Structure}: language has structural principles including a system of rules (grammar) and principles that specify the properties of expressions.
+				\item \textbf{Localization}: various physical mechanisms in the brain are specific language centers.
+				\item \textbf{Use}: language is used to express thoughts, establish social relationships, and to communicate \& clarify ideas.
+				\item Other animals can communicate, however they are not using a language under this definition. Much of their language is mimicry and reinforcement. They can't form infinitely many unique expressions.
+			\end{itemize}
+
+			\subsubsection{Characteristics of Language}
+				The four main characteristics of language are:
+				\begin{itemize}
+					\item \textbf{Regular}: governed by a system of rules.
+					\item \textbf{Productive}: infinite combinations of things can be expressed.
+					\item \textbf{Arbitrariness}: lack of necessary resemblance between a word or sentence and what it refers to.
+					\item \textbf{Discreteness}: system can be subdivided into recognizable parts.
+				\end{itemize}
+
+				Out of the four characteristics, most other animals fail at meeting the productivity and arbitrary requirements of languages. Bee dances are not productive, and meerkats are not arbitrary in their communications.
+
+			\subsubsection{Structure of Language}
+				\begin{itemize}
+					\item \textbf{Phoneme}: the smallest unit of sound we can make. For example: \textbf{m}at vs. \textbf{c}at.
+					\item \textbf{Morpheme}: the smallest unit of sound we can make that has meaning. For example: take vs. tak\textbf{ing}.
+					\item \textbf{Syntax}: rules for how to put together sentences and phrases. For example: English is subject-verb-object, ``The girl will hit the boy.'' As humans, we are pretty good at syntax however we aren't actively conscious of our use of syntax.
+					\item \textbf{Semantics}: meaning. This explains anomalies, contradictions, ambiguities, synonyms, and entailment.
+					\item \textbf{Pragmatics}: social rules of language. For example, it's a social rule to not talk until the person you're talking to is done speaking. Also, Paris Hilton sitting at a table with a friend, both of them texting on their cell phones, is violating a social rule.
+				\end{itemize}
+
+		\subsection{Speech Perception}
+			\begin{itemize}
+				\item There are two fundamental problems with speech perception:
+					\begin{itemize}
+						\item Speech is continuous.
+						\item A single phoneme sounds different depending on the context.
+					\end{itemize}
+				\item The auditory input we receive is dirty or messy. We may hear mumbles, or accents that are harder for us to understand.
+				\item We perceive speech by breaking its continuity up into chunks (words).
+				\item Like visual perception, context aids our interpretation of sounds and words, and can create illusions in some cases.
+				\item \textbf{Acoustic context effect}: perception of speech is context-sensitive. Neighboring stimuli can change how sound is perceived.
+				\item \textbf{Visual context effect}: watching a guy's lips say ``ga'' when his voice is actually saying ``ba'' will make you hear any number of things, even things like ``da.''
+			\end{itemize}
+
+		\subsection{Language \& Cognition}
+			\subsubsection{The Whorfian Hypothesis}
+				\begin{itemize}
+					\item ``The language you know shapes the way you think about events in the world around you.''
+					\item Linguistic relativity: does language constrain thought? You cannot think without language.
+					\item Match retrieval and encoding becomes hard when they occur in different languages.
+					\item Your inner monologue could change from one language to another as your proficiency (and use) increases.
+				\end{itemize}
+
+			\subsubsection{The Modularity Hypothesis}
+				\begin{itemize}
+					\item Jerry Fodor in 1983 argued that perception and language are modular cognitive processes.
+					\item They're domain specific \textendash{} it operates with certain kinds of input but not others.
+					\item They're informationally encapsulated \textendash{} it operates independently of the beliefs and other information available to the processor.
+				\end{itemize}
+
+		\subsection{Neuropsychological Views}
+			\begin{itemize}
+				\item The motor cortex, Broca's area, and Wenicke's area are some of the underlying brain structures involved with language.
+				\item An \textbf{aphasia} is a collective deficit in language comprehension and production that results from brain damage.
+				\item \textbf{Broca's aphasia}: expressive aphasia, involving halting, agrammatic speech, imparied function words (nouns and verbs are okay), resulting from damage to the frontal areas of the brain. This is a motor deficit \textendash{} the mind is okay.
+				\item \textbf{Wenicke's aphasia}: receptive aphasia involving fluent speech without content. They cannot comprehend simple commands. This results from damage to the temporal lobe of the left hemisphere. Words are jumbled. Words are easy to come (it's not a motor problem).
+				\item The left hemisphere is much more dominant for language processes for most people.
+				\item Neither of these views are pure deficits \textendash{} someone with Wenicke's aphasia may be able to understand \emph{some} things (such as ``I don't understand'').
+				\item Other aphasias include Anomia (naming deficit), Alexia (visual language impairment), Agraphia (inability to write), and Alexia without agraphia (can write, but cannot read what they have written).
+			\end{itemize}
+
+	\section{Thinking \& Problem Solving} \lecture{March 19, 2013}
+		\subsection{What is Thinking?}
+			\begin{itemize}
+				\item Most definitions of thinking are quite vague because it's tough to define.
+				\item Thinking is ``going beyond the information given'' (Bruner, 1957).
+				\item Thinking is a ``complex and high-level skill that fills up gaps in the evidence'' (Bartlett, 1958).
+				\item Thinking is the ``process of searching through a problem space'' (Newell \& Simon, 1972).
+				\item Thinking is ``what we do when we are in doubt about how to act, what to believe, or what to desire'' (Baron, 1994).
+				\item Thinking could either be focused or unfocused. Focused thinking is goal-based, problem solving. Unfocused thinking is daydreaming and unintentional.
+				\item People tend to think creative thinking falls under unfocused thinking, but Fugelsang argues that creative thinking does require goals / problem solving techniques.
+				\item Problems could be either well-defined (have a beginning and end, and have rules or guidelines), or they could be ill-defined otherwise.
+				\item The vast majority of psychologists tend to research focused problem solving in well-defined problems.
+				\item There's a lot of mystery/magic that happens in order to solve a problem. It's a huge black box. It's unconstrained.
+				\item Ill-defined problems potentially have no clear solution. It's hard to find a clear solution path for the problem. Specifically, it's hard to account for all potential variables.
+			\end{itemize}
+
+		\subsection{Problem Solving Techniques}
+			\subsubsection{Generate and Test}
+				\begin{itemize}
+					\item Generate a number of solutions, and then test the solutions.
+					\item This is a useful technique if there are a very limited number of possibilities.
+					\item It's a problematic approach if there are too many possibilities, if there is no guidance over generation, or if you can't keep track of the possibilities that have already been tested.
+					\item This is essentially the brute force or exhaustive search approach.
+					\item Fugelsang claims that generation is not entirely random. It's often guided by frequency, recency, availability, familiarity, etc.
+				\end{itemize}
+
+			\subsubsection{Means-Ends Analysis}
+				\begin{itemize}
+					\item Every problem is a problem space.
+					\item A problem space contains:
+						\begin{itemize}
+							\item \textbf{Initial state}: conditions at the beginning of the problem.
+							\item \textbf{Goal state}: conditions at the end of the problem.
+							\item \textbf{Intermediate states}: the various conditions that exist along the path(s) between the initial and goal states.
+							\item \textbf{Operators}: permissible moves that can be made towards the problem's solution (transitions, essentially).
+						\end{itemize}
+					\item We aim to reduce the difference between the initial state and the goal state.
+					\item Sometimes you have to move further away (back) from the goal state in order to make progress, like when solving a Rubik's Cube. Means-End analysis breaks down a bit in these cases.
+					\item Involves generating a goal and several sub-goals along the way.
+					\item Any sequence of moves beginning at the initial state and ending at the final state is considered a solution path. In many cases there are multiple solution paths.
+					\item The Tower of Hanoi (moving the tower of discs from one peg to another) works well with means-end analysis.
+					\item Other CS students will appreciate this as being similar to a nondeterministic finite automaton (NFA).
+				\end{itemize}
+
+			\subsubsection{Working Backwards}
+				\begin{itemize}
+					\item Start at the goal state and create sub-goals that work towards the initial state.
+					\item Steps will be the same, but the reasoning for taking those steps would be different than when working forwards.
+					\item Working backwards is just yet another possible solution path(s).
+					\item Similar to means-end analysis in that we create sub-goals to reduce differences between the current state and goal state.
+				\end{itemize}
+
+			\subsubsection{Backtracking}
+				\begin{itemize}
+					\item Problem solving often involves making working assumptions.
+					\item In order to correct mistakes in problem solving, we need to remember our assumptions, assess which assumptions failed, and correct our assumptions appropriately.
+					\item Essentially, when we make a mistake, we need to move back to the state where we were most right, then change the next steps to stay on track.
+				\end{itemize}
+
+			\subsubsection{Reasoning by Analogy}
+				\begin{itemize}
+					\item Analogies work by making comparisons between two situations and applying the solution from one of the situations to the other.
+					\item We often find an existing domain to help explain something new.
+					\item Analogies are especially useful in explaining unobservable phenomenon.
+					\item It's sometimes hard to know if analogies helped develop a discovery or if it was generated after the fact to help explain the discovery.
+					\item Massive scientific discoveries must build upon knowledge that's already known. That's what analogies achieve.
+					\item The structure of atoms is analogous to the structure of the solar system.
+					\item Darwin discussed how the use of analogies helped him develop his theory on evolution.
+					\item Recall: the computer metaphor of mind (where our short-term memory is analogous to RAM and long-term memory is analogous to a hard drive).
+					\item Analogies involve similar structures, but the two situations can differ superficially.
+					\item The tumor problem: given a human being with a tumor, and rays that destroy organic tissue at sufficient intensity, by what procedure can one free him of the tumor by these rays and at the same time avoid destroying the healthy tissue that surrounds it?
+					\item The tumor/fortress analogy is structurally very similar, but superficially very different.
+					\item Without the fortress story, 10\% of people came up with an appropriate strategy for handling the brain tumor. With the fortress story, that jumped up to 30\%. After being told there's a hint in the fortress story, then being told the fortress story, that jumped up to 75\% of people.
+					\item You can improve your personal performance with generating analogies through practice.
+					\item The tumor/fortress analogy is an example of a cross-domain analogy. Cross-domain analogies are harder to handle due to their superficial dissimilarity. \lecture{March 21, 2013}
+					\item An experiment was performed with analogies of varying degrees (varied how close the analogy was). The degree to which the frontal polar cortex is recruited is proportional to how far away the analogies are from each other in semantic space.
+					\item Humans are probably the only species with analogous reasoning.
+				\end{itemize}
+
+		\subsection{Blocks in Problem Solving}
+			\subsubsection{Mental Set}
+				\begin{itemize}
+					\item When you go into a problem and your initial impression prevents you from attempting other (possibly easier) solution paths.
+					\item It limits how you see the problem.
+					\item If given many algebra problems before a more general problem, the probability that you'll solve the problem in an algebraic way increases dramatically.
+					\item Your mind makes unwarranted, faulty assumptions about the problem space.
+					\item You can break the set if you step away, incubate, and then come back later.
+					\item \textbf{Functional fixedness}: you have a particular purpose in mind for an object that is actually used in a different way in the intended solution.
+					\item An example of functional fixedness is using a screwdriver as a pendulum to enable you to grab two ropes that are just a little too far away from each other (so you can then tie them together).
+				\end{itemize}
+
+			\subsubsection{Using Incomplete or Incorrect Representations}
+				\begin{itemize}
+					\item You aren't seeing all aspects of the problem.
+					\item Can 31 dominoes be arranged to cover the remaining 62 checkerboard squares (when the two white corner squares are removed)? Each domino covers two squares.
+					\item Solution: no. Each domino must cover one black and one white square, but two whites are removed.
+					\item People don't typically consider that aspect of the problem. Their representation of the problem is incomplete.
+					\item This block could be resolved by taking a break from the problem (incubating).
+				\end{itemize}
+
+			\subsubsection{Lack of Problem-Specific Knowledge or Expertise}
+				\begin{itemize}
+					\item Chess masters are able to choose the best move more easily than novices, despite the fact that they must consider the same number of moves (all possible moves).
+					\item Experts are able to extract more information from brief exposure.
+					\item A chess master can recall the positions of more chess pieces on a chessboard (after a brief exposure) compared to novices, but only when the pieces depict a possible chess game.
+					\item Experts have more domain-specific categorization skills, since they can draw from more exemplars than novices can.
+					\item Experts represent information at a deeper, more conceptual level.
+					\item Novices will remember the superficial locations of the pieces, but chess masters will remember the meaning of the state of the game being depicted.
+					\item Having knowledge is equivalent to having the ability to move beyond superficial details of the problem. Instead, the structural details are retained.
+					\item You can't really get around this without practice and training, unlike the other blocks (which you can solve by just taking a break from the problem).
+				\end{itemize}
+
+	\section{Decision Making}
+		\subsection{What is Decision Making?}
+			\begin{itemize}
+				\item Decision making involves a forced choice between multiple options. We have to weigh the pros and cons of each option.
+				\item The study of decision making concerns how we make rational, optimal solutions.
+				\item Decision making is often based on probabilities. Bayes Theorem could be used to find the optimal solution, however we're interested in how we \emph{actually} make decisions (not necessarily the most optimal one).
+				\item Biases guide our decisions.
+				\item Decision making occurs in working memory. So, limitations of working memory affect decision making.
+				\item There's a lot of information out there that we could consider to make a particular decision, but we can't possibly consider \emph{everything}.
+				\item Decision making involves conflict processing between intuition and the ideal solution.
+				\item People fall \emph{very} short of being rational, if you define rationality mathematically.
+				\item Researchers look at how and why people deviate from optimal reality. \lecture{March 26, 2013}
+				\item People don't make decisions rationally \textendash{} it's too cognitively taxing. Instead, we insert and apply heuristics and biases.
+				\item We estimate and make judgments based on probabilities, even if all of the information is available to us in its entirety. It's just too much information to retrieve in full.
+				\item \emph{Every} outcome is probabilistic in some way or another.
+			\end{itemize}
+
+		\subsection{Sources of Decision Difficulty}
+			There are two main sources of decision difficulty:
+			\begin{itemize}
+				\item \textbf{Conflict}: tradeoffs must be made across different dimensions, by the decision maker. For example: a car's power vs. gas mileage, TV's price vs. quality, spending time at work vs. with family.
+				\item \textbf{Uncertainty}: the outcome of a decision often depends on unknown/uncertain variables or events. For example: the future demand of a product, or completion time of a project.
+			\end{itemize}
+
+		\subsection{Heuristics in Decision Making}
+			Making purely rational decisions is very difficult, so instead we use mental shortcuts. It's important to note that heuristics and biases are not all good or all bad.
+			\subsubsection{Availability}
+				\begin{itemize}
+					\item The ease of which things come to mind increases their prevalence.
+					\item People were asked how many words they thought were in a book that had their second last letter being ``n''. They guessed not many. They were then asked how many words in the book end in ``ing'', and that number was bigger than the previous result (for the second last letter just being ``n''). That's not possible.
+					\item This happens because it's easy to recall words that end in ``ing''.
+					\item Another example: asthma deaths. Many deaths are caused by asthma, and not many are caused by things like botulism or tornadoes (relatively). People seem to think the latter are more common causes of death, though, because they're more prevalent in the news media.
+				\end{itemize}
+
+			\subsubsection{Representativeness}
+				\begin{itemize}
+					\item This has to do with the question ``how representative is something?''
+					\item ``Of all families with six children, in what percentage do you think the exact birth order was (a) BBBGGG and (b) GBBGBG?'' These probabilities are equivalent, but many people said the latter had a higher probability because it was more random.
+					\item In this experiment, the vast majority of possible birth orders appear random, so GBBGBG is representative of that. However, individually, those two orders have the same probability.
+					\item The more random something is, the more representative it is of that large group of possibilities that obviously exists.
+					\item \textbf{Law of Small Numbers}: a small sample is not representative of the group as a whole.
+					\item \textbf{Gambler's Fallacy}: gamblers don't understand the independence of events. Winning/losing streaks do not affect upcoming outcomes. Also, a slot machine is programmed to pay out between 85\% and 98\% of the time.
+				\end{itemize}
+
+			\subsubsection{Anchoring}
+				\begin{itemize}
+					\item The initial starting point sets the anchor, and everything that follows will not deviate (much) from that anchor.
+					\item If you've asked to estimate $8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1$, you'll get a different result than when asked to estimate $1 \times 2 \times 3 \times 4 \times 5 \times 6 \times 7 \times 8$. The first number sets the anchor for the estimation.
+					\item You will make adjustments from the anchor occasionally, but they will not be significant enough to fix the anchoring bias.
+				\end{itemize}
+
+			\subsubsection{Illusory Correlation}
+				\begin{itemize}
+					\item We perceive, or overestimate, the relationship between some variables that does not exist (or is less).
+					\item For example, it's common to think that more wild things and crimes occur under a full moon. However, this relationship is often overestimated.
+				\end{itemize}
+
+			\subsubsection{Confirmation Bias}
+				\begin{itemize}
+					\item We have an initial intuition and seek out additional information that supports that intuition.
+					\item You're given the numbers 2, 4, and 6, and you're asked to determine the rule that's in play. You can ask if a certain group of numbers is or is not following the rule correctly.
+					\item You might think it's just even numbers, or just multiples of the tuple (1, 2, 3), but in this case it's actually just three numbers in ascending order.
+					\item People tend to test numbers that \underline{confirm} their initial rule, which could take a long time. You should instead make guesses that you think may discredit your theory about what the rule is.
+					\item In science, no theory can be absolutely proven to be true (or at least, by example it cannot be proven), but it can be proven to be false.
+					\item \textbf{Wason's Selection Task}: if the document has an A on one side, then it must have a 4 on the other. There might be some errors in the cards, but each card \emph{does} have one numerical side and one alphabetic side. Which of the following cards do you have to check for validity? A D 4 7.
+					\item Answer: A and 7. The A needs to be checked to ensure there's a 4. The 7 needs to be checked to ensure there's not an A.
+					\item A logically equivalent example could occur if you're asked to determine legal drinking ages. If you have someone drinking a beer, someone drinking a coke, someone who is 22, and someone who is 16, who do you need to check?
+					\item Answer: the beer drinker and the 16-year-old. We don't care who drinks coke and we don't care what a 22-year-old is drinking, since they're above the legal drinking age.
+					\item Why is the drinking age problem easier than the more abstract problem involving letters and numbered cards, despite them being logically equivalent? Our intuitions guide us based on our experiences. Also, cheater detection is innate.
+					\item We've evolved to have cheater detection \textendash{} that is, we're really good at determining if anyone is violating a social contract. We define cheating as someone who deliberately takes benefits without paying costs or meeting certain requirements.
+					\item Cheater detection depends on the context to define cheating.
+				\end{itemize}
+		\subsection{Decision Making in the Brain} \lecture{March 28, 2013}
+			\subsubsection{Decision Making in the Split Brain}
+				\begin{itemize}
+					\item People with split brains can draw two distinct shapes at the same time (one with each hand), whereas normal people cannot.
+					\item When shown a picture of a face that was designed out of fruits or books the left hemisphere (shown on right) will recognize the fruits/books, and the right hemisphere will recognize the facial features.
+					\item There are a couple of approaches to probability guessing: frequency matched, or maximized.
+					\item Frequency matched (left hemisphere) is where guesses are based on the relative frequencies of what's been observed in the past.
+					\item The maximized approach (right hemisphere) is to always choose the option that has occurred most frequently in the past.
+					\item The optimal strategy in a frequency experiment is to maximize every time. Why? You'll never predict it correctly 100\% of the time.
+					\item The left hemisphere is trying to find causal patterns. It tries to out-guess randomness that is not actually there. This is called the \textbf{left hemisphere interpreter}.
+					\item The ability to form inferences about two events is part of the left hemisphere.
+					\item Each hemisphere responds differently to the kinds of relations it has to solve.
+				\end{itemize}
+
+			\subsubsection{Decision Making, Emotion, and the Brain}
+				\begin{itemize}
+					\item Cognition is part of a highly interactive system involving the interplay between attention, perception, emotion, and social interactions.
+					\item Ultimatum game: you have the opportunity to split \$10 with someone. You'll receive a one-time offer from your partner, then you must decide to accept or reject the offer. If you reject the offer, you both go home with nothing.
+					\item If you're offered \$1, you'll probably reject it to punish the other person, so they won't be able to keep \$9. This punishment is because of their greed.
+					\item The rational thing to do in this situation is to take any offer of money, because any amount is better than no amount.
+					\item Remember: this is a one-time offer. There are no future offers, so the punishment is not meant to change their behavior to benefit you in the future.
+					\item Why do we want to prevent their greed? We get an initial disgust response.
+					\item This experiment is an example of a highly cognitive act that is affected by emotions.
+					\item Often times, emotional processing happens quicker than cognitive processing.
+				\end{itemize}
+
+	\section{Individual Differences}
+		\begin{itemize}
+			\item There is less variability in low-level processes.
+			\item The more high-level or complex a task is, the more it will likely differ based on individual differences.
+			\item Recall that chess novices have a superficial representation of the board while experts have a deeper understanding. They define importance differently, too.
+			\item Individual differences and expertise will change cognition.
+		\end{itemize}
+
+		\subsection{Aging}
+			\begin{itemize}
+				\item Aging also changes cognition as part of individual differences.
+				\item Processing speed slows down.
+				\item Memory also slows down with age. Senior's moments occur. Episodic and working memory decline steadily with age, due to degeneration of the frontal lobes as you age.
+				\item Semantic memory does not decrease. It sometimes increases, actually.
+				\item Indirect, unconscious memory is relatively preserved over time.
+				\item As you age, three brain changes occur:
+					\begin{itemize}
+						\item Reductions in brain volume stemming from gray and white matter atrophy (shrinkage).
+						\item Synaptic degeneration which impairs communication between neurons.
+						\item Reductions in regional cerebral blood flow (rCBF) to the brain.
+					\end{itemize}
+
+				\item Changes (1) and (3) can be slowed down, by doing things like aerobic exercises. It's hard to say the same about (2) because it's harder to measure.
+
+				\item There are reductions in bottom-up perceptual processing abilities, and an increase in top-down processes (involving the frontal lobes), as people age. \lecture{April 2, 2013}
+				\item Compensatory strategies are used to alleviate these ability reductions.
+				\item Arthur Rubinstein, a pianist, used several compensatory strategies as he got older:
+					\begin{itemize}
+						\item Selection. He played fewer pieces.
+						\item Optimization. He practiced these pieces more often.
+						\item Compensation. He would play slower before fast segments to make the fast segments seem faster. He did this to counteract his loss in mechanical speed.
+					\end{itemize}
+
+				\item People often use distributed cognition (off-loading) more as they get older. They use Google more, or rely on partners/family members to fill in gaps.
+				\item A cue experiment was conducted where youth and adults had to remember pairs of words. The adults were separated into two groups: low performance, and high performance (at this specific task). The right hemisphere was active for this task for the youth. The older, low performance adults used the same neural tissue more intensively. The older, high performance adults used a combination of the corresponding (homologous) regions in both the left and right hemispheres.
+				\item The more active the mind is, the less of a memory deficit that forms over time. Surprisingly, physical exercise also helps maintain cognitive abilities. One study showed that regular exercise reduced the likelihood of developing Alzheimer's disease, even in people who were predisposed to the disease.
+			\end{itemize}
+
+		\subsection{Sex Differences}
+			\begin{itemize}
+				\item People place a lot of emphasis on finding differences between the sexes, and not on other arbitrary differentiators like eye color.
+				\item Differences might be smaller than researchers think (or smaller than they'd like to admit).
+				\item In general, males outperform females in spatial tasks, and females outperform males in verbal tasks. This outperforming is within one standard deviation, so it isn't \emph{that} big of a difference. This is a relatively stable finding.
+				\item \textbf{Mean differences}: there's an overlapping distribution. Some females outperform males on spatial tasks, for instance, and some males outperform females on verbal tasks.
+				\item \textbf{File drawer problem}: it's hard for researchers to publish null findings. This is a problem for research in \emph{all} fields. They may exaggerate their results a bit as a consequence of this, in order to publish something.
+				\item \textbf{Experimenter expectancy effects}: confirmation bias.
+				\item Why are there some slight sex differences? There are two theories:
+					\begin{itemize}
+						\item \textbf{Socialization}: reading materials, communication styles, access to puzzles \& video games all differ between the sexes.
+						\item \textbf{Lateralization}: it might be genetics. Women have more brain resources that are used for verbal processing. They have bilateral resources (both hemispheres), which makes them more likely to retain their verbal skills after brain damage than men. The reverse is true for men, and spatial abilities.
+					\end{itemize}
+			\end{itemize}
+
+	\section{The Big Picture, and Future Directions}
+		\begin{itemize}
+			\item Conscious experience is largely reconstructive.
+			\item Cognition = Attention + Perception + Emotion + Social Interactions.
+			\item Cognitive science is used in industry for informing law, and for interacting with others.
+			\item Cognitive science can inform developmental work.
+				\begin{itemize}
+					\item Emotional processes cause dumb things to happen.
+					\item An experiment was conducted that asked teens and adults if something was a good idea or not, while they were in an MRI machine.
+					\item Good ideas were judged quickly be both teens and adults.
+					\item Bad ideas took slightly longer for both adults and teens, but teens took significantly longer than adults to think about bad ideas.
+					\item Why is this? Adults have an insula activation (an initial disgust response). It's an emotionally negative response. Meanwhile, teens activate the analytical regions of their brain.
+				\end{itemize}
+
+			\item An fMRI could be used as a lie detector.
+				\begin{itemize}
+					\item Traditional polygraph detectors measure bodily response (sweating, heart rate), but they aren't helpful if the individual doesn't feel guilty.
+					\item Using an fMRI as a lie detector works but has problems. It's still better than polygraph lie detectors though.
+					\item An experiment gave participants a group of cards. They were asked to tell the truth about certain cards and to lie about others.
+					\item Lies are indicated by heightened activity in the dorsomedial prefrontal cortex (DMPFC).
+					\item It's a good deception detector. It determines if the person is self-monitoring or not.
+				\end{itemize}
+
+			\item Neuroeconomics: using cognitive science to think about the impact your behavior has on others.
+		\end{itemize}
+\end{document}
