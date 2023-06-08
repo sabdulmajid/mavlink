@@ -653,7 +653,7 @@ And as for connecting the simulated drone to the SITL:
 5. **Monitor the connection**: Keep an eye on the wireless connection between the drone and the ground station during flight. Ensure the signal strength remains strong, and there are no interruptions or interference. Some ground control station software provides telemetry data, including the link quality, which can help you monitor the connection health.
 
 ## How To Stay Connected In The Air
-1. **Set up the Pixhawk 4**: Connect your Pixhawk 4 to your Raspberry Pi 4 using a USB cable. Ensure that the Pixhawk 4 is powered on and recognized by the Raspberry Pi 4. You can verify this by checking the device connection using the ```ls /dev/serial/by-id command``` in the terminal. Make a note of the serial port name assigned to the Pixhawk 4 (```/dev/serial/by-id/usb-3D_Robotics_PX4_FMU_v2.x_0-if00```).
+1. **Set up the Pixhawk 4**: Connect your Pixhawk 4 to your Raspberry Pi 4 using a USB cable. Ensure that the Pixhawk 4 is powered on and recognized by the Raspberry Pi 4. You can verify this by checking the device connection using the ```ls /dev/serial/by-id``` command in the terminal (on the RP4). Make a note of the serial port name assigned to the Pixhawk 4 (```/dev/serial/by-id/usb-3D_Robotics_PX4_FMU_v2.x_0-if00```).
 
 2. **Launch SITL (Software In The Loop)**: SITL allows you to simulate the Pixhawk's behavior and test your software without an actual drone. Launch the SITL environment by opening a terminal window and running the following command:
 
