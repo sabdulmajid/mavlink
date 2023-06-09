@@ -1,0 +1,130 @@
+\contentsline {section}{\numberline {1}Introduction \& Course Structure}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Course Structure}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Introduction to Cognitive Processes}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Historical Overview \& Approaches}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Antecedent Philosophies and Traditions}{5}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Empiricism}{5}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Nativism}{5}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Structuralism}{6}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Functionalism}{6}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}Behaviorism}{6}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}Gestalt Psychology}{6}{subsubsection.2.1.6}%
+\contentsline {subsubsection}{\numberline {2.1.7}Individual Differences}{7}{subsubsection.2.1.7}%
+\contentsline {subsection}{\numberline {2.2}The Cognitive Revolution}{7}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Human factors engineering presented new problems}{7}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Behaviorism failed to adequately explain language}{7}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Localization of functions in the brain forced discussion of mind}{7}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.4}Development of computers and artificial intelligence gave a dominant metaphor}{7}{subsubsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.3}Paradigms of Cognitive Psychology}{8}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Localist models}{8}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Connectionism -- Neural network models}{8}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Major Assumptions of Approaches}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Other Approaches}{8}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}The Evolutionary Approach}{8}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}The Ecological Approach}{8}{subsubsection.2.5.2}%
+\contentsline {section}{\numberline {3}The Brain}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dependent Measures of Behavior}{9}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Modified/Damaged Brains}{9}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Human Brain Lesions}{9}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Brain Processing}{9}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Structure of the Brain}{10}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Brain Planes}{10}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Brain Regions}{10}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Lobes of the Brain}{10}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Localization of Function}{11}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Faulty Assumptions}{11}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Localization of Language (Double Dissociations)}{11}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Brain Imaging Techniques}{11}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Functional Neuroimaging}{11}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Cerebral Blood Supply}{11}{subsubsection.3.4.2}%
+\contentsline {section}{\numberline {4}Perception}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Bottom-Up Processes}{12}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Template Matching}{12}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Feature Analysis}{13}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Prototype Matching}{13}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Top-Down Processes}{13}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Context Effect}{13}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Change Blindness}{14}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Other Views of Perception}{14}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Gestalt Approaches}{14}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Neuropsychology}{15}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Visual Agnosia}{15}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Capgras Syndrome}{16}{subsubsection.4.3.4}%
+\contentsline {section}{\numberline {5}Attention}{16}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Selective Attention}{16}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Early Selection}{17}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Late Selection}{17}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Automaticity}{18}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Disorders of Attention}{18}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Attention in the Real World}{19}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Memory Structures}{19}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Sensory Memory}{19}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Short-Term Memory}{20}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Forgetting in Short-Term Memory}{20}{subsubsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.3}Working Memory}{21}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Long-Term Memory}{21}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Memory Processes}{23}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Reconstructive Nature of Memory}{23}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Amnesia}{24}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Models of Semantic Memory}{25}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Memory \& Studying}{26}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Concepts \& Categorization}{26}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Definitions}{27}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Functions of Categorization}{27}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Classical View}{27}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Problems with the Classical View}{28}{subsubsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.4}Prototype View}{28}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Problems with the Prototype View}{28}{subsubsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.5}The Exemplar View}{29}{subsection.8.5}%
+\contentsline {subsubsection}{\numberline {8.5.1}Problems with the Exemplar View}{29}{subsubsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.6}The Schemata View}{29}{subsection.8.6}%
+\contentsline {subsubsection}{\numberline {8.6.1}Problems with the Schemata View}{29}{subsubsection.8.6.1}%
+\contentsline {subsection}{\numberline {8.7}The Knowledge-Based View}{29}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Learning New Concepts}{30}{subsection.8.8}%
+\contentsline {subsubsection}{\numberline {8.8.1}Learning Strategies}{30}{subsubsection.8.8.1}%
+\contentsline {subsubsection}{\numberline {8.8.2}Implicit Learning}{30}{subsubsection.8.8.2}%
+\contentsline {subsection}{\numberline {8.9}How Concepts \& Categorization May Work in the Brain}{30}{subsection.8.9}%
+\contentsline {section}{\numberline {9}Visual Imagery}{31}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Visual Imagery and Memory}{31}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Mental Rotation}{32}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Image Scanning}{32}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Properties of Mental Images}{32}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}The Imagery Debate}{33}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}The Imaging Brain}{33}{subsection.9.6}%
+\contentsline {section}{\numberline {10}Language}{34}{section.10}%
+\contentsline {subsection}{\numberline {10.1}What is Language?}{34}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Characteristics of Language}{34}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}Structure of Language}{34}{subsubsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.2}Speech Perception}{34}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Language \& Cognition}{35}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}The Whorfian Hypothesis}{35}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}The Modularity Hypothesis}{35}{subsubsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.4}Neuropsychological Views}{35}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Thinking \& Problem Solving}{36}{section.11}%
+\contentsline {subsection}{\numberline {11.1}What is Thinking?}{36}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Problem Solving Techniques}{36}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Generate and Test}{36}{subsubsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2}Means-Ends Analysis}{36}{subsubsection.11.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.3}Working Backwards}{37}{subsubsection.11.2.3}%
+\contentsline {subsubsection}{\numberline {11.2.4}Backtracking}{37}{subsubsection.11.2.4}%
+\contentsline {subsubsection}{\numberline {11.2.5}Reasoning by Analogy}{37}{subsubsection.11.2.5}%
+\contentsline {subsection}{\numberline {11.3}Blocks in Problem Solving}{38}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Mental Set}{38}{subsubsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.2}Using Incomplete or Incorrect Representations}{38}{subsubsection.11.3.2}%
+\contentsline {subsubsection}{\numberline {11.3.3}Lack of Problem-Specific Knowledge or Expertise}{39}{subsubsection.11.3.3}%
+\contentsline {section}{\numberline {12}Decision Making}{39}{section.12}%
+\contentsline {subsection}{\numberline {12.1}What is Decision Making?}{39}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Sources of Decision Difficulty}{40}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Heuristics in Decision Making}{40}{subsection.12.3}%
+\contentsline {subsubsection}{\numberline {12.3.1}Availability}{40}{subsubsection.12.3.1}%
+\contentsline {subsubsection}{\numberline {12.3.2}Representativeness}{40}{subsubsection.12.3.2}%
+\contentsline {subsubsection}{\numberline {12.3.3}Anchoring}{40}{subsubsection.12.3.3}%
+\contentsline {subsubsection}{\numberline {12.3.4}Illusory Correlation}{41}{subsubsection.12.3.4}%
+\contentsline {subsubsection}{\numberline {12.3.5}Confirmation Bias}{41}{subsubsection.12.3.5}%
+\contentsline {subsection}{\numberline {12.4}Decision Making in the Brain}{41}{subsection.12.4}%
+\contentsline {subsubsection}{\numberline {12.4.1}Decision Making in the Split Brain}{41}{subsubsection.12.4.1}%
+\contentsline {subsubsection}{\numberline {12.4.2}Decision Making, Emotion, and the Brain}{42}{subsubsection.12.4.2}%
+\contentsline {section}{\numberline {13}Individual Differences}{42}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Aging}{42}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Sex Differences}{43}{subsection.13.2}%
+\contentsline {section}{\numberline {14}The Big Picture, and Future Directions}{44}{section.14}%
