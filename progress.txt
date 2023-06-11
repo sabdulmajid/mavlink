@@ -123,3 +123,10 @@ Day 15: Sunday 11th June 2023
 • Researched into how to load code onto the drone
 • Researched into how to stay connected to the drone when it is flying in the air (since we have no access point outside)
 • Researched into how to connect to the drone using the Mission Planner software, while in the air
+• Wrote down three different types of code for flying the drone, using pyMAVLink, dronekit-api and MAVSDK
+• Will test all three different types of code tomorrow, and see which one works best
+• Need to connect the Raspberry Pi 4 completely to the PixHawk, then run code after successfully connecting it
+• Explored various methods to ensure the security and integrity of the code loaded onto the drone to prevent unauthorized access or tampering
+• Investigated different communication protocols and technologies, such as Wi-Fi, cellular networks, or long-range radio, to establish a reliable and stable connection with the drone during flight
+• Explored the capabilities and limitations of the Mission Planner software to optimize its usage for real-time monitoring, control, and data collection from the drone
+• Researched best practices for ensuring data synchronization and latency reduction between the ground station and the drone during flight operations
