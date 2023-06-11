@@ -674,3 +674,5 @@ Replace your-pixhawk-serial-port with the serial port name of your Pixhawk 4, an
 5. **Interact with the drone using MAVProxy**: With MAVProxy running, you can enter commands in the MAVProxy terminal to interact with the simulated drone. MAVProxy provides a command-line interface for controlling the drone and accessing telemetry data. You can arm/disarm the drone, take off, control its movements, and perform other operations. Refer to MAVProxy documentation for a list of available commands.
 
 6. **Develop with pymavlink and dronekit-sitl**: You can use pymavlink and dronekit-sitl libraries to develop custom scripts and applications for interacting with the drone. These libraries provide APIs to send and receive MAVLink messages, control the drone's behavior, and access telemetry data. You can write Python scripts using these libraries to automate tasks, perform custom missions, or integrate additional functionality.
+
+oak: vuxd1H9zwlPn6ZFuUAUzT3BlbkFJkrcMXgrpmO4HPeEdI63r
