@@ -118,3 +118,8 @@ Day 14: Thursday 8th June 2023
 • Researched into how to load code onto the drone
 • Researched into how to stay connected to the drone when it is flying in the air (since we have no access point outside)
 • Installed Mission Planner and QGroundControl on the work i9 Windows PC for testing
+
+Day 15: Sunday 11th June 2023
+• Researched into how to load code onto the drone
+• Researched into how to stay connected to the drone when it is flying in the air (since we have no access point outside)
+• Researched into how to connect to the drone using the Mission Planner software, while in the air
