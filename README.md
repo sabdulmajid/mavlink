@@ -675,3 +675,78 @@ Replace your-pixhawk-serial-port with the serial port name of your Pixhawk 4, an
 
 6. **Develop with pymavlink and dronekit-sitl**: You can use pymavlink and dronekit-sitl libraries to develop custom scripts and applications for interacting with the drone. These libraries provide APIs to send and receive MAVLink messages, control the drone's behavior, and access telemetry data. You can write Python scripts using these libraries to automate tasks, perform custom missions, or integrate additional functionality.
 
+##Connecting a Raspberry Pi 4 to Pixhawk 4 (physical connection)
+
+1. Physical Connection: Connect the Pixhawk's telemetry port (usually TELEM1 or TELEM2) to the Raspberry Pi's serial port using appropriate cables. The Pixhawk's telemetry port uses a serial protocol like UART or MAVLink.
+
+2. Software Setup: Install the required software on your Raspberry Pi to communicate with the Pixhawk. You'll need to install the MAVProxy or DroneKit-Python libraries, which provide APIs for interacting with the Pixhawk.
+
+   - MAVProxy: Install MAVProxy by running the following command in the terminal:
+     ```
+     sudo pip3 install MAVProxy
+     ```
+
+   - DroneKit-Python: Install DroneKit-Python by running the following command:
+     ```
+     sudo pip3 install dronekit
+     ```
+
+3. Code Execution: Once the software is installed, you can write Python scripts to communicate with the Pixhawk and control the flight. Here's an example script to get started:
+
+   ```python
+   from dronekit import connect, VehicleMode
+
+   # Connect to the Pixhawk
+   connection_string = '/dev/serial0'  # Use the appropriate serial port
+   vehicle = connect(connection_string, wait_ready=True, baud=57600)
+
+   # Arm and takeoff
+   vehicle.mode = VehicleMode("GUIDED")
+   vehicle.armed = True
+   vehicle.simple_takeoff(10)  # Replace 10 with your desired altitude in meters
+
+   # Do some flight operations...
+
+   # Disconnect from the Pixhawk
+   vehicle.close()
+   ```
+
+   This example script connects to the Pixhawk, arms it, performs a guided takeoff to an altitude of 10 meters, and then you can add your own flight control logic as needed.
+
+4. Running Code When Raspberry Pi Restarts: If you want your code to run automatically when the Raspberry Pi is turned on or restarted, you can add your script to the system's startup process. You can achieve this by modifying the Raspberry Pi's systemd service.
+
+   - Create a new systemd service unit file by running the command:
+     ```
+     sudo nano /etc/systemd/system/myflightcontrol.service
+     ```
+
+   - Add the following content to the file:
+     ```
+     [Unit]
+     Description=My Flight Control
+     After=network.target
+
+     [Service]
+     ExecStart=/usr/bin/python3 /path/to/your/script.py
+
+     [Install]
+     WantedBy=multi-user.target
+     ```
+
+     Replace `/path/to/your/script.py` with the actual path to your Python script.
+
+   - Save the file and exit the text editor.
+
+   - Enable the service to start on boot:
+     ```
+     sudo systemctl enable myflightcontrol.service
+     ```
+
+   - Reboot the Raspberry Pi:
+     ```
+     sudo reboot
+     ```
+
+   After the reboot, your code will automatically start running.
+
+Please note that connecting a Raspberry Pi to a Pixhawk flight controller and controlling an aircraft involves potential safety risks. It's crucial to have a good understanding of flight operations and safety precautions. Always follow local regulations and ensure you have the necessary knowledge and experience to handle the system safely.
