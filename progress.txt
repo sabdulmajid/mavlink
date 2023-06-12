@@ -130,3 +130,5 @@ Day 15: Sunday 11th June 2023
 • Investigated different communication protocols and technologies, such as Wi-Fi, cellular networks, or long-range radio, to establish a reliable and stable connection with the drone during flight
 • Explored the capabilities and limitations of the Mission Planner software to optimize its usage for real-time monitoring, control, and data collection from the drone
 • Researched best practices for ensuring data synchronization and latency reduction between the ground station and the drone during flight operations
+
+Day 16: Monday 12th June 2023
