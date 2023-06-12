@@ -750,3 +750,135 @@ Replace your-pixhawk-serial-port with the serial port name of your Pixhawk 4, an
    After the reboot, your code will automatically start running.
 
 Please note that connecting a Raspberry Pi to a Pixhawk flight controller and controlling an aircraft involves potential safety risks. It's crucial to have a good understanding of flight operations and safety precautions. Always follow local regulations and ensure you have the necessary knowledge and experience to handle the system safely.
+
+## Log After 1st Test
+```
+AP: Frame: QUAD/X
+Received 973 parameters (ftp)
+Saved 973 parameters to mav.parm
+Flight battery 80 percent
+AP: PreArm: EKF attitude is bad
+AP: PreArm: AHRS: Waiting for 3D fix
+AP: PreArm: Battery 1 below minimum arming voltage
+GPS lock at 780 meters
+LOITER> Mode LOITER
+LAND> Mode LAND
+STABILIZE> LOITER> Mode LOITER
+LAND> LOITER> STABILIZE> Mode STABILIZE
+LAND> Mode LAND
+STABILIZE> Mode STABILIZE
+AP: PreArm: Battery 1 below minimum arming voltage
+AP: EKF3 IMU0 origin set
+AP: EKF3 IMU0 is using GPS
+AP: EKF3 IMU1 origin set
+AP: EKF3 IMU1 is using GPS
+LOITER> Mode LOITER
+LAND> LOITER> STABILIZE> Mode STABILIZE
+Flight battery 80 percent
+AP: PreArm: Battery 1 below minimum arming voltage
+AP: PreArm: Battery 1 below minimum arming voltage
+LOITER> Mode LOITER
+LAND> STABILIZE> Mode STABILIZE
+``x`ff~x~`ffxfx`fx`f``xx`xfx``f`x`x`fx```~`x`~~x``~x`~xx`~x`~~ff`fxfx`f`~`~``~fff`f``f`~xffx~``~xxxx~~xf~`~~xx``f`~`f`f~fx`fx`xx`xx`~f`ff~fx`fx`xx`x``f`ff`fx`fffff~fx`~~~ff``~`fxx``x`ffxxf`~`fx~x~```~f`f~f`f~~~f`~``xf`~ff`ffxxfx``fxff`fxfx`ff~f`~f`~~~`~x~f`~fff~``~xfx`xxx``f``~f~ff`~f``~xfx~xx``xx~xx``f`x`xxf`x`f`f~fx`f``x``~f`f``~x`~x`xxxxff`f~fx`fxx~~~xx`f`f`ff~xxff`fxfx`f`~``f`fx``f`f~fx`f~ffx```xxff`~``ff~`~``f~ff~`xxf`f~fx`f``f~f`~~ff~`xxxffx~x`xff~f`f~fx`fffx`fff`f`xf`f~fx`f`xfx~```x`x`f~x`fxx~f~~fx~f``~~``f`f~fx````~fx`ff~x~f`f~````~pi@raspberrypi:~ $ mavproxy.py --master=/dev/ttyAMA0
+Connect /dev/ttyAMA0 source_system=255
+Failed to load module: No module named 'cmdlong'. Use 'set moddebug 3' in the MAVProxy console to enable traceback
+Failed to load module: No module named 'terrain'. Use 'set moddebug 3' in the MAVProxy console to enable traceback
+Log Directory: 
+Telemetry log: mav.tlog
+Waiting for heartbeat from /dev/ttyAMA0
+MAV> GPS lock at 784 meters
+Detected vehicle 1:1 on link 0
+online system 1
+STABILIZE> Mode STABILIZE
+fence present
+fence enabled
+AP: ArduCopter V4.3.3 (34e8e02c)
+AP: ChibiOS: 66e5de0d
+AP: fmuv3 002A0032 3339510A 34383938
+AP: RCOut: PWM:1-14
+AP: IMU0: fast sampling enabled 8.0kHz/1.0kHz
+AP: Frame: QUAD/X
+
+STABILIZE> AP: PreArm: Battery 1 below minimum arming voltage
+mode GUIDEDReceived 973 parameters (ftp)
+Saved 973 parameters to mav.parm
+Flight battery 70 percent
+AP: GPS Glitch or Compass error
+
+STABILIZE> Got COMMAND_ACK: DO_SET_MODE: ACCEPTED
+GUIDED> Mode GUIDED
+`x`xff`xx``fxxxx`~`fxx`x`~~`f`xx`f`ff~`x`~`~~ffxxff~`f~f`~`~`fffxx`f`xfx`f~`f~``~ff``f~~`ff~`f~x`x~ffxff`f```~ffxxff```x~xfxx`f`xxfx~fx`fx~fff`f~~f`~f``x`x`ff```xf~````f``ffx`xf~~mavproxy.py --master=/dev/ttyAMA0
+Connect /dev/ttyAMA0 source_system=255
+Failed to load module: No module named 'cmdlong'. Use 'set moddebug 3' in the MAVProxy console to enable traceback
+Failed to load module: No module named 'terrain'. Use 'set moddebug 3' in the MAVProxy console to enable traceback
+Log Directory: 
+Telemetry log: mav.tlog
+Waiting for heartbeat from /dev/ttyAMA0
+MAV> GPS lock at 784 meters
+Detected vehicle 1:1 on link 0
+online system 1
+GUIDED> Mode GUIDED
+fence present
+fence enabled
+AP: ArduCopter V4.3.3 (34e8e02c)
+AP: ChibiOS: 66e5de0d
+AP: fmuv3 002A0032 3339510A 34383938
+AP: RCOut: PWM:1-14
+AP: IMU0: fast sampling enabled 8.0kHz/1.0kHz
+AP: Frame: QUAD/X
+AP: Glitch cleared
+Received 973 parameters (ftp)
+Saved 973 parameters to mav.parm
+Flight battery 70 percent
+AP: PreArm: Battery 1 below minimum arming voltage
+AP: GPS Glitch or Compass error
+AP: Glitch cleared
+AP: PreArm: Battery 1 below minimum arming voltage
+AP: GPS Glitch or Compass error
+AP: EKF variance
+Flight battery 70 percent
+AP: PreArm: GPS and AHRS differ by 26.2m
+AP: PreArm: Battery 1 below minimum arming voltage
+AP: EKF3 lane switch 1
+AP: EKF3 lane switch 1
+AP: PreArm: GPS glitching
+AP: PreArm: Battery 1 below minimum arming voltage
+Flight battery 70 percent
+AP: PreArm: GPS and AHRS differ by 10.3m
+AP: PreArm: Battery 1 below minimum arming voltage
+AP: PreArm: GPS glitching
+AP: PreArm: Battery 1 below minimum arming voltage
+f`f`x`fxxf`ffxf~~`xx`~``xf~~`f```~xffx`~f``~fxxx``~f`fff~``xffffffx`~fx`x~xf`x```~xff```~x~`xx```fxxf`~`~```~f`f``f~x~````~`f~~`xx``x```x`~~f`~f`~fx`x``ff``xf``xxf``fxfx`~``xx`x~xxx``````f`f~`~`xfx`x`~x`~`~~x`f~f`~ffxf`ff~fxx~~x`f`f``f``~xf`f`x``fxfxff~xx`x~pi@raspberrypi:~ $ mavproxy.py --master=/dev/ttyAMA0
+Connect /dev/ttyAMA0 source_system=255
+Failed to load module: No module named 'cmdlong'. Use 'set moddebug 3' in the MAVProxy console to enable traceback
+Failed to load module: No module named 'terrain'. Use 'set moddebug 3' in the MAVProxy console to enable traceback
+Log Directory: 
+Telemetry log: mav.tlog
+Waiting for heartbeat from /dev/ttyAMA0
+MAV> Detected vehicle 1:1 on link 0
+online system 1
+GUIDED> Mode GUIDED
+fence present
+fence enabled
+GPS lock at 784 meters
+AP: ArduCopter V4.3.3 (34e8e02c)
+AP: ChibiOS: 66e5de0d
+AP: fmuv3 002A0032 3339510A 34383938
+AP: RCOut: PWM:1-14
+AP: IMU0: fast sampling enabled 8.0kHz/1.0kHz
+AP: Frame: QUAD/X
+mode SReceived 973 parameters (ftp)
+Saved 973 parameters to mav.parm
+Flight battery 70 percent
+AP: PreArm: GPS glitching
+AP: PreArm: Battery 1 below minimum arming voltage
+arm check gps
+GUIDED> Unknown command 'marm check gps'
+arm check gps
+GUIDED> AP: EKF3 lane switch 1
+AP: EKF variance
+AP: PreArm: GPS and AHRS differ by 56.2m
+AP: PreArm: Battery 1 below minimum arming voltage
+AP: EKF variance
+
+```
