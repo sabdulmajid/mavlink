@@ -132,3 +132,11 @@ Day 15: Sunday 11th June 2023
 • Researched best practices for ensuring data synchronization and latency reduction between the ground station and the drone during flight operations
 
 Day 16: Monday 12th June 2023
+• Tested all three different types of code for flying the drone, using pyMAVLink, dronekit-api and MAVSDK
+• Ran into issues with the drone not taking off, and not being able to connect to the drone
+• Could not find a fix to that issue, so will have to work on it again tomorrow
+• Have successfully connected the MAVProxy to the drone, but am unable to run either of the 3 code files on it
+• Need to configure the Raspberry Pi 4 to run from boot and connect to the drone automatically (with code automatically running as it starts)
+• Another issue that I ran into was that the GPS signal did not reach the indoors, so for testing, we had to take the drone outside - which resulted in another issue - the Raspberry Pi 4 was unable to connect to the Wi-fi inside the building
+• Will have to find a solution to this issue, as we need to be able to connect to the drone from inside the building, and not have to take it outside every time we want to test something
+• Plan tomorrow is to try and do whatever it takes to get the drone to start it's motors inside the building
