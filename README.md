@@ -675,7 +675,7 @@ Replace your-pixhawk-serial-port with the serial port name of your Pixhawk 4, an
 
 6. **Develop with pymavlink and dronekit-sitl**: You can use pymavlink and dronekit-sitl libraries to develop custom scripts and applications for interacting with the drone. These libraries provide APIs to send and receive MAVLink messages, control the drone's behavior, and access telemetry data. You can write Python scripts using these libraries to automate tasks, perform custom missions, or integrate additional functionality.
 
-##Connecting a Raspberry Pi 4 to Pixhawk 4 (physical connection)
+## Connecting a Raspberry Pi 4 to Pixhawk 4 (physical connection)
 
 1. Physical Connection: Connect the Pixhawk's telemetry port (usually TELEM1 or TELEM2) to the Raspberry Pi's serial port using appropriate cables. The Pixhawk's telemetry port uses a serial protocol like UART or MAVLink.
 
