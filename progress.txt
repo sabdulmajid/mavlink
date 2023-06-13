@@ -142,9 +142,7 @@ Day 16: Monday 12th June 2023
 • Plan tomorrow is to try and do whatever it takes to get the drone to start it's motors inside the building
 
 Day 17: Tuesday 13th June 2023
-• 
-• 
-• 
-• 
-• 
-• 
+• Encountered compatibility issues with DroneKit, Python 3.11, pyMAVlink, and MAVProxy, halting our further progress on the project due to the incompatibility
+• Unable to find bug fixes or support since the software is not maintained (the DroneKit-api software)
+• Will have to start from scratch using Python 2.7 and old dependencies of DroneKit
+• Understand that starting from scratch will be time-consuming but have to do it for project success
