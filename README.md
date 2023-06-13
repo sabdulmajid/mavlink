@@ -697,7 +697,7 @@ Replace your-pixhawk-serial-port with the serial port name of your Pixhawk 4, an
    from dronekit import connect, VehicleMode
 
    # Connect to the Pixhawk
-   connection_string = '/dev/serial0'  # Use the appropriate serial port
+   connection_string = '/dev/ttyAMA0'
    vehicle = connect(connection_string, wait_ready=True, baud=57600)
 
    # Arm and takeoff
