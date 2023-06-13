@@ -882,3 +882,6 @@ AP: PreArm: Battery 1 below minimum arming voltage
 AP: EKF variance
 
 ```
+
+## Getting Nowhere With Tests
+After working on this project for multiple weeks now, we aren't able to make any progress because of the incompatibility of DroneKit with everything else, such as Python 3.11, pyMAVlink and even the inability to connect with the MAVProxy instance in another terminal. I am still looking for a bug fixes, but cannot find anything since the software is not maintained at all. My last resort now is to FULLY start from scratch, and write code in Python 2.7 and use all of the old dependencies of DroneKit. This is a very time consuming process, but I am willing to do it if it means that I can get this project to work. Hopefully I get somewhere.
