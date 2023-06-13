@@ -146,3 +146,6 @@ Day 17: Tuesday 13th June 2023
 • Unable to find bug fixes or support since the software is not maintained (the DroneKit-api software)
 • Will have to start from scratch using Python 2.7 and old dependencies of DroneKit
 • Understand that starting from scratch will be time-consuming but have to do it for project success
+• Learning Python 2.7 now as all of my previously shipped code will need to be fully replaced and re-written, since we are migrating back to Python 2.7
+• First task tomorrow is to get all the code for takeoff and land to written in Python 2.7 and tested on the Raspberry Pi
+• Also, need to look into MAVROS and ROS in general to see if this will work with our project - by reading reviews and documentation online
