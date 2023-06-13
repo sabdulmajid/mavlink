@@ -140,3 +140,11 @@ Day 16: Monday 12th June 2023
 • Another issue that I ran into was that the GPS signal did not reach the indoors, so for testing, we had to take the drone outside - which resulted in another issue - the Raspberry Pi 4 was unable to connect to the Wi-fi inside the building
 • Will have to find a solution to this issue, as we need to be able to connect to the drone from inside the building, and not have to take it outside every time we want to test something
 • Plan tomorrow is to try and do whatever it takes to get the drone to start it's motors inside the building
+
+Day 17: Tuesday 13th June 2023
+• 
+• 
+• 
+• 
+• 
+• 
