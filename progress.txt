@@ -149,3 +149,10 @@ Day 17: Tuesday 13th June 2023
 • Learning Python 2.7 now as all of my previously shipped code will need to be fully replaced and re-written, since we are migrating back to Python 2.7
 • First task tomorrow is to get all the code for takeoff and land to written in Python 2.7 and tested on the Raspberry Pi
 • Also, need to look into MAVROS and ROS in general to see if this will work with our project - by reading reviews and documentation online
+
+Day 18: Wednesday 14th June 2023
+• 
+• 
+• 
+• 
+• 
