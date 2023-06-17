@@ -156,3 +156,9 @@ Day 18: Wednesday 14th June 2023
 • Downgraded all the dependencies on the Raspberry Pi 3 (such as dronekit-api, pymavlink and MAVProxy)
 • Updated the Raspberry Pi 3 to the latest version of Raspbian OS 10
 • Have yet to successfully download all of the dependencies on the Raspberry Pi 3
+
+Day 19: Thursday 15th June 2023
+• 
+• 
+• 
+• 
