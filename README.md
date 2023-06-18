@@ -885,3 +885,328 @@ AP: EKF variance
 
 ## Getting Nowhere With Tests
 After working on this project for multiple weeks now, we aren't able to make any progress because of the incompatibility of DroneKit with everything else, such as Python 3.11, pyMAVlink and even the inability to connect with the MAVProxy instance in another terminal. I am still looking for a bug fixes, but cannot find anything since the software is not maintained at all. My last resort now is to FULLY start from scratch, and write code in Python 2.7 and use all of the old dependencies of DroneKit. This is a very time consuming process, but I am willing to do it if it means that I can get this project to work. Hopefully I get somewhere.
+
+## Yarn Lint Issues
+```typescript
+ayman@iMac-shkhsy amelia-mobile % yarn lint
+yarn run v1.22.19
+$ eslint .
+can't resolve reference #/definitions/directiveConfigSchema from id #
+can't resolve reference #/definitions/directiveConfigSchema from id #
+can't resolve reference #/definitions/directiveConfigSchema from id #
+can't resolve reference #/definitions/directiveConfigSchema from id #
+Warning: React version not specified in eslint-plugin-react settings. See https://github.com/jsx-eslint/eslint-plugin-react#configuration .
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/__tests__/Components/LockScreen-test.js
+  22:31  warning  'initialLoadingValue' is defined but never used  @typescript-eslint/no-unused-vars
+  35:31  warning  'initialLoadingValue' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/App.tsx
+  1:17  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/BottomSheet.tsx
+  24:44  warning  'updateProfile' is defined but never used       @typescript-eslint/no-unused-vars
+  27:18  warning  'updateRes' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/DoubleButtonModal.tsx
+  30:32  warning  'Common' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/InAppContext.tsx
+  5:15  warning  'data' is defined but never used  @typescript-eslint/no-unused-vars
+  9:15  warning  'user' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/MainProfile/Tags.tsx
+  15:11  warning  'Gutters' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/NotificationCards/NotifCards.tsx
+    3:10  warning  'updateInfo' is defined but never used          @typescript-eslint/no-unused-vars
+  303:10  warning  'readNotif' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  719:16  warning  'hour' is defined but never used                @typescript-eslint/no-unused-vars
+  720:18  warning  'minute' is defined but never used              @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/NotificationCards/SocialCards.tsx
+  3:10  warning  'updateInfo' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/NotificationCards/SystemCards.tsx
+  3:10  warning  'updateInfo' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/NotificationCards/notifHooks.tsx
+   2:8   warning  'React' is defined but never used                @typescript-eslint/no-unused-vars
+   5:10  warning  'useGetCommentsQuery' is defined but never used  @typescript-eslint/no-unused-vars
+   7:10  warning  'getUserById' is defined but never used          @typescript-eslint/no-unused-vars
+  47:10  warning  'message' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/OnboardingProfile/ProfileHead.tsx
+  14:42  warning  'title' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/OnboardingProfile/ProfileTail.tsx
+   3:10  warning  'Params' is defined but never used                  @typescript-eslint/no-unused-vars
+  21:19  warning  'width' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  33:24  warning  'interestRes' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  34:26  warning  'professionRes' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  35:24  warning  'headlineRes' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  36:19  warning  'bioRes' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  96:7   warning  'styles' is assigned a value but never used         @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/OnboardingProfile/Tags.tsx
+  16:11  warning  'width' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  16:18  warning  'height' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/ProfileSettings/ConnectSocialsLine.tsx
+  3:53  warning  'View' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/ProfileSettings/InputField.tsx
+  3:22  warning  'Text' is defined but never used   @typescript-eslint/no-unused-vars
+  3:39  warning  'View' is defined but never used   @typescript-eslint/no-unused-vars
+  5:11  warning  'Props' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/ProfileSettings/ProfileSettingsLine.tsx
+  5:11  warning  'Props' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/ProfileSettings/SuccessPrompt.tsx
+  2:35  warning  'View' is defined but never used    @typescript-eslint/no-unused-vars
+  3:20  warning  'Easing' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/SocialsCard.tsx
+    7:10  warning  'idToPeople' is defined but never used            @typescript-eslint/no-unused-vars
+    9:10  warning  'SocialEventInfo' is defined but never used       @typescript-eslint/no-unused-vars
+   54:7   warning  'hostProfile' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  529:10  warning  'alert' is defined but never used                 @typescript-eslint/no-unused-vars
+  529:16  warning  'arg0' is defined but never used                  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/SocialsPage/Attending/EventCard.tsx
+  1:24  warning  'updateInfo' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Components/SocialsPage/Hosting/DraftCard.tsx
+    1:24  warning  'updateInfo' is defined but never used      @typescript-eslint/no-unused-vars
+   38:9   warning  'Photo' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  167:16  warning  'hour' is defined but never used            @typescript-eslint/no-unused-vars
+  168:18  warning  'minute' is defined but never used          @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/BioModal.tsx
+  1:27  warning  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/BookVenueForm/BookVenueForm.tsx
+   11:3   warning  'Modal' is defined but never used                                      @typescript-eslint/no-unused-vars
+   17:10  warning  'BlurView' is defined but never used                                   @typescript-eslint/no-unused-vars
+   20:10  warning  'Config' is defined but never used                                     @typescript-eslint/no-unused-vars
+   36:10  warning  'toHosting' is defined but never used                                  @typescript-eslint/no-unused-vars
+  158:16  warning  'editRes' is assigned a value but never used                           @typescript-eslint/no-unused-vars
+  159:10  warning  'pushOneSignal' is assigned a value but never used                     @typescript-eslint/no-unused-vars
+  159:25  warning  'oneSignalRes' is assigned a value but never used                      @typescript-eslint/no-unused-vars
+  160:10  warning  'showLeavePageModal' is assigned a value but never used                @typescript-eslint/no-unused-vars
+  160:30  warning  'setShowLeavePageModal' is assigned a value but never used             @typescript-eslint/no-unused-vars
+  181:10  warning  'socialDraftModalVisible' is assigned a value but never used           @typescript-eslint/no-unused-vars
+  184:35  warning  'isLoading' is assigned a value but never used                         @typescript-eslint/no-unused-vars
+  184:46  warning  'error' is assigned a value but never used                             @typescript-eslint/no-unused-vars
+  251:9   warning  'changeSocialDraftModalVisibility' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  267:9   warning  'toVenue' is assigned a value but never used                           @typescript-eslint/no-unused-vars
+  278:9   warning  'authToken' is assigned a value but never used                         @typescript-eslint/no-unused-vars
+  283:21  warning  'pushRes' is assigned a value but never used                           @typescript-eslint/no-unused-vars
+  284:10  warning  'newEventId' is assigned a value but never used                        @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/BookVenueForm/CancelSocialForm.tsx
+    1:10  warning  'Fonts' is defined but never used                       @typescript-eslint/no-unused-vars
+  115:33  warning  'Common' is assigned a value but never used             @typescript-eslint/no-unused-vars
+  115:41  warning  'SocialEventStyles' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  115:60  warning  'Colors' is assigned a value but never used             @typescript-eslint/no-unused-vars
+  119:10  warning  'cancel' is assigned a value but never used             @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/BookVenueForm/SocialDraftModal.tsx
+  4:10  warning  'navigate' is defined but never used         @typescript-eslint/no-unused-vars
+  4:20  warning  'navigateForward' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/HomeContainer.tsx
+  22:31  warning  'useUpdateUserDataMutation' is defined but never used  @typescript-eslint/no-unused-vars
+  26:10  warning  'useLazyPushNotifQuery' is defined but never used      @typescript-eslint/no-unused-vars
+  45:10  warning  'cityUpdated' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  52:10  warning  'notifs' is assigned a value but never used            @typescript-eslint/no-unused-vars
+  52:18  warning  'setNotifs' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  58:21  warning  'pushRes' is assigned a value but never used           @typescript-eslint/no-unused-vars
+  66:9   warning  'toDiscussions' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  69:9   warning  'accessToken' is assigned a value but never used       @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/InterestsModal.tsx
+  13:10  warning  'Config' is defined but never used                 @typescript-eslint/no-unused-vars
+  28:31  warning  'interestsRes' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  78:9   warning  'authToken' is assigned a value but never used     @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/LoginFlow/CheckEmailPage.tsx
+  13:22  warning  'setFormStatus' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/LoginFlow/Components/Footer.tsx
+  28:11  warning  'height' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/LoginFlow/Components/InputBox.tsx
+   2:10  warning  'Text' is defined but never used            @typescript-eslint/no-unused-vars
+   2:27  warning  'TextStyle' is defined but never used       @typescript-eslint/no-unused-vars
+   6:8   warning  'PropTypes' is defined but never used       @typescript-eslint/no-unused-vars
+  34:11  warning  'Fonts' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/LoginFlow/EmailPage.tsx
+   1:28  warning  'useRef' is defined but never used             @typescript-eslint/no-unused-vars
+   2:22  warning  'Text' is defined but never used               @typescript-eslint/no-unused-vars
+  21:20  warning  'emailRes' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/LoginFlow/LoginPage.tsx
+   2:17  warning  'isValidElement' is defined but never used            @typescript-eslint/no-unused-vars
+   8:10  warning  'onLogin' is defined but never used                   @typescript-eslint/no-unused-vars
+   8:19  warning  'NavigationControllerData' is defined but never used  @typescript-eslint/no-unused-vars
+   8:45  warning  'onCheckEmail' is defined but never used              @typescript-eslint/no-unused-vars
+  18:8   warning  'OneSignal' is defined but never used                 @typescript-eslint/no-unused-vars
+  47:22  warning  'setToastError' is assigned a value but never used    @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/LoginFlow/SignUpPage.tsx
+   2:38  warning  'createContext' is defined but never used             @typescript-eslint/no-unused-vars
+  11:10  warning  'NavigationControllerData' is defined but never used  @typescript-eslint/no-unused-vars
+  11:36  warning  'onSignUp' is defined but never used                  @typescript-eslint/no-unused-vars
+  53:22  warning  'setToastError' is assigned a value but never used    @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/Onboarding/LocationPage.tsx
+   2:41  warning  'SafeAreaView' is defined but never used            @typescript-eslint/no-unused-vars
+   4:20  warning  'Params' is defined but never used                  @typescript-eslint/no-unused-vars
+   4:28  warning  'postData' is defined but never used                @typescript-eslint/no-unused-vars
+   5:10  warning  'Config' is defined but never used                  @typescript-eslint/no-unused-vars
+  15:10  warning  'locationQuery' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/Onboarding/OnboardingScreen.tsx
+  2:36  warning  'Dimensions' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileContainers/EarnPointsPage.tsx
+  13:10  warning  'Colors' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileIndustryTagsModal.tsx
+  23:32  warning  'professionRes' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/AccountInfo.tsx
+  5:16  warning  'Text' is defined but never used         @typescript-eslint/no-unused-vars
+  6:10  warning  'useSelector' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/ChangePassword.tsx
+  1:25  warning  'InputBar' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/ChooseLocation.tsx
+  28:9  warning  'editCity' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/ConnectInstagram.tsx
+   3:10  warning  'navigateForward' is defined but never used   @typescript-eslint/no-unused-vars
+  27:16  warning  'setName' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/ConnectLinkedIn.tsx
+  1:45  warning  'InputField' is defined but never used       @typescript-eslint/no-unused-vars
+  3:10  warning  'navigateForward' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/ConnectSocials.tsx
+  4:16  warning  'Text' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/ConnectTwitter.tsx
+  1:45  warning  'InputBar' is defined but never used         @typescript-eslint/no-unused-vars
+  3:10  warning  'navigateForward' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/PrivacySafety.tsx
+  4:16  warning  'Text' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/ProfileForgotPassword.tsx
+  1:25  warning  'InputBar' is defined but never used         @typescript-eslint/no-unused-vars
+  3:10  warning  'navigateForward' is defined but never used  @typescript-eslint/no-unused-vars
+  7:52  warning  'Button' is defined but never used           @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/ProfileSettings.tsx
+   6:10  warning  'navigateAndSimpleReset' is defined but never used  @typescript-eslint/no-unused-vars
+  10:10  warning  'navigateAndReset' is defined but never used        @typescript-eslint/no-unused-vars
+  16:9   warning  'styles' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  26:10  warning  'backdrop' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  26:20  warning  'setBackdrop' is assigned a value but never used    @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/ProfileSettings/SMSNotifications.tsx
+  3:10  warning  'navigateForward' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/SampleSocialDetail/SampleDirectMessagePage.tsx
+   2:35  warning  'useEffect' is defined but never used              @typescript-eslint/no-unused-vars
+   4:10  warning  'useSelector' is defined but never used            @typescript-eslint/no-unused-vars
+  11:10  warning  'Config' is defined but never used                 @typescript-eslint/no-unused-vars
+  22:11  warning  'refDoubleButtonModal' is defined but never used   @typescript-eslint/no-unused-vars
+  32:23  warning  'postRes' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  33:20  warning  'inSocRes' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  34:16  warning  'pushRes' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  35:25  warning  'oneSignalRes' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/SampleSocialDetail/SampleSocialDetailPage.tsx
+   6:3   warning  'SocialEventInfo' is defined but never used          @typescript-eslint/no-unused-vars
+  16:10  warning  'useGetUserDataQuery' is defined but never used      @typescript-eslint/no-unused-vars
+  30:10  warning  'ProfileContext' is defined but never used           @typescript-eslint/no-unused-vars
+  55:20  warning  'inSocRes' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  56:22  warning  'inWlRes' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  57:21  warning  'outSocRes' is assigned a value but never used       @typescript-eslint/no-unused-vars
+  58:23  warning  'outWlRes' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  59:21  warning  'pushRes' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  60:25  warning  'oneSignalRes' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  80:10  warning  'isPublished' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  80:23  warning  'setIsPublished' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Containers/SampleVenueDetail/SampleVenueDetailPage.tsx
+  88:11  warning  'Layout' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Navigators/Main.tsx
+  10:10  warning  'BlurView' is defined but never used                @typescript-eslint/no-unused-vars
+  25:22  warning  'setNewMessage' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Screens/Context/ProfileContext.tsx
+  5:20  warning  's' is defined but never used  @typescript-eslint/no-unused-vars
+  9:17  warning  's' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Screens/Context/SocialsContext.tsx
+  5:14  warning  's' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Screens/Context/VenusesContext.tsx
+  5:14  warning  's' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Screens/Notifications.tsx
+   1:17  warning  'useState' is defined but never used              @typescript-eslint/no-unused-vars
+   1:27  warning  'useEffect' is defined but never used             @typescript-eslint/no-unused-vars
+   8:3   warning  'SafeAreaView' is defined but never used          @typescript-eslint/no-unused-vars
+  13:7   warning  'Tab' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  14:8   warning  'System' is defined but never used                @typescript-eslint/no-unused-vars
+  15:8   warning  'Messages' is defined but never used              @typescript-eslint/no-unused-vars
+  16:8   warning  'SocialsNotifications' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Screens/NotificationsTab/Messages.tsx
+   3:10  warning  'MessageNotification' is defined but never used     @typescript-eslint/no-unused-vars
+   9:19  warning  'b' is defined but never used                       @typescript-eslint/no-unused-vars
+  20:11  warning  'Layout' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  21:9   warning  'scrollViewRef' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  22:22  warning  'setToastError' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Screens/NotificationsTab/SocialsNotifications.tsx
+   1:10  warning  'SocialNotification' is defined but never used      @typescript-eslint/no-unused-vars
+   8:19  warning  'b' is defined but never used                       @typescript-eslint/no-unused-vars
+  19:22  warning  'setToastError' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Screens/NotificationsTab/System.tsx
+   3:10  warning  'SystemNotification' is defined but never used      @typescript-eslint/no-unused-vars
+   8:19  warning  'b' is defined but never used                       @typescript-eslint/no-unused-vars
+  19:22  warning  'setToastError' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Screens/SocialsTab/Attending.tsx
+  145:24  warning  'item' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Screens/SocialsTab/Hosting.tsx
+  144:24  warning  'item' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Services/modules/venues/endpoints.ts
+  2:10  warning  'Venue' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Store/Actions.ts
+  2:10  warning  'string' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Theme/components/NotificationStyles.ts
+  1:8  warning  'React' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/ayman/Desktop/Ayman/mobile_app/amelia-mobile/src/Util/Linkedin/Authorization.tsx
+   30:11  warning  'test' is assigned a value but never used        @typescript-eslint/no-unused-vars
+  150:9   warning  'testToken2' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+✖ 181 problems (0 errors, 181 warnings)
+
+✨  Done in 6.77s.
+```
