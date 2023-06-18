@@ -1210,3 +1210,6 @@ Warning: React version not specified in eslint-plugin-react settings. See https:
 
 ✨  Done in 6.77s.
 ```
+
+## Channel Overriding for Indoor Drone Testing
+(Guide on how to override the RC for indoor control of drone (unstable but possible))[https://dronekit-python.readthedocs.io/en/latest/examples/channel_overrides.html#example-channel-overrides]
