@@ -158,6 +158,13 @@ Day 18: Wednesday 14th June 2023
 • Have yet to successfully download all of the dependencies on the Raspberry Pi 3
 
 Day 19: Thursday 15th June 2023
+• Downloaded all the required dependencies for the Raspberry Pi 3
+• Managed to migrate all of the useful stuff from the RP3 to the RP4
+• Tested code on the RP4 to run the flight controller, and it worked
+• Will look into MAVROS and Gazebo for flight simulation
+
+Day 20: Sunday 18th June 2023
+• 
 • 
 • 
 • 
