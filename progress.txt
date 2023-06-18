@@ -164,8 +164,8 @@ Day 19: Thursday 15th June 2023
 • Will look into MAVROS and Gazebo for flight simulation
 
 Day 20: Sunday 18th June 2023
-• 
-• 
-• 
-• 
-• 
+• Researched into MAVROS and Gazebo for flight simulation
+• Set up the MAVROS environment
+• Set up the Gazebo environment
+• Wrote code to collect sensor information from the drone while in flight
+• Wrote code to control the drone while in flight (stablize mode, guided mode, land mode)
