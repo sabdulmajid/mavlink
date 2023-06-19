@@ -884,7 +884,7 @@ AP: EKF variance
 ```
 
 ## Getting Nowhere With Tests
-After working on this project for multiple weeks now, we aren't able to make any progress because of the incompatibility of DroneKit with everything else, such as Python 3.11, pyMAVlink and even the inability to connect with the MAVProxy instance in another terminal. I am still looking for a bug fixes, but cannot find anything since the software is not maintained at all. My last resort now is to FULLY start from scratch, and write code in Python 2.7 and use all of the old dependencies of DroneKit. This is a very time consuming process, but I am willing to do it if it means that I can get this project to work. Hopefully I get somewhere.
+After working on this project for multiple weeks now, we aren't able to make any progress because of the incompatibility of DroneKit with everything else, such as Python 3.11, pyMAVlink and even the inability to connect with the MAVProxy instance in another terminal. I am still looking for bug fixes, but cannot find anything since the software is not maintained at all. My last resort now is to FULLY start from scratch, and write code in Python 2.7 and use all of the old dependencies of DroneKit. This is a very time consuming process, but I am willing to do it if it means that I can get this project to work. Hopefully I get somewhere.
 
 ## Yarn Lint Issues
 ```typescript
@@ -1213,3 +1213,159 @@ Warning: React version not specified in eslint-plugin-react settings. See https:
 
 ## Channel Overriding for Indoor Drone Testing
 (Guide on how to override the RC for indoor control of drone (unstable but possible))[https://dronekit-python.readthedocs.io/en/latest/examples/channel_overrides.html#example-channel-overrides]
+
+## Terminal Log After First 3 Tests
+```typescript
+pi@raspberrypi:~/droneTest $ python real_test_1.py ############# FIRST TEST #############
+Connecting to vehicle on: /dev/ttyAMA0
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+Basic pre-arm checks
+Starting .....
+Arming motors
+Waiting for arming...
+Taking off!
+('Altitude:', -0.066)
+('Altitude:', -0.056)
+('Altitude:', 0.105)
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 0.407)
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+WARNING:autopilot:Radio Failsafe
+WARNING:autopilot:Radio Failsafe Cleared
+('Altitude:', 0.798)
+('Altitude:', 0.748)
+('Altitude:', 0.864)
+('Altitude:', 1.122)
+Reached target altitude
+Take off complete
+Now let's land
+pi@raspberrypi:~/droneTest $ python real_test_1.py 
+Connecting to vehicle on: /dev/ttyAMA0
+Basic pre-arm checks
+Starting .....
+Arming motors
+Waiting for arming...
+Taking off!
+('Altitude:', 0.109)
+('Altitude:', 0.187)
+('Altitude:', 0.222)
+('Altitude:', 0.528)
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 0.893)
+('Altitude:', 0.95)
+Reached target altitude
+Take off complete
+Now let's land
+pi@raspberrypi:~/droneTest $ python real_test_2.py ############# SECOND TEST #############
+Connecting to vehicle on: /dev/ttyAMA0
+Basic pre-arm checks
+Starting .....
+Arming motors
+Waiting for arming...
+Taking off!
+('Altitude:', 0.024)
+Latitude: 28.382081, Longitude: 36.482996
+('Altitude:', 0.028)
+Latitude: 28.382080, Longitude: 36.482996
+('Altitude:', 0.076)
+Latitude: 28.382080, Longitude: 36.482996
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 0.659)
+Latitude: 28.382080, Longitude: 36.482996
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 1.55)
+Latitude: 28.382080, Longitude: 36.482996
+('Altitude:', 1.834)
+Latitude: 28.382081, Longitude: 36.482996
+('Altitude:', 1.927)
+Latitude: 28.382080, Longitude: 36.482996
+Reached target altitude
+Take off complete
+Now let's land
+pi@raspberrypi:~/droneTest $ python real_test_3.py ############# THIRD TEST #############
+WARNING:dronekit:Link timeout, no heartbeat in last 5 seconds
+ERROR:dronekit.mavlink:Exception in MAVLink input loop
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/dronekit/mavlink.py", line 211, in mavlink_thread_in
+    fn(self)
+  File "/usr/local/lib/python2.7/dist-packages/dronekit/__init__.py", line 1371, in listener
+    self._heartbeat_error)
+APIException: No heartbeat in 30 seconds, aborting.
+Traceback (most recent call last):
+  File "real_test_3.py", line 5, in <module>
+    vehicle = connect('/dev/ttyAMA0', wait_ready=True)  # /dev/ttyS0
+  File "/usr/local/lib/python2.7/dist-packages/dronekit/__init__.py", line 3166, in connect
+    vehicle.initialize(rate=rate, heartbeat_timeout=heartbeat_timeout)
+  File "/usr/local/lib/python2.7/dist-packages/dronekit/__init__.py", line 2275, in initialize
+    raise APIException('Timeout in initializing connection.')
+dronekit.APIException: Timeout in initializing connection.
+pi@raspberrypi:~/droneTest $ python real_test_3.py ############# THIRD TEST #############
+WARNING:dronekit:Link timeout, no heartbeat in last 5 seconds
+^Z
+[1]+  Stopped                 python real_test_3.py
+pi@raspberrypi:~/droneTest $ python real_test_2.py
+Connecting to vehicle on: /dev/ttyAMA0
+Basic pre-arm checks
+Starting .....
+Arming motors
+Waiting for arming...
+Taking off!
+('Altitude:', -0.062)
+Latitude: 28.382075, Longitude: 36.482991
+('Altitude:', 0.026)
+Latitude: 28.382075, Longitude: 36.482991
+('Altitude:', 0.142)
+Latitude: 28.382075, Longitude: 36.482991
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 0.504)
+Latitude: 28.382075, Longitude: 36.482991
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 1.562)
+Latitude: 28.382071, Longitude: 36.482990
+('Altitude:', 1.916)
+Latitude: 28.382071, Longitude: 36.482990
+Reached target altitude
+Take off complete
+Now let's land
+pi@raspberrypi:~/droneTest $ python real_test_4.py ############# FOURTH TEST #############
+python: can't open file 'real_test_4.py': [Errno 2] No such file or directory
+pi@raspberrypi:~/droneTest $ python real_test4.py
+  File "real_test4.py", line 66
+    if vehicle.location.global_relative_frame.alt>=aTargetAltitude*0.95: 
+                                                                        ^
+IndentationError: unindent does not match any outer indentation level
+pi@raspberrypi:~/droneTest $ python real_test4.py
+  File "real_test4.py", line 66
+    if vehicle.location.global_relative_frame.alt>=aTargetAltitude*0.95:
+                                                                       ^
+IndentationError: unindent does not match any outer indentation level
+pi@raspberrypi:~/droneTest $ python real_test_2.py ############# SECOND TEST AGAIN (With different height)#############
+Connecting to vehicle on: /dev/ttyAMA0
+Basic pre-arm checks
+Starting .....
+Arming motors
+Waiting for arming...
+Taking off!
+('Altitude:', -0.009)
+Latitude: 28.382078, Longitude: 36.482986
+('Altitude:', -0.043)
+Latitude: 28.382078, Longitude: 36.482986
+('Altitude:', -0.141)
+Latitude: 28.382078, Longitude: 36.482986
+('Altitude:', 0.313)
+Latitude: 28.382078, Longitude: 36.482986
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 2.178)
+Latitude: 28.382078, Longitude: 36.482985
+('Altitude:', 3.423)
+Latitude: 28.382078, Longitude: 36.482987
+('Altitude:', 3.999)
+Latitude: 28.382078, Longitude: 36.482987
+Reached target altitude
+Take off complete
+Now let's land
+
+```
