@@ -169,3 +169,17 @@ Day 20: Sunday 18th June 2023
 • Set up the Gazebo environment
 • Wrote code to collect sensor information (battery, roll, pitch, yaw, voltage, current, etc) from the drone while in flight
 • Wrote code to control the drone while in flight (stablize mode, guided mode, land mode)
+
+Day 21: Monday 19th June 2023
+• Tested 4 different variations of code on the actual drone in the field
+• 2 variations properly worked, 1 variation had a connection issue and the last one had an issue with an indent in the code (which is what happens when you code on the Thonny IDE on RP4! I've fixed that for tomorrow's testing session and it should be fine)
+• Added another 2 variations of code, one to that works similar to the previous 4 and another one meant for a different type of mission
+• Will test all 6 variations of code tomorrow, and see which one works best
+• Need to work on making the RP4 self-sufficient (fully autonomous) so that it will fly as soon as it is turn on and will go from waypoint to waypoint and land successfully without any issues or errors
+
+Day 22: Tuesday 20th June 2023
+• 
+• 
+• 
+• 
+• 
