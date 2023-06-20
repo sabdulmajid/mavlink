@@ -1369,3 +1369,55 @@ Take off complete
 Now let's land
 
 ```
+
+## RP4 Wi-fi Issues
+If the access point is no longer showing up on your Raspberry Pi 4, there could be several reasons behind this issue. Here are some troubleshooting steps you can try:
+
+1. **Check Power and Hardware Connections:**
+   - Make sure your Raspberry Pi is receiving power and all the necessary cables (such as the power adapter, HDMI, Ethernet, etc.) are properly connected.
+   - Ensure that the Wi-Fi adapter or module is securely connected to the Raspberry Pi.
+
+2. **Restart the Raspberry Pi:**
+   - Sometimes a simple restart can resolve connectivity issues. Reboot your Raspberry Pi and see if the access point appears again.
+
+3. **Verify Wi-Fi Configuration:**
+   - Access the Raspberry Pi's terminal or SSH into it and check the Wi-Fi configuration files.
+   - Run the following command to open the configuration file in a text editor:
+     ```
+     sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+     ```
+   - Ensure that the access point details (SSID and password) are correctly entered in the configuration file.
+
+4. **Check Wi-Fi Adapter Compatibility:**
+   - Confirm that your Wi-Fi adapter is compatible with the Raspberry Pi 4 and supported by the Raspberry Pi OS.
+   - Look for any specific installation steps or drivers required for your Wi-Fi adapter.
+
+5. **Update and Upgrade Packages:**
+   - Run the following commands to update and upgrade the Raspberry Pi's packages:
+     ```
+     sudo apt update
+     sudo apt upgrade
+     ```
+   - This ensures that you have the latest software and firmware installed, which can potentially fix any compatibility issues.
+
+6. **Check Wi-Fi Adapter Power Management:**
+   - Some Wi-Fi adapters have power-saving features that can cause connectivity problems. Disable power management for the Wi-Fi adapter by creating a configuration file.
+   - Run the following command to create the configuration file:
+     ```
+     sudo nano /etc/modprobe.d/8192cu.conf
+     ```
+   - Add the following line to the file and save it:
+     ```
+     options 8192cu rtw_power_mgnt=0 rtw_enusbss=0
+     ```
+   - Reboot the Raspberry Pi and check if the access point appears.
+
+7. **Verify Access Point Settings:**
+   - If you are setting up an access point on the Raspberry Pi, double-check the access point configuration files to ensure they are correctly configured.
+   - Confirm that the necessary software (such as `hostapd` and `dnsmasq`) is properly installed and configured.
+
+8. **Check for Interference or Range Issues:**
+   - If you are using a Wi-Fi dongle, try moving the Raspberry Pi closer to the access point to rule out any range or interference problems.
+   - Test the access point with another device to ensure it is working correctly.
+
+If none of the above steps resolve the issue, it's possible that there may be a hardware problem with your Wi-Fi adapter or Raspberry Pi. In such cases, consider trying a different Wi-Fi adapter or contacting technical support for further assistance.
