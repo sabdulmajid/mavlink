@@ -176,3 +176,10 @@ Day 21: Monday 19th June 2023
 • Added another 2 variations of code, one to that works similar to the previous 4 and another one meant for a different type of mission
 • Will test all 6 variations of code tomorrow, and see which one works best
 • Need to work on making the RP4 self-sufficient (fully autonomous) so that it will fly as soon as it is turn on and will go from waypoint to waypoint and land successfully without any issues or errors
+
+Day 22: Tuesday 20th June 2023
+• 
+• 
+• 
+• 
+• 
