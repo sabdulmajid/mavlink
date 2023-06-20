@@ -178,8 +178,8 @@ Day 21: Monday 19th June 2023
 • Need to work on making the RP4 self-sufficient (fully autonomous) so that it will fly as soon as it is turn on and will go from waypoint to waypoint and land successfully without any issues or errors
 
 Day 22: Tuesday 20th June 2023
-• 
-• 
-• 
-• 
-• 
+• Tested out the different new variations of code on the actual drone in the field
+• 5 out of 6 worked, with 1 not being able to run due to a relocation in drone testing area
+• 1 was wonky, due to the wind in the area. Will have to test it again tomorrow with less wind around
+• Need to test the one in the exact location as it was before (unable to test because the sprinklers were on! how unfortunate!)
+• Need to work on making the code not hard-coded, rather it should be more dynamic so that it can fly itself from point to point without any human intervention
