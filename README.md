@@ -2092,3 +2092,6 @@ Traceback (most recent call last):
 AttributeError: 'LocationGlobalRelative' object has no attribute 'distance_to'
 
 ```
+
+## Object Tracking
+Since the drone is successfully running code without any errors, we can now move on to the next step which is object tracking. I have found this really nice (guide to autonomous object tracking)[https://gaas.gitbook.io/guide/software-realization-build-your-own-autonomous-drone/basic-object-tracking]
