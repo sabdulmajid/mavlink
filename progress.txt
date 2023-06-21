@@ -183,3 +183,12 @@ Day 22: Tuesday 20th June 2023
 • 1 was wonky, due to the wind in the area. Will have to test it again tomorrow with less wind around
 • Need to test the one in the exact location as it was before (unable to test because the sprinklers were on! how unfortunate!)
 • Need to work on making the code not hard-coded, rather it should be more dynamic so that it can fly itself from point to point without any human intervention
+
+Day 23: Wednesday 21st June 2023
+• Tested 4 more types of code - point to point; forward, backward, left & right movement; North, East, West & South direction stimulus to the drone
+• Sprinklers turned on again! What a coincidence!
+• Fixed the bugs in the code from the previous test
+• Rewrote the failed code from yesterday's test
+• The UAV fell from a height of about 3 meters but was not damaged, thankfully (it fell due to manual interference)
+• Need to work on making the code more dynamic and less hard-coded
+• Have to look into MAVROS for flight simulation and more power over the drone
