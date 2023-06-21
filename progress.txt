@@ -192,3 +192,4 @@ Day 23: Wednesday 21st June 2023
 • The UAV fell from a height of about 3 meters but was not damaged, thankfully (it fell due to manual interference)
 • Need to work on making the code more dynamic and less hard-coded
 • Have to look into MAVROS for flight simulation and more power over the drone
+• Ran into error regarding the 'distance_to()' method not being an attribute of the 'vehicle' object in the dronekit library, but that is not the case as it is clearly stated in the documentation that it is an attribute of the 'vehicle' object (the error is caused because we are using the 1.6 version of dronekit and the distance_to() method was added in the dronekit 2.0 version)
