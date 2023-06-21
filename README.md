@@ -1421,3 +1421,674 @@ If the access point is no longer showing up on your Raspberry Pi 4, there could 
    - Test the access point with another device to ensure it is working correctly.
 
 If none of the above steps resolve the issue, it's possible that there may be a hardware problem with your Wi-Fi adapter or Raspberry Pi. In such cases, consider trying a different Wi-Fi adapter or contacting technical support for further assistance.
+
+## Logs from Testing - Part 4
+```typescript
+pi@raspberrypi:~/droneTest $ python real_test_5.py
+Connecting to vehicle on: /dev/ttyAMA0
+Basic pre-arm checks
+Starting .....
+Arming motors
+Waiting for arming...
+WARNING:autopilot:Terrain: clamping offset 16 to 15
+Taking off!
+('Altitude:', 0.037)
+Latitude: 28.382083, Longitude: 36.483037
+Roll: -0.01, Pitch: 0.01, Yaw: 2.37
+('Altitude:', 0.015)
+Latitude: 28.382082, Longitude: 36.483037
+Roll: -0.01, Pitch: 0.01, Yaw: 2.37
+('Altitude:', 0.019)
+Latitude: 28.382082, Longitude: 36.483037
+Roll: -0.01, Pitch: 0.00, Yaw: 2.37
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 0.65)
+Latitude: 28.382081, Longitude: 36.483038
+Roll: -0.02, Pitch: 0.02, Yaw: 2.46
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 2.552)
+Latitude: 28.382080, Longitude: 36.483038
+Roll: 0.02, Pitch: 0.04, Yaw: 2.96
+('Altitude:', 3.952)
+Latitude: 28.382081, Longitude: 36.483038
+Roll: 0.01, Pitch: 0.03, Yaw: 2.79
+('Altitude:', 4.746)
+Latitude: 28.382081, Longitude: 36.483037
+Roll: -0.01, Pitch: 0.04, Yaw: 2.84
+('Altitude:', 4.929)
+Latitude: 28.382082, Longitude: 36.483036
+Roll: -0.02, Pitch: 0.02, Yaw: 2.87
+Reached target altitude
+Take off complete
+Starting to land! Prepare for landing!
+pi@raspberrypi:~/droneTest $ ls
+First_Test.py   real_test_2.py  real_test_5.py       real_test_p2p_1.py
+no_gps_test.py  real_test_3.py  real_test_NEWS_1.py  real_test_p2p_2.py
+real_test_1.py  real_test_4.py  real_test_NEWS_2.py
+pi@raspberrypi:~/droneTest $ python real_test_p2p_1.py
+Connecting to vehicle on: /dev/ttyAMA0
+Basic pre-arm checks
+Starting ...
+Arming motors
+Waiting for arming...
+WARNING:autopilot:Terrain: clamping offset 17 to 15
+Taking off!
+('Altitude:', -0.045)
+Latitude: 28.382074, Longitude: 36.483030
+Roll: -0.00, Pitch: 0.05, Yaw: 2.50
+('Altitude:', -0.112)
+Latitude: 28.382073, Longitude: 36.483030
+Roll: -0.00, Pitch: 0.05, Yaw: 2.50
+('Altitude:', -0.17)
+Latitude: 28.382073, Longitude: 36.483030
+Roll: -0.00, Pitch: 0.04, Yaw: 2.50
+WARNING:autopilot:Radio Failsafe
+WARNING:autopilot:Radio Failsafe Cleared
+('Altitude:', 0.028)
+Latitude: 28.382072, Longitude: 36.483031
+Roll: -0.01, Pitch: 0.03, Yaw: 2.56
+('Altitude:', 0.249)
+Latitude: 28.382072, Longitude: 36.483032
+Roll: -0.01, Pitch: 0.05, Yaw: 2.59
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 0.46)
+Latitude: 28.382072, Longitude: 36.483032
+Roll: 0.02, Pitch: 0.05, Yaw: 2.56
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 0.573)
+Latitude: 28.382071, Longitude: 36.483031
+Roll: 0.03, Pitch: 0.03, Yaw: 2.94
+('Altitude:', 0.22)
+Latitude: 28.382072, Longitude: 36.483030
+Roll: 0.01, Pitch: 0.05, Yaw: 2.94
+WARNING:autopilot:Radio Failsafe
+('Altitude:', 0.169)
+Latitude: 28.382072, Longitude: 36.483029
+Roll: -0.01, Pitch: 0.03, Yaw: 2.87
+('Altitude:', 0.133)
+Latitude: 28.382072, Longitude: 36.483029
+Roll: -0.01, Pitch: 0.02, Yaw: 2.81
+WARNING:autopilot:Radio Failsafe Cleared
+('Altitude:', 0.159)
+Latitude: 28.382072, Longitude: 36.483029
+Roll: -0.01, Pitch: 0.00, Yaw: 2.77
+WARNING:autopilot:Radio Failsafe - Disarming
+('Altitude:', 0.176)
+Latitude: 28.382072, Longitude: 36.483029
+Roll: -0.01, Pitch: -0.00, Yaw: 2.74
+('Altitude:', 0.161)
+Latitude: 28.382072, Longitude: 36.483029
+Roll: -0.01, Pitch: -0.00, Yaw: 2.71
+('Altitude:', 0.106)
+Latitude: 28.382073, Longitude: 36.483029
+Roll: -0.01, Pitch: -0.00, Yaw: 2.70
+WARNING:autopilot:Radio Failsafe Cleared
+('Altitude:', 0.061)
+Latitude: 28.382073, Longitude: 36.483028
+Roll: -0.01, Pitch: -0.00, Yaw: 2.68
+('Altitude:', 0.038)
+Latitude: 28.382074, Longitude: 36.483027
+Roll: -0.01, Pitch: -0.01, Yaw: 2.67
+('Altitude:', 0.009)
+Latitude: 28.382075, Longitude: 36.483027
+Roll: -0.01, Pitch: -0.01, Yaw: 2.67
+('Altitude:', 0.006)
+Latitude: 28.382076, Longitude: 36.483026
+Roll: -0.01, Pitch: -0.01, Yaw: 2.66
+WARNING:autopilot:Radio Failsafe - Disarming
+('Altitude:', 0.011)
+Latitude: 28.382077, Longitude: 36.483025
+Roll: -0.01, Pitch: -0.01, Yaw: 2.66
+^Z
+[2]+  Stopped                 python real_test_p2p_1.py
+pi@raspberrypi:~/droneTest $ python real_test_p2p_1.py
+Connecting to vehicle on: /dev/ttyAMA0
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+^Z
+[3]+  Stopped                 python real_test_p2p_1.py
+pi@raspberrypi:~/droneTest $ python real_test_p2p_1.py
+Connecting to vehicle on: /dev/ttyAMA0
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+Basic pre-arm checks
+Starting ...
+Arming motors
+Waiting for arming...
+WARNING:autopilot:Terrain: clamping offset 17 to 15
+Taking off!
+('Altitude:', -0.035)
+Latitude: 28.382103, Longitude: 36.483000
+Roll: 0.02, Pitch: -0.01, Yaw: 2.48
+('Altitude:', -0.126)
+Latitude: 28.382103, Longitude: 36.482999
+Roll: 0.02, Pitch: -0.01, Yaw: 2.48
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+('Altitude:', -0.151)
+Latitude: 28.382103, Longitude: 36.482999
+Roll: 0.02, Pitch: -0.01, Yaw: 2.48
+('Altitude:', -0.029)
+Latitude: 28.382103, Longitude: 36.482999
+Roll: 0.02, Pitch: -0.01, Yaw: 2.48
+('Altitude:', 0.025)
+Latitude: 28.382103, Longitude: 36.482999
+Roll: 0.02, Pitch: -0.01, Yaw: 2.48
+('Altitude:', 0.068)
+Latitude: 28.382103, Longitude: 36.482999
+Roll: 0.02, Pitch: -0.01, Yaw: 2.48
+('Altitude:', 0.056)
+Latitude: 28.382103, Longitude: 36.482998
+Roll: 0.02, Pitch: -0.01, Yaw: 2.48
+('Altitude:', 0.073)
+Latitude: 28.382103, Longitude: 36.482998
+Roll: 0.02, Pitch: -0.01, Yaw: 2.48
+('Altitude:', 0.083)
+Latitude: 28.382102, Longitude: 36.482997
+Roll: 0.02, Pitch: -0.01, Yaw: 2.48
+^Z
+[4]+  Stopped                 python real_test_p2p_1.py
+pi@raspberrypi:~/droneTest $ python real_test_5.py
+Connecting to vehicle on: /dev/ttyAMA0
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+Basic pre-arm checks
+Starting .....
+Arming motors
+Waiting for arming...
+WARNING:autopilot:Terrain: clamping offset 17 to 15
+Taking off!
+('Altitude:', -0.011)
+Latitude: 28.382099, Longitude: 36.483003
+Roll: -0.01, Pitch: -0.00, Yaw: 2.41
+('Altitude:', -0.058)
+Latitude: 28.382099, Longitude: 36.483003
+Roll: -0.01, Pitch: -0.00, Yaw: 2.41
+('Altitude:', -0.083)
+Latitude: 28.382099, Longitude: 36.483004
+Roll: -0.01, Pitch: -0.02, Yaw: 2.40
+('Altitude:', 0.187)
+Latitude: 28.382098, Longitude: 36.483004
+Roll: 0.01, Pitch: 0.00, Yaw: 2.49
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 2.157)
+Latitude: 28.382096, Longitude: 36.483003
+Roll: -0.08, Pitch: 0.08, Yaw: 3.00
+('Altitude:', 3.878)
+Latitude: 28.382095, Longitude: 36.483002
+Roll: -0.04, Pitch: 0.09, Yaw: 2.81
+('Altitude:', 4.727)
+Latitude: 28.382096, Longitude: 36.483000
+Roll: -0.13, Pitch: 0.06, Yaw: 2.53
+('Altitude:', 5.188)
+Latitude: 28.382099, Longitude: 36.483002
+Roll: -0.07, Pitch: 0.03, Yaw: 2.97
+Reached target altitude
+Take off complete
+Starting to land! Prepare for landing!
+pi@raspberrypi:~/droneTest $ python real_test_p2p_1.py
+Connecting to vehicle on: /dev/ttyAMA0
+Basic pre-arm checks
+Starting ...
+Arming motors
+Waiting for arming...
+WARNING:autopilot:Terrain: clamping offset 18 to 15
+Taking off!
+('Altitude:', 0.054)
+Latitude: 28.382104, Longitude: 36.483016
+Roll: -0.06, Pitch: 0.01, Yaw: 2.65
+('Altitude:', 0.102)
+Latitude: 28.382104, Longitude: 36.483015
+Roll: -0.06, Pitch: 0.01, Yaw: 2.66
+('Altitude:', 0.16)
+Latitude: 28.382104, Longitude: 36.483016
+Roll: -0.05, Pitch: 0.02, Yaw: 2.68
+('Altitude:', 0.427)
+Latitude: 28.382101, Longitude: 36.483015
+Roll: 0.97, Pitch: -0.55, Yaw: 2.34
+('Altitude:', 0.087)
+Latitude: 28.382098, Longitude: 36.483015
+Roll: 2.80, Pitch: 0.26, Yaw: 1.94
+('Altitude:', 0.283)
+Latitude: 28.382099, Longitude: 36.483019
+Roll: 2.63, Pitch: 0.10, Yaw: 2.14
+CRITICAL:autopilot:Crash: Disarming: AngErr=132>30, Accel=0.4<3.0
+('Altitude:', 0.287)
+Latitude: 28.382102, Longitude: 36.483021
+Roll: 2.65, Pitch: 0.20, Yaw: 2.88
+('Altitude:', -0.498)
+Latitude: 28.382101, Longitude: 36.483022
+Roll: 2.66, Pitch: 0.09, Yaw: 2.74
+('Altitude:', -0.915)
+Latitude: 28.382100, Longitude: 36.483022
+Roll: 2.78, Pitch: 0.09, Yaw: 2.66
+('Altitude:', -1.117)
+Latitude: 28.382099, Longitude: 36.483022
+Roll: 2.78, Pitch: 0.11, Yaw: 2.70
+('Altitude:', -1.242)
+Latitude: 28.382099, Longitude: 36.483022
+Roll: 2.78, Pitch: 0.11, Yaw: 2.70
+('Altitude:', -0.975)
+Latitude: 28.382099, Longitude: 36.483020
+Roll: 2.31, Pitch: 0.39, Yaw: 3.01
+('Altitude:', -0.807)
+Latitude: 28.382099, Longitude: 36.483021
+Roll: 1.47, Pitch: 0.28, Yaw: 1.62
+('Altitude:', -0.397)
+Latitude: 28.382101, Longitude: 36.483019
+Roll: 0.88, Pitch: -0.09, Yaw: 1.32
+('Altitude:', -0.17)
+Latitude: 28.382102, Longitude: 36.483018
+Roll: 0.62, Pitch: -0.08, Yaw: 1.35
+^Z
+[5]+  Stopped                 python real_test_p2p_1.py
+pi@raspberrypi:~/droneTest $ python real_test_p2p_1.py
+Connecting to vehicle on: /dev/ttyAMA0
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+WARNING:autopilot:Radio Failsafe - Disarming
+CRITICAL:autopilot:PreArm: Throttle below failsafe
+CRITICAL:autopilot:PreArm: Radio failsafe on
+WARNING:autopilot:Radio Failsafe Cleared
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+Basic pre-arm checks
+Starting ...
+Arming motors
+Waiting for arming...
+WARNING:autopilot:Terrain: clamping offset 18 to 15
+Taking off!
+('Altitude:', 0.007)
+Latitude: 28.382101, Longitude: 36.483023
+Roll: -0.07, Pitch: -0.04, Yaw: 2.29
+('Altitude:', 0.029)
+Latitude: 28.382101, Longitude: 36.483023
+Roll: -0.07, Pitch: -0.04, Yaw: 2.29
+('Altitude:', 0.063)
+Latitude: 28.382101, Longitude: 36.483024
+Roll: -0.07, Pitch: -0.04, Yaw: 2.29
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 0.423)
+Latitude: 28.382100, Longitude: 36.483025
+Roll: -0.03, Pitch: 0.00, Yaw: 2.41
+('Altitude:', 1.844)
+Latitude: 28.382100, Longitude: 36.483025
+Roll: -0.01, Pitch: -0.00, Yaw: 2.96
+('Altitude:', 2.772)
+Latitude: 28.382100, Longitude: 36.483024
+Roll: -0.02, Pitch: 0.02, Yaw: 2.79
+('Altitude:', 2.911)
+Latitude: 28.382100, Longitude: 36.483023
+Roll: -0.02, Pitch: 0.01, Yaw: 2.98
+('Altitude:', 2.874)
+Latitude: 28.382102, Longitude: 36.483023
+Roll: -0.01, Pitch: -0.01, Yaw: 2.90
+('Altitude:', 2.846)
+Latitude: 28.382102, Longitude: 36.483024
+Roll: -0.01, Pitch: -0.01, Yaw: 2.96
+('Altitude:', 2.841)
+Latitude: 28.382102, Longitude: 36.483024
+Roll: -0.02, Pitch: 0.01, Yaw: 2.92
+('Altitude:', 2.899)
+Latitude: 28.382101, Longitude: 36.483024
+Roll: -0.02, Pitch: 0.01, Yaw: 2.92
+('Altitude:', 2.878)
+Latitude: 28.382100, Longitude: 36.483024
+Roll: -0.02, Pitch: 0.01, Yaw: 2.90
+('Altitude:', 2.873)
+Latitude: 28.382100, Longitude: 36.483024
+Roll: -0.03, Pitch: 0.01, Yaw: 2.89
+('Altitude:', 2.894)
+Latitude: 28.382100, Longitude: 36.483023
+Roll: -0.01, Pitch: -0.01, Yaw: 2.86
+('Altitude:', 2.875)
+Latitude: 28.382100, Longitude: 36.483023
+Roll: -0.04, Pitch: 0.02, Yaw: 2.84
+('Altitude:', 2.858)
+Latitude: 28.382099, Longitude: 36.483023
+Roll: -0.03, Pitch: 0.02, Yaw: 2.84
+CRITICAL:autopilot:EKF3 lane switch 1
+WARNING:autopilot:EKF primary changed:1
+('Altitude:', -0.147)
+Latitude: 28.382099, Longitude: 36.483024
+Roll: -0.17, Pitch: -0.03, Yaw: 2.75
+CRITICAL:autopilot:Vibration compensation ON
+CRITICAL:autopilot:EKF variance
+CRITICAL:autopilot:EKF Failsafe: changed to LAND Mode
+('Altitude:', -5.661)
+Latitude: 28.382098, Longitude: 36.483018
+Roll: -0.05, Pitch: -0.07, Yaw: 2.66
+CRITICAL:autopilot:GPS Glitch or Compass error
+('Altitude:', -6.406)
+Latitude: 28.382096, Longitude: 36.483018
+Roll: -0.06, Pitch: -0.07, Yaw: 2.62
+CRITICAL:autopilot:EKF Failsafe Cleared
+('Altitude:', 0.608)
+Latitude: 28.382098, Longitude: 36.483021
+Roll: -0.07, Pitch: -0.07, Yaw: 2.60
+('Altitude:', 0.482)
+Latitude: 28.382100, Longitude: 36.483021
+Roll: -0.07, Pitch: -0.07, Yaw: 2.59
+('Altitude:', 0.247)
+Latitude: 28.382100, Longitude: 36.483022
+Roll: -0.08, Pitch: -0.06, Yaw: 2.60
+('Altitude:', 0.083)
+Latitude: 28.382100, Longitude: 36.483021
+Roll: -0.09, Pitch: -0.06, Yaw: 2.60
+WARNING:autopilot:EKF primary changed:0
+('Altitude:', 0.205)
+Latitude: 28.382099, Longitude: 36.483022
+Roll: -0.05, Pitch: -0.07, Yaw: 2.60
+('Altitude:', 0.181)
+Latitude: 28.382099, Longitude: 36.483022
+Roll: -0.05, Pitch: -0.06, Yaw: 2.61
+('Altitude:', 0.189)
+Latitude: 28.382099, Longitude: 36.483022
+Roll: -0.05, Pitch: -0.06, Yaw: 2.62
+('Altitude:', 0.044)
+Latitude: 28.382099, Longitude: 36.483022
+Roll: -0.05, Pitch: -0.06, Yaw: 2.63
+('Altitude:', 0.071)
+Latitude: 28.382099, Longitude: 36.483021
+Roll: -0.05, Pitch: -0.06, Yaw: 2.63
+CRITICAL:autopilot:Glitch cleared
+('Altitude:', 0.156)
+Latitude: 28.382099, Longitude: 36.483021
+Roll: -0.05, Pitch: -0.05, Yaw: 2.63
+('Altitude:', 0.244)
+Latitude: 28.382099, Longitude: 36.483022
+Roll: -0.05, Pitch: -0.05, Yaw: 2.63
+('Altitude:', 0.235)
+Latitude: 28.382099, Longitude: 36.483022
+Roll: -0.04, Pitch: -0.04, Yaw: 2.63
+('Altitude:', 0.118)
+Latitude: 28.382099, Longitude: 36.483022
+Roll: -0.04, Pitch: -0.03, Yaw: 2.63
+('Altitude:', 0.046)
+Latitude: 28.382099, Longitude: 36.483021
+Roll: -0.03, Pitch: -0.03, Yaw: 2.63
+('Altitude:', -0.006)
+Latitude: 28.382099, Longitude: 36.483021
+Roll: -0.03, Pitch: -0.02, Yaw: 2.63
+CRITICAL:autopilot:Vibration compensation OFF
+('Altitude:', 0.02)
+Latitude: 28.382099, Longitude: 36.483021
+Roll: -0.03, Pitch: -0.02, Yaw: 2.63
+('Altitude:', 0.097)
+Latitude: 28.382100, Longitude: 36.483021
+Roll: -0.04, Pitch: -0.01, Yaw: 2.63
+('Altitude:', 0.182)
+Latitude: 28.382100, Longitude: 36.483021
+Roll: -0.04, Pitch: -0.02, Yaw: 2.62
+('Altitude:', 0.188)
+Latitude: 28.382100, Longitude: 36.483020
+Roll: -0.04, Pitch: -0.02, Yaw: 2.62
+('Altitude:', 0.146)
+Latitude: 28.382100, Longitude: 36.483019
+Roll: -0.04, Pitch: -0.02, Yaw: 2.62
+('Altitude:', 0.13)
+Latitude: 28.382100, Longitude: 36.483019
+Roll: -0.04, Pitch: -0.02, Yaw: 2.62
+('Altitude:', 0.202)
+Latitude: 28.382100, Longitude: 36.483019
+Roll: -0.04, Pitch: -0.02, Yaw: 2.61
+('Altitude:', 0.229)
+Latitude: 28.382101, Longitude: 36.483018
+Roll: -0.04, Pitch: -0.02, Yaw: 2.61
+('Altitude:', 0.174)
+Latitude: 28.382102, Longitude: 36.483018
+Roll: -0.04, Pitch: -0.02, Yaw: 2.61
+('Altitude:', 0.101)
+Latitude: 28.382101, Longitude: 36.483017
+Roll: -0.04, Pitch: -0.02, Yaw: 2.61
+('Altitude:', 0.105)
+Latitude: 28.382101, Longitude: 36.483017
+Roll: -0.03, Pitch: -0.02, Yaw: 2.61
+('Altitude:', 0.182)
+Latitude: 28.382101, Longitude: 36.483016
+Roll: -0.04, Pitch: -0.02, Yaw: 2.61
+('Altitude:', 0.166)
+Latitude: 28.382101, Longitude: 36.483015
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.166)
+Latitude: 28.382101, Longitude: 36.483014
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.175)
+Latitude: 28.382101, Longitude: 36.483014
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.163)
+Latitude: 28.382101, Longitude: 36.483013
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.172)
+Latitude: 28.382101, Longitude: 36.483013
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.185)
+Latitude: 28.382101, Longitude: 36.483012
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.239)
+Latitude: 28.382101, Longitude: 36.483012
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.231)
+Latitude: 28.382101, Longitude: 36.483011
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.212)
+Latitude: 28.382101, Longitude: 36.483011
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.191)
+Latitude: 28.382100, Longitude: 36.483011
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.21)
+Latitude: 28.382100, Longitude: 36.483011
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.228)
+Latitude: 28.382100, Longitude: 36.483011
+Roll: -0.03, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.274)
+Latitude: 28.382100, Longitude: 36.483012
+Roll: -0.04, Pitch: -0.02, Yaw: 2.60
+('Altitude:', 0.355)
+Latitude: 28.382100, Longitude: 36.483013
+Roll: -0.21, Pitch: -0.70, Yaw: 2.82
+('Altitude:', 0.167)
+Latitude: 28.382100, Longitude: 36.483012
+Roll: -0.10, Pitch: -0.73, Yaw: 2.75
+('Altitude:', -0.058)
+Latitude: 28.382101, Longitude: 36.483011
+Roll: -0.00, Pitch: -0.06, Yaw: 2.61
+('Altitude:', -0.146)
+Latitude: 28.382101, Longitude: 36.483012
+Roll: -0.00, Pitch: -0.06, Yaw: 2.61
+('Altitude:', -0.237)
+Latitude: 28.382101, Longitude: 36.483013
+Roll: -0.00, Pitch: -0.06, Yaw: 2.61
+('Altitude:', -0.269)
+Latitude: 28.382100, Longitude: 36.483013
+Roll: -0.01, Pitch: -0.06, Yaw: 2.61
+('Altitude:', -0.268)
+Latitude: 28.382100, Longitude: 36.483015
+Roll: -0.01, Pitch: -0.06, Yaw: 2.61
+('Altitude:', -0.231)
+Latitude: 28.382100, Longitude: 36.483015
+Roll: -0.00, Pitch: -0.06, Yaw: 2.61
+('Altitude:', -0.176)
+Latitude: 28.382100, Longitude: 36.483016
+Roll: -0.00, Pitch: -0.06, Yaw: 2.62
+('Altitude:', -0.153)
+Latitude: 28.382100, Longitude: 36.483016
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', -0.092)
+Latitude: 28.382100, Longitude: 36.483017
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', -0.048)
+Latitude: 28.382100, Longitude: 36.483017
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', 0.008)
+Latitude: 28.382100, Longitude: 36.483017
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+('Altitude:', 0.07)
+Latitude: 28.382099, Longitude: 36.483018
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', 0.123)
+Latitude: 28.382099, Longitude: 36.483018
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', 0.153)
+Latitude: 28.382100, Longitude: 36.483018
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', 0.158)
+Latitude: 28.382100, Longitude: 36.483017
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', 0.17)
+Latitude: 28.382100, Longitude: 36.483016
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', 0.197)
+Latitude: 28.382100, Longitude: 36.483017
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', 0.172)
+Latitude: 28.382100, Longitude: 36.483016
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', 0.144)
+Latitude: 28.382100, Longitude: 36.483016
+Roll: -0.00, Pitch: -0.05, Yaw: 2.62
+('Altitude:', 0.116)
+Latitude: 28.382101, Longitude: 36.483016
+Roll: -0.01, Pitch: -0.06, Yaw: 2.62
+('Altitude:', 0.298)
+Latitude: 28.382101, Longitude: 36.483017
+Roll: -0.01, Pitch: -0.06, Yaw: 2.62
+('Altitude:', 0.241)
+Latitude: 28.382100, Longitude: 36.483018
+Roll: -0.01, Pitch: -0.06, Yaw: 2.62
+('Altitude:', 0.225)
+Latitude: 28.382100, Longitude: 36.483018
+Roll: -0.01, Pitch: -0.06, Yaw: 2.62
+('Altitude:', 0.209)
+Latitude: 28.382100, Longitude: 36.483019
+Roll: -0.01, Pitch: -0.06, Yaw: 2.63
+('Altitude:', 0.175)
+Latitude: 28.382100, Longitude: 36.483019
+Roll: -0.01, Pitch: -0.06, Yaw: 2.63
+('Altitude:', 0.195)
+Latitude: 28.382101, Longitude: 36.483019
+Roll: -0.01, Pitch: -0.06, Yaw: 2.63
+('Altitude:', 0.183)
+Latitude: 28.382101, Longitude: 36.483019
+Roll: -0.01, Pitch: -0.06, Yaw: 2.63
+('Altitude:', 0.174)
+Latitude: 28.382101, Longitude: 36.483019
+Roll: -0.01, Pitch: -0.06, Yaw: 2.63
+('Altitude:', 0.199)
+Latitude: 28.382101, Longitude: 36.483019
+Roll: -0.01, Pitch: -0.06, Yaw: 2.63
+('Altitude:', 0.166)
+Latitude: 28.382101, Longitude: 36.483018
+Roll: -0.00, Pitch: -0.06, Yaw: 2.63
+('Altitude:', 0.169)
+Latitude: 28.382102, Longitude: 36.483018
+Roll: -0.01, Pitch: -0.06, Yaw: 2.64
+('Altitude:', 0.223)
+Latitude: 28.382102, Longitude: 36.483019
+Roll: -0.01, Pitch: -0.06, Yaw: 2.64
+('Altitude:', 0.24)
+Latitude: 28.382102, Longitude: 36.483020
+Roll: -0.01, Pitch: -0.06, Yaw: 2.64
+('Altitude:', 0.283)
+Latitude: 28.382102, Longitude: 36.483019
+Roll: -0.01, Pitch: -0.06, Yaw: 2.64
+('Altitude:', 0.249)
+Latitude: 28.382102, Longitude: 36.483019
+Roll: -0.01, Pitch: -0.06, Yaw: 2.64
+('Altitude:', 0.224)
+Latitude: 28.382102, Longitude: 36.483020
+Roll: -0.01, Pitch: -0.06, Yaw: 2.64
+^Z
+[6]+  Stopped                 python real_test_p2p_1.py
+pi@raspberrypi:~/droneTest $ python real_test_p2p_1.py
+Connecting to vehicle on: /dev/ttyAMA0
+WARNING:autopilot:Radio Failsafe - Disarming
+WARNING:autopilot:Radio Failsafe Cleared
+Basic pre-arm checks
+Starting ...
+Arming motors
+Waiting for arming...
+WARNING:autopilot:Terrain: clamping offset 18 to 15
+Taking off!
+('Altitude:', -0.019)
+Latitude: 28.382107, Longitude: 36.483023
+Roll: -0.02, Pitch: -0.05, Yaw: 2.68
+('Altitude:', -0.05)
+Latitude: 28.382108, Longitude: 36.483022
+Roll: -0.02, Pitch: -0.05, Yaw: 2.68
+('Altitude:', -0.061)
+Latitude: 28.382108, Longitude: 36.483022
+Roll: -0.02, Pitch: -0.05, Yaw: 2.68
+('Altitude:', 0.502)
+Latitude: 28.382108, Longitude: 36.483022
+Roll: -0.03, Pitch: -0.00, Yaw: 2.77
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 2.171)
+Latitude: 28.382107, Longitude: 36.483021
+Roll: -0.03, Pitch: 0.04, Yaw: -3.14
+('Altitude:', 2.956)
+Latitude: 28.382109, Longitude: 36.483021
+Roll: -0.01, Pitch: -0.02, Yaw: 2.90
+('Altitude:', 3.013)
+Latitude: 28.382110, Longitude: 36.483020
+Roll: -0.06, Pitch: 0.00, Yaw: -2.97
+Reached target altitude
+Takeoff complete
+Flying to waypoint: (28.382081, 36.482996)
+Traceback (most recent call last):
+  File "real_test_p2p_1.py", line 76, in <module>
+    distance = vehicle.location.global_relative_frame.distance_to(target_location)
+AttributeError: 'LocationGlobalRelative' object has no attribute 'distance_to'
+pi@raspberrypi:~/droneTest $ python real_test_p2p_2.py
+Connecting to vehicle on: /dev/ttyAMA0
+Basic pre-arm checks
+Starting ...
+Arming motors
+Waiting for arming...
+WARNING:autopilot:Terrain: clamping offset 19 to 15
+Taking off!
+('Altitude:', -0.012)
+Latitude: 28.382090, Longitude: 36.483018
+Roll: -0.00, Pitch: 0.01, Yaw: 2.14
+('Altitude:', -0.047)
+Latitude: 28.382090, Longitude: 36.483018
+Roll: -0.00, Pitch: 0.00, Yaw: 2.14
+('Altitude:', -0.071)
+Latitude: 28.382089, Longitude: 36.483018
+Roll: 0.00, Pitch: 0.00, Yaw: 2.14
+('Altitude:', 0.206)
+Latitude: 28.382088, Longitude: 36.483019
+Roll: -0.06, Pitch: 0.04, Yaw: 2.29
+WARNING:autopilot:EKF3 IMU1 MAG0 ground mag anomaly, yaw re-aligned
+WARNING:autopilot:EKF3 IMU0 MAG0 ground mag anomaly, yaw re-aligned
+('Altitude:', 0.898)
+Latitude: 28.382087, Longitude: 36.483019
+Roll: -0.03, Pitch: 0.06, Yaw: 2.77
+('Altitude:', 0.976)
+Latitude: 28.382088, Longitude: 36.483018
+Roll: -0.01, Pitch: 0.01, Yaw: 2.82
+('Altitude:', 0.996)
+Latitude: 28.382089, Longitude: 36.483018
+Roll: 0.01, Pitch: -0.02, Yaw: 2.73
+Reached target altitude
+Takeoff complete
+Moving to the right
+Traceback (most recent call last):
+  File "real_test_p2p_2.py", line 76, in <module>
+    distance = vehicle.location.global_relative_frame.distance_to(right_location)
+AttributeError: 'LocationGlobalRelative' object has no attribute 'distance_to'
+
+```
