@@ -193,3 +193,43 @@ Day 23: Wednesday 21st June 2023
 • Need to work on making the code more dynamic and less hard-coded
 • Have to look into MAVROS for flight simulation and more power over the drone
 • Ran into error regarding the 'distance_to()' method not being an attribute of the 'vehicle' object in the dronekit library, but that is not the case as it is clearly stated in the documentation that it is an attribute of the 'vehicle' object (the error is caused because we are using the 1.6 version of dronekit and the distance_to() method was added in the dronekit 2.0 version)
+
+Day 24: Thursday 22nd June 2023
+• Researched into MAVROS for flight simulation and more power over the drone
+
+Day 25: Sunday 25th June 2023
+• Continued learning more about MAVROS, and researched into compatibility with PixHawk 4
+
+Day 26: Monday 26th June 2023
+• Continued learning more about MAVROS, and researched into compatibility with PixHawk 4
+
+Day 27: Tuesday 27th June 2023
+• Continued learning more about MAVROS, and researched into integration with Linux
+
+Day 28: Wednesday 28th June 2023
+• Continued learning more about MAVROS, and researched into connecting it with Gazebo
+
+Day 29: Thursday 29th June 2023
+• Researched into setting up the whole environment for MAVROS and Gazebo on the Ubuntu
+
+Day 30: Sunday 2nd July 2023
+• Read documentation for MAVROS code and how to navigate using it
+
+Day 31: Monday 3rd July 2023
+• Continued reading documentation for MAVROS code and how to navigate using it
+
+Day 32: Tuesday 4th July 2023
+• Wrote down 2 different types of code for MAVROS, one for takeoff and landing and the other for point to point navigation
+
+Day 33: Wednesday 5th July 2023
+• Worked on setting up the ArduPilot SITL environment on the Ubuntu 
+
+Day 34: Thursday 6th July 2023
+• Worked on setting up the ArduPilot SITL environment on the Ubuntu, and completed it fully
+
+Day 35: Sunday 9th July 2023
+• Did not managed to fully set up the SITL, and so will directly deploy code on the drone
+
+Day 36: Monday 10th July 2023
+• Managed to set 3 different types of code for testing, will most likely test it tomorrow
+• Researched into how to get code to work indoors, via Offboard control
