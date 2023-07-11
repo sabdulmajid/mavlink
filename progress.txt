@@ -233,3 +233,7 @@ Day 35: Sunday 9th July 2023
 Day 36: Monday 10th July 2023
 • Managed to set 3 different types of code for testing, will most likely test it tomorrow
 • Researched into how to get code to work indoors, via Offboard control
+
+Day 37: Tuesday 11th July 2023
+• Researched into other potential compatibility issues with MAVROS and Gazebo
+• Researched to SLAM technology and how it can be integrated into our project
