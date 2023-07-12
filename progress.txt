@@ -237,3 +237,8 @@ Day 36: Monday 10th July 2023
 Day 37: Tuesday 11th July 2023
 • Researched into other potential compatibility issues with MAVROS and Gazebo
 • Researched to SLAM technology and how it can be integrated into our project
+
+Day 38: Wednesday 12th July 2023
+• Reinstalled Gazebo Ignition Fortress on the Ubuntu (after deleting the Gazebo Garden build)
+• Upgraded Ubuntu 20.04 to 22.04 (latest version) so that it is compatible with Gazebo Ignition Fortress
+• Installed ROS 2 Humble Hummingbird on the Ubuntu
